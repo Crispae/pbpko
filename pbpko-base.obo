@@ -1,0 +1,14 @@
+format-version: 1.2
+data-version: pbpko/releases/2023-11-25/pbpko-base.owl
+date: 25:11:2023 04:39
+ontology: pbpko/pbpko-base
+property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
+property_value: http://purl.org/dc/terms/description "Ontology aligned for PBPK modelling in life science domain" xsd:string
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
+property_value: http://purl.org/dc/terms/title "pharmokinetic-ontology" xsd:string
+property_value: owl:versionInfo "2023-11-25" xsd:string
+
+[Term]
+id: PBPKO:0000000
+name: root node
+
