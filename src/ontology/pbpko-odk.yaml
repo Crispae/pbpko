@@ -36,7 +36,7 @@ import_group:
       module_type_slme: STAR
     - id: iao
 license: "https://creativecommons.org/licenses/by/4.0"
-namespaces: 
+namespaces:
   - http://purl.obolibrary.org/obo/PBPKO_
   - http://purl.obolibrary.org/obo/pbpko_
   - http://purl.obolibrary.org/obo/PBPKO#
@@ -98,8 +98,8 @@ workflows:
   - docs
 components:
   products:
-    - filename: vocab.owl # 
+    - filename: vocab.owl #
       use_template: true
       template_options: --add-prefixes config/context.json
       templates:
-        - vocab.tsv # 
+        - vocab_updated.tsv #
