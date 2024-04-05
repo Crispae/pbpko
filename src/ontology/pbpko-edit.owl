@@ -19,7 +19,7 @@ Import(<http://purl.obolibrary.org/obo/pbpko/components/vocab.owl>)
 
 
 Annotation(dcterms:description "Ontology aligned for PBPK modelling in life science domain")
-Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
+Annotation(dcterms:license <https://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "pharmokinetic-ontology")
 
 

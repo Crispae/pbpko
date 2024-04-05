@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: releases/2024-04-04
-date: 04:04:2024 17:40
+data-version: releases/2024-04-05
+date: 05:04:2024 06:20
 subsetdef: goslim_agr ""
 subsetdef: goslim_candida ""
 subsetdef: goslim_chembl ""
@@ -22,9 +22,9 @@ subsetdef: ro-eco ""
 subsetdef: RO:0002259 ""
 ontology: pbpko
 property_value: http://purl.org/dc/terms/description "Ontology aligned for PBPK modelling in life science domain" xsd:string
-property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
 property_value: http://purl.org/dc/terms/title "pharmokinetic-ontology" xsd:string
-property_value: owl:versionInfo "2024-04-04" xsd:string
+property_value: owl:versionInfo "2024-04-05" xsd:string
 
 [Term]
 id: BFO:0000001

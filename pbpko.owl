@@ -18,12 +18,12 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pbpko.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pbpko/releases/2024-04-04/pbpko.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pbpko/releases/2024-04-05/pbpko.owl"/>
         <dcterms:description>Ontology aligned for PBPK modelling in life science domain</dcterms:description>
-        <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
+        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title>pharmokinetic-ontology</dcterms:title>
-        <oboInOwl:date>04:04:2024 17:40</oboInOwl:date>
-        <owl:versionInfo>2024-04-04</owl:versionInfo>
+        <oboInOwl:date>05:04:2024 06:20</oboInOwl:date>
+        <owl:versionInfo>2024-04-05</owl:versionInfo>
     </owl:Ontology>
     
 

@@ -12,13 +12,13 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pbpko/pbpko-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pbpko/releases/2024-04-04/pbpko-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pbpko/releases/2024-04-05/pbpko-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:description>Ontology aligned for PBPK modelling in life science domain</dcterms:description>
-        <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
+        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title>pharmokinetic-ontology</dcterms:title>
-        <oboInOwl:date>04:04:2024 17:40</oboInOwl:date>
-        <owl:versionInfo>2024-04-04</owl:versionInfo>
+        <oboInOwl:date>05:04:2024 06:20</oboInOwl:date>
+        <owl:versionInfo>2024-04-05</owl:versionInfo>
     </owl:Ontology>
     
 
