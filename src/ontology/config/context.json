@@ -1,7 +1,7 @@
 {
 	"@context": {
 		
-		"pkpbo":"http://purl.obolibrary.org/obo/pbpko/"
+		"pbpko":"http://purl.obolibrary.org/obo/"
 
 	}
 }

@@ -1,49 +1,49 @@
 format-version: 1.2
-data-version: pbpko/releases/2024-04-05/pbpko-base.owl
-date: 05:04:2024 06:20
+data-version: pbpko/releases/2024-06-25/pbpko-base.owl
+date: 25:06:2024 22:32
 ontology: pbpko/pbpko-base
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/description "Ontology aligned for PBPK modelling in life science domain" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/
 property_value: http://purl.org/dc/terms/title "pharmokinetic-ontology" xsd:string
-property_value: owl:versionInfo "2024-04-05" xsd:string
+property_value: owl:versionInfo "2024-06-25" xsd:string
+
+[Term]
+id: PBPKO:00000
+name: PBPK Evaluation
+def: "Evaluation of PBPK models." []
+is_a: PBPKO:00004 ! Physiologically Based Pharmacokinetic Modeling
+property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
+property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
 id: PBPKO:0000000
 name: root node
 
 [Term]
-id: PKPBO:00000
-name: PBPK Evaluation
-def: "Evaluation of PBPK models." []
-is_a: PKPBO:00004 ! Physiologically Based Pharmacokinetic Modeling
-property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
-property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
-
-[Term]
-id: PKPBO:00001
+id: PBPKO:00001
 name: Statistical Method
 def: "Statistical method to evaluate PBPK model." []
-is_a: PKPBO:00000 ! PBPK Evaluation
+is_a: PBPKO:00000 ! PBPK Evaluation
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 
 [Term]
-id: PKPBO:00002
+id: PBPKO:00002
 name: Parameters
 def: "Different types of parameters involved in PBPK modelling." []
-is_a: PKPBO:00004 ! Physiologically Based Pharmacokinetic Modeling
+is_a: PBPKO:00004 ! Physiologically Based Pharmacokinetic Modeling
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 
 [Term]
-id: PKPBO:00003
+id: PBPKO:00003
 name: PBPK types
 def: "Different types of PBPK model." []
-is_a: PKPBO:00004 ! Physiologically Based Pharmacokinetic Modeling
+is_a: PBPKO:00004 ! Physiologically Based Pharmacokinetic Modeling
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00004
+id: PBPKO:00004
 name: Physiologically Based Pharmacokinetic Modeling
 def: "Physiologically based pharmacokinetic (PBPK) modeling is a mathematical modeling technique that predicts the absorption, distribution, metabolism, and excretion (ADME) of synthetic or natural chemical substances in humans and other animal species" [] {IAO:0000119="10.1038/psp.2013.41"}
 property_value: exactMatch "http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000609" xsd:string
@@ -52,1059 +52,1059 @@ property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "PBPK" xsd:string
 
 [Term]
-id: PKPBO:00005
+id: PBPKO:00005
 name: Whole body PBPK Model
 def: "A whole-body PBPK model contains an explicit representation of the organs that are most relevant to the absorption, distribution, excretion, and metabolization of the drug/chemicals due to their physiological/pharmacological function or their volume" [] {IAO:0000119="10.1002/psp4.12134"}
-is_a: PKPBO:00003 ! PBPK types
+is_a: PBPKO:00003 ! PBPK types
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "All organs PBPK" xsd:string
 
 [Term]
-id: PKPBO:00006
+id: PBPKO:00006
 name: Perfusion Limited Model
 def: "Perfusion-limited models are a type of physiologically based pharmacokinetic (PBPK) model that assumes that the concentration of a substance in tissues reaches equilibrium with the substance in the circulation rapidly. In perfusion-limited models, the rate of drug uptake by tissues is limited by blood flow, and the rate of drug elimination is limited by the rate of diffusion from the tissue to the blood" [] {IAO:0000119="https://doi.org/10.3390/nano10071267"}
-is_a: PKPBO:00003 ! PBPK types
+is_a: PBPKO:00003 ! PBPK types
 property_value: closeMatch "http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000591" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00007
+id: PBPKO:00007
 name: Physiological Parameters
 def: "Physiological parameters in PBPK modeling provide the structural framework of the model and are used to simulate the absorption, distribution, metabolism, and excretion (ADME) of a substance throughout the body. These parameters include body weight, height, organ volume, cardiac output, organ blood flow, and tissue composition." [] {IAO:0000119="10.3390/ijerph20043473"}
-is_a: PKPBO:00006 ! Perfusion Limited Model
+is_a: PBPKO:00006 ! Perfusion Limited Model
 property_value: exactMatch "http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000457" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00008
+id: PBPKO:00008
 name: Body Mass Index 
 def: "An individual's weight in kilograms divided by the square of the height in meters." [] {IAO:0000119="http://purl.obolibrary.org/obo/NCIT_C16358"}
-is_a: PKPBO:00007 ! Physiological Parameters
+is_a: PBPKO:00007 ! Physiological Parameters
 property_value: exactMatch "http://purl.bioontology.org/ontology/MESH/D015992" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "BMI" xsd:string
 
 [Term]
-id: PKPBO:00009
+id: PBPKO:00009
 name: BW (Kg)
 def: " Mass or quantity of heaviness of an individual. " [] {IAO:0000119="http://purl.bioontology.org/ontology/MESH/D001835"}
-is_a: PKPBO:00007 ! Physiological Parameters
+is_a: PBPKO:00007 ! Physiological Parameters
 property_value: exactMatch "http://purl.bioontology.org/ontology/MESH/D001835" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "BW" xsd:string
 
 [Term]
-id: PKPBO:00010
+id: PBPKO:00010
 name: HT
 def: "Height is a term used to describe the distance from the bottom to the top of someone or something standing upright" [] {IAO:0000119="Height Definition & Meaning - Merriam-Webster"}
-is_a: PKPBO:00007 ! Physiological Parameters
+is_a: PBPKO:00007 ! Physiological Parameters
 property_value: exactMatch "http://purl.bioontology.org/ontology/MESH/D001827" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "HT" xsd:string
 
 [Term]
-id: PKPBO:00011
+id: PBPKO:00011
 name: Surface area
 def: " A measure of  total area i.e., surface of  object occupies. or\n \nThe two dimensional measure of the outer layer of the body." [] {IAO:0000119="http://semanticscience.org/resource/SIO_001407\n\nhttp://purl.bioontology.org/ontology/MESH/D001830"}
-is_a: PKPBO:00007 ! Physiological Parameters
+is_a: PBPKO:00007 ! Physiological Parameters
 property_value: exactMatch "http://purl.bioontology.org/ontology/MESH/D001830" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "BSA/SA" xsd:string
 
 [Term]
-id: PKPBO:00012
+id: PBPKO:00012
 name: Race
 def: "A geographic ancestral origin category  assigned to a population group ." [] {IAO:0000119="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C17049"}
-is_a: PKPBO:00007 ! Physiological Parameters
+is_a: PBPKO:00007 ! Physiological Parameters
 property_value: exactMatch "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C17049" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00013
+id: PBPKO:00013
 name: Blood flow
 def: "Blood flow in PBPK modeling refers to the rate of blood flow to a particular organ or tissue, which is used to calculate the rate of drug delivery to that organ or tissue/chemical" [] {IAO:0000119="10.1002/psp4.12134"}
-is_a: PKPBO:00007 ! Physiological Parameters
+is_a: PBPKO:00007 ! Physiological Parameters
 property_value: exactMatch "http://purl.org/obo/owl/GO#GO_0008015" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "Q" xsd:string
 
 [Term]
-id: PKPBO:00014
+id: PBPKO:00014
 name: Cardiac Output
 def: "Cardiac output in PBPK modeling refers to the volume of blood pumped by the heart per unit of time, which is used to calculate the rate of blood flow to different organs and tissues in the body" [] {IAO:0000119="10.3390/ijerph20043473"}
-is_a: PKPBO:00013 ! Blood flow
+is_a: PBPKO:00013 ! Blood flow
 property_value: exactMatch "http://purl.bioontology.org/ontology/MESH/D002302" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "CO" xsd:string
 
 [Term]
-id: PKPBO:00015
+id: PBPKO:00015
 name: Qstomach
 def: "Qstomach is a parameter used in PBPK modeling to describe the blood flow rate to the stomach, which is used to calculate the rate of drug/chemical delivery to the stomach. The value of Qstomach depends on the species of interest and is defined by the stomach weight/volume and cardiac output" []
-is_a: PKPBO:00013 ! Blood flow
+is_a: PBPKO:00013 ! Blood flow
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00016
+id: PBPKO:00016
 name: FQstomach
 def: "Fraction of blood flow to stomach" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00015 ! Qstomach
+is_a: PBPKO:00015 ! Qstomach
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00017
+id: PBPKO:00017
 name: Qintestine
 def: "Qintestine is a parameter used in PBPK modeling to describe the blood flow rate to the intestine, which is used to calculate the rate of drug/chemical delivery to the intestine. The value of Qintestine depends on the species of interest and is defined by the intestine weight/volume and cardiac output" []
-is_a: PKPBO:00013 ! Blood flow
+is_a: PBPKO:00013 ! Blood flow
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00018
+id: PBPKO:00018
 name: FQintestine
 def: "Fraction of blood flow to intestine" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00017 ! Qintestine
+is_a: PBPKO:00017 ! Qintestine
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00019
+id: PBPKO:00019
 name: Qsmall intestine
 def: "Qsmall intestine is a parameter used in PBPK modeling to describe the blood flow rate to the small intestine, which is used to calculate the rate of drug/chemical delivery to the small intestine. The value of Qsmall intestine depends on the species of interest and is defined by the small intestine weight/volume and cardiac output" []
-is_a: PKPBO:00013 ! Blood flow
+is_a: PBPKO:00013 ! Blood flow
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00020
+id: PBPKO:00020
 name: FQsmall intestine
 def: "Fraction of blood flow to small intestine" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00019 ! Qsmall intestine
+is_a: PBPKO:00019 ! Qsmall intestine
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00021
+id: PBPKO:00021
 name: Qlarge intestine
 def: "Qlarge intestine is a parameter used in PBPK modeling to describe the blood flow rate to the large intestine, which is used to calculate the rate of drug/chemical delivery to the large intestine. The value of Qlarge intestine depends on the species of interest and is defined by the large intestine weight/volume and cardiac output" []
-is_a: PKPBO:00013 ! Blood flow
+is_a: PBPKO:00013 ! Blood flow
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00022
+id: PBPKO:00022
 name: FQlarge intestine
 def: "Fraction of blood flow to large intestine" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00021 ! Qlarge intestine
+is_a: PBPKO:00021 ! Qlarge intestine
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00023
+id: PBPKO:00023
 name: Qpancreas
 def: "Qpancreas is a parameter used in PBPK modeling to describe the blood flow rate to the pancreas, which is used to calculate the rate of drug/chemical delivery to the pancreas. The value of Qpancreas depends on the species of interest and is defined by the pancreas weight/volume and cardiac output" []
-is_a: PKPBO:00013 ! Blood flow
+is_a: PBPKO:00013 ! Blood flow
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00024
+id: PBPKO:00024
 name: FQpancreas
 def: "Fraction of blood flow to pancreas" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00023 ! Qpancreas
+is_a: PBPKO:00023 ! Qpancreas
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00025
+id: PBPKO:00025
 name: Qliver
 def: "Qliver is a parameter used in PBPK modeling to describe the blood flow rate to the liver, which is used to calculate the rate of drug/chemical delivery to the liver. The value of Qliver depends on the species of interest and is defined by the liver weight/volume and cardiac output" [] {IAO:0000119="10.1002/psp4.12134\nhttps://www.ema.europa.eu/en/documents/scientific-guideline/guideline-reporting-physiologically-based-pharmacokinetic-pbpk-modelling-simulation_en.pdf"}
-is_a: PKPBO:00013 ! Blood flow
+is_a: PBPKO:00013 ! Blood flow
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00026
+id: PBPKO:00026
 name: FQliver
 def: "Fraction of blood flow to liver" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00025 ! Qliver
+is_a: PBPKO:00025 ! Qliver
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00027
+id: PBPKO:00027
 name: Qkidney
 def: "Qkidney is a parameter used in PBPK modeling to describe the blood flow rate to the kidney, which is used to calculate the rate of drug/chemical delivery to the kidney. The value of Qkidney depends on the species of interest and is defined by the kidney weight/volume and cardiac output" []
-is_a: PKPBO:00013 ! Blood flow
+is_a: PBPKO:00013 ! Blood flow
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00028
+id: PBPKO:00028
 name: FQkidney
 def: "Fraction of blood flow to kidney" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00027 ! Qkidney
+is_a: PBPKO:00027 ! Qkidney
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00029
+id: PBPKO:00029
 name: Qmuscle
 def: "Qmuscle is a parameter used in PBPK modeling to describe the blood flow rate to the muscle, which is used to calculate the rate of drug/chemical delivery to the muscle. The value of Qmuscle depends on the species of interest and is defined by the muscle weight/volume and cardiac output" []
-is_a: PKPBO:00013 ! Blood flow
+is_a: PBPKO:00013 ! Blood flow
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00030
+id: PBPKO:00030
 name: FQmuscle
 def: "Fraction of blood flow to muscle" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00029 ! Qmuscle
+is_a: PBPKO:00029 ! Qmuscle
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00031
+id: PBPKO:00031
 name: Qheart
 def: "Qheart is a parameter used in PBPK modeling to describe the blood flow rate to the heart, which is used to calculate the rate of drug/chemical delivery to the heart. The value of Qheart depends on the species of interest and is defined by the heart weight/volume and cardiac output" []
-is_a: PKPBO:00013 ! Blood flow
+is_a: PBPKO:00013 ! Blood flow
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00032
+id: PBPKO:00032
 name: FQheart
 def: "Fraction of blood flow to heart" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00031 ! Qheart
+is_a: PBPKO:00031 ! Qheart
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00033
+id: PBPKO:00033
 name: Qfat
 def: "Qfat is a parameter used in PBPK modeling to describe the blood flow rate to the fat, which is used to calculate the rate of drug/chemical delivery to the fat. The value of Qfat depends on the species of interest and is defined by the fat weight/volume and cardiac output" []
-is_a: PKPBO:00013 ! Blood flow
+is_a: PBPKO:00013 ! Blood flow
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "Qadipose tissue" xsd:string
 
 [Term]
-id: PKPBO:00034
+id: PBPKO:00034
 name: FQfat
 def: "Fraction of blood flow to fat" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00033 ! Qfat
+is_a: PBPKO:00033 ! Qfat
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00035
+id: PBPKO:00035
 name: Qgonads
 def: "Qgonads is a parameter used in PBPK modeling to describe the blood flow rate to the gonads, which is used to calculate the rate of drug/chemical delivery to the gonads. The value of Qgonads depends on the species of interest and is defined by the gonads weight/volume and cardiac output" []
-is_a: PKPBO:00013 ! Blood flow
+is_a: PBPKO:00013 ! Blood flow
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00036
+id: PBPKO:00036
 name: FQgonads
 def: "Fraction of blood flow to gonads" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00035 ! Qgonads
+is_a: PBPKO:00035 ! Qgonads
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00037
+id: PBPKO:00037
 name: Qskin
 def: "Qskin is a parameter used in PBPK modeling to describe the blood flow rate to the skin, which is used to calculate the rate of drug/chemical delivery to the skin. The value of Qskin depends on the species of interest and is defined by the skin weight/volume and cardiac output" []
-is_a: PKPBO:00013 ! Blood flow
+is_a: PBPKO:00013 ! Blood flow
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00038
+id: PBPKO:00038
 name: FQskin
 def: "Fraction of blood flow to skin" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00037 ! Qskin
+is_a: PBPKO:00037 ! Qskin
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00039
+id: PBPKO:00039
 name: Qbone
 def: "Qbone is a parameter used in PBPK modeling to describe the blood flow rate to the bone, which is used to calculate the rate of drug/chemical delivery to the bone. The value of Qbone depends on the species of interest and is defined by the bone weight/volume and cardiac output" []
-is_a: PKPBO:00013 ! Blood flow
+is_a: PBPKO:00013 ! Blood flow
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00040
+id: PBPKO:00040
 name: FQbone
 def: "Fraction of blood flow to bone" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00039 ! Qbone
+is_a: PBPKO:00039 ! Qbone
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00041
+id: PBPKO:00041
 name: Qbrain
 def: "Qbrain is a parameter used in PBPK modeling to describe the blood flow rate to the brain, which is used to calculate the rate of drug/chemical delivery to the brain. The value of Qbrain depends on the species of interest and is defined by the brain weight/volume and cardiac output" []
-is_a: PKPBO:00013 ! Blood flow
+is_a: PBPKO:00013 ! Blood flow
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00042
+id: PBPKO:00042
 name: FQbrain
 def: "Fraction of blood flow to brain" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00041 ! Qbrain
+is_a: PBPKO:00041 ! Qbrain
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00043
+id: PBPKO:00043
 name: Qspleen
 def: "Qspleen is a parameter used in PBPK modeling to describe the blood flow rate to the spleen, which is used to calculate the rate of drug/chemical delivery to the spleen. The value of Qspleen depends on the species of interest and is defined by the spleen weight/volume and cardiac output" []
-is_a: PKPBO:00013 ! Blood flow
+is_a: PBPKO:00013 ! Blood flow
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00044
+id: PBPKO:00044
 name: FQspleen
 def: "Fraction of blood flow to spleen" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00043 ! Qspleen
+is_a: PBPKO:00043 ! Qspleen
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00045
+id: PBPKO:00045
 name: Qlung
 def: "Qlung is a parameter used in PBPK modeling to describe the blood flow rate to the lung, which is used to calculate the rate of drug/chemical delivery to the lung. The value of Qlung depends on the species of interest and is defined by the lung weight/volume and cardiac output" []
-is_a: PKPBO:00013 ! Blood flow
+is_a: PBPKO:00013 ! Blood flow
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00046
+id: PBPKO:00046
 name: FQlung
 def: "Fraction of blood flow to lung" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00045 ! Qlung
+is_a: PBPKO:00045 ! Qlung
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00047
+id: PBPKO:00047
 name: Qpoorly perfused
 def: "Qpoorly perfused is a parameter used in PBPK modeling to describe the blood flow rate to the poorly perfused organ/tissue, which is used to calculate the rate of drug/chemical delivery to the poorly perfused organ/tissue. The value of Qpoorly perfused depends on the species of interest and is defined by the poorly perfused organ/tissue weight/volume and cardiac output" []
-is_a: PKPBO:00013 ! Blood flow
+is_a: PBPKO:00013 ! Blood flow
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00048
+id: PBPKO:00048
 name: FQpoorly perfused
 def: "Fraction of blood flow to poorly perfused tissues/organ" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00047 ! Qpoorly perfused
+is_a: PBPKO:00047 ! Qpoorly perfused
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00049
+id: PBPKO:00049
 name: Qrichly perfused
 def: "Qrichly perfused is a parameter used in PBPK modeling to describe the blood flow rate to the richly perfused organ/tissue, which is used to calculate the rate of drug/chemical delivery to the richly perfused organ/tissue. The value of Qrichly perfused depends on the species of interest and is defined by the richly perfused organ/tissue weight/volume and cardiac output" []
-is_a: PKPBO:00013 ! Blood flow
+is_a: PBPKO:00013 ! Blood flow
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00050
+id: PBPKO:00050
 name: FQrichly perfused
 def: "Fraction of blood flow to richly perfused tissues/organs" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00049 ! Qrichly perfused
+is_a: PBPKO:00049 ! Qrichly perfused
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00051
+id: PBPKO:00051
 name: Qrestbody
 def: "Qrestbody is a parameter used in PBPK modeling to describe the blood flow rate to the remaining organ/tissue, which is used to calculate the rate of drug/chemical delivery to the remaining organ/tissue. The value of Qrestbody can be obtained by subtracting the total body blood flow with the blood flow of each organs/tissue present in the model." []
-is_a: PKPBO:00013 ! Blood flow
+is_a: PBPKO:00013 ! Blood flow
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00052
+id: PBPKO:00052
 name: FQrestbody
-is_a: PKPBO:00051 ! Qrestbody
+is_a: PBPKO:00051 ! Qrestbody
 
 [Term]
-id: PKPBO:00053
+id: PBPKO:00053
 name: Qgallballder
 def: "Qgall bladder is a parameter used in PBPK modeling to describe the blood flow rate to the gall bladder, which is used to calculate the rate of drug/chemical delivery to the gall bladder. The value of Qgall bladder depends on the species of interest and is defined by the gall bladder weight/volume and cardiac output" []
-is_a: PKPBO:00013 ! Blood flow
+is_a: PBPKO:00013 ! Blood flow
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00054
+id: PBPKO:00054
 name: FQgallballder
-is_a: PKPBO:00053 ! Qgallballder
+is_a: PBPKO:00053 ! Qgallballder
 
 [Term]
-id: PKPBO:00055
+id: PBPKO:00055
 name: Qportal vein
 def: "Qportal vein is a parameter used in PBPK modeling to describe the blood flow rate to the portal vein, which is used to calculate the rate of drug/chemical delivery to the stomach. The value of Qportal vein depends on the species of interest and is defined by the portal vein weight/volume and cardiac output" []
-is_a: PKPBO:00013 ! Blood flow
+is_a: PBPKO:00013 ! Blood flow
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00056
+id: PBPKO:00056
 name: FQportal vein
-is_a: PKPBO:00055 ! Qportal vein
+is_a: PBPKO:00055 ! Qportal vein
 
 [Term]
-id: PKPBO:00057
+id: PBPKO:00057
 name: Qlymph
 def: "Qlymph is a parameter used in PBPK modeling to describe the blood flow rate to the lymph, which is used to calculate the rate of drug/chemical delivery to the lymph. The value of Qlymph depends on the species of interest and is defined by the lymph weight/volume and cardiac output" []
-is_a: PKPBO:00013 ! Blood flow
+is_a: PBPKO:00013 ! Blood flow
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00058
+id: PBPKO:00058
 name: FQlymph
-is_a: PKPBO:00057 ! Qlymph
+is_a: PBPKO:00057 ! Qlymph
 
 [Term]
-id: PKPBO:00059
+id: PBPKO:00059
 name: Qmetab
 
 [Term]
-id: PKPBO:00060
+id: PBPKO:00060
 name: Qexcret
 
 [Term]
-id: PKPBO:00061
+id: PBPKO:00061
 name: Qair
 
 [Term]
-id: PKPBO:00062
+id: PBPKO:00062
 name: scFBlood
 
 [Term]
-id: PKPBO:00063
+id: PBPKO:00063
 name: FSkin_e
 
 [Term]
-id: PKPBO:00064
+id: PBPKO:00064
 name: FSkin_u
 
 [Term]
-id: PKPBO:00065
+id: PBPKO:00065
 name: Arterial blood flow
 def: "Arterial blood flow in PBPK modeling represents the rate of blood flow to the tissues and organs through the arterial system. This parameter is essential for estimating the distribution of drugs and other substances in the body" [] {IAO:0000119="10.1007/s40268-020-00325-0\n10.1186/1472-6904-4-2"}
-is_a: PKPBO:00013 ! Blood flow
+is_a: PBPKO:00013 ! Blood flow
 property_value: exactMatch "http://purl.obolibrary.org/obo/CMO_0000198" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00066
+id: PBPKO:00066
 name: Venous blood flow
 def: "Venous blood flow in PBPK modeling represents the rate of blood flow returning from the tissues and organs through the venous system. This parameter is essential for estimating the distribution of drugs/chemicals and other substances in the body." []
-is_a: PKPBO:00013 ! Blood flow
+is_a: PBPKO:00013 ! Blood flow
 property_value: exactMatch "http://purl.obolibrary.org/obo/CMO_0000199" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00067
+id: PBPKO:00067
 name: Glomerular filtration rate
 def: "Glomerular filtration rate (GFR) is a measure of kidney function that describes the flow rate of filtered fluid through the kidney" [] {IAO:0000119="Glomerular filtration rate - Wikipedia"}
-is_a: PKPBO:00013 ! Blood flow
+is_a: PBPKO:00013 ! Blood flow
 property_value: exactMatch "http://purl.bioontology.org/ontology/MESH/D005919" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "GFR" xsd:string
 
 [Term]
-id: PKPBO:00068
+id: PBPKO:00068
 name: Volume of organ
 def: "Organ volume in PBPK modeling refers to the volume of a specific organ or tissue in the body. " [] {IAO:0000119="10.1002/psp4.12205"}
-is_a: PKPBO:00007 ! Physiological Parameters
+is_a: PBPKO:00007 ! Physiological Parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "Vorgan" xsd:string
 
 [Term]
-id: PKPBO:00069
+id: PBPKO:00069
 name: Vstomach
 def: "Volume of stomach" [] {IAO:0000119="https://doi.org/10.1016/j.envres.2022.114074"}
-is_a: PKPBO:00068 ! Volume of organ
+is_a: PBPKO:00068 ! Volume of organ
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00070
+id: PBPKO:00070
 name: Fstomach
 def: "stomach volume as total body weight fraction" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00069 ! Vstomach
+is_a: PBPKO:00069 ! Vstomach
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00071
+id: PBPKO:00071
 name: Vintestine
 def: "Volume of intestine" [] {IAO:0000119="https://doi.org/10.1016/j.envres.2022.114074"}
-is_a: PKPBO:00068 ! Volume of organ
+is_a: PBPKO:00068 ! Volume of organ
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00072
+id: PBPKO:00072
 name: Fintestine
 def: "intestine volume as total body weight fraction" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00071 ! Vintestine
+is_a: PBPKO:00071 ! Vintestine
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00073
+id: PBPKO:00073
 name: Vsmall intestine
 def: "Volume of small intestine" [] {IAO:0000119="https://doi.org/10.1016/j.envres.2022.114074"}
-is_a: PKPBO:00068 ! Volume of organ
+is_a: PBPKO:00068 ! Volume of organ
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00074
+id: PBPKO:00074
 name: Fsmall intestine
 def: "small intestine volume as total body weight fraction" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00073 ! Vsmall intestine
+is_a: PBPKO:00073 ! Vsmall intestine
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00075
+id: PBPKO:00075
 name: Vlarge intestine
 def: "Volume of large intestine" [] {IAO:0000119="https://doi.org/10.1016/j.envres.2022.114074"}
-is_a: PKPBO:00068 ! Volume of organ
+is_a: PBPKO:00068 ! Volume of organ
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00076
+id: PBPKO:00076
 name: Flarge intestine
 def: "large intestine volume as total body weight fraction" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00075 ! Vlarge intestine
+is_a: PBPKO:00075 ! Vlarge intestine
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00077
+id: PBPKO:00077
 name: Vpancreas
 def: "Volume of pancreas" [] {IAO:0000119="https://doi.org/10.1016/j.envres.2022.114074"}
-is_a: PKPBO:00068 ! Volume of organ
+is_a: PBPKO:00068 ! Volume of organ
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00078
+id: PBPKO:00078
 name: Fpancreas
 def: "pancreas volume as total body weight fraction" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00077 ! Vpancreas
+is_a: PBPKO:00077 ! Vpancreas
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00079
+id: PBPKO:00079
 name: Vliver
 def: "Volume of liver" [] {IAO:0000119="https://doi.org/10.1016/j.envres.2022.114074"}
-is_a: PKPBO:00068 ! Volume of organ
+is_a: PBPKO:00068 ! Volume of organ
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00080
+id: PBPKO:00080
 name: Fliver
 def: "liver volume as total body weight fraction" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00079 ! Vliver
+is_a: PBPKO:00079 ! Vliver
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00081
+id: PBPKO:00081
 name: Vkidney
 def: "Volume of kidney" [] {IAO:0000119="https://doi.org/10.1016/j.envres.2022.114074"}
-is_a: PKPBO:00068 ! Volume of organ
+is_a: PBPKO:00068 ! Volume of organ
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00082
+id: PBPKO:00082
 name: Fkidney
 def: "kidney volume as total body weight fraction" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00081 ! Vkidney
+is_a: PBPKO:00081 ! Vkidney
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00083
+id: PBPKO:00083
 name: Vmuscle
 def: "Volume of muscle" [] {IAO:0000119="https://doi.org/10.1016/j.envres.2022.114074"}
-is_a: PKPBO:00068 ! Volume of organ
+is_a: PBPKO:00068 ! Volume of organ
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00084
+id: PBPKO:00084
 name: Fmuscle
 def: "muscle volume as total body weight fraction" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00083 ! Vmuscle
+is_a: PBPKO:00083 ! Vmuscle
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00085
+id: PBPKO:00085
 name: Vheart
 def: "Volume of heart" [] {IAO:0000119="https://doi.org/10.1016/j.envres.2022.114074"}
-is_a: PKPBO:00068 ! Volume of organ
+is_a: PBPKO:00068 ! Volume of organ
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00086
+id: PBPKO:00086
 name: Fheart
 def: "heart volume as total body weight fraction" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00085 ! Vheart
+is_a: PBPKO:00085 ! Vheart
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00087
+id: PBPKO:00087
 name: Vfat
 def: "Volume of fat" [] {IAO:0000119="https://doi.org/10.1016/j.envres.2022.114074"}
-is_a: PKPBO:00068 ! Volume of organ
+is_a: PBPKO:00068 ! Volume of organ
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00088
+id: PBPKO:00088
 name: Ffat
 def: "fat volume as total body weight fraction" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00087 ! Vfat
+is_a: PBPKO:00087 ! Vfat
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00089
+id: PBPKO:00089
 name: Vgonads
 def: "Volume of gonads" [] {IAO:0000119="https://doi.org/10.1016/j.envres.2022.114074"}
-is_a: PKPBO:00068 ! Volume of organ
+is_a: PBPKO:00068 ! Volume of organ
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00090
+id: PBPKO:00090
 name: Fgonads
 def: "gonads volume as total body weight fraction" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00089 ! Vgonads
+is_a: PBPKO:00089 ! Vgonads
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00091
+id: PBPKO:00091
 name: Vskin
 def: "Volume of skin" [] {IAO:0000119="https://doi.org/10.1016/j.envres.2022.114074"}
-is_a: PKPBO:00068 ! Volume of organ
+is_a: PBPKO:00068 ! Volume of organ
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00092
+id: PBPKO:00092
 name: Fskin
 def: "skin volume as total body weight fraction" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00091 ! Vskin
+is_a: PBPKO:00091 ! Vskin
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00093
+id: PBPKO:00093
 name: Vbone
 def: "Volume of bone" [] {IAO:0000119="https://doi.org/10.1016/j.envres.2022.114074"}
-is_a: PKPBO:00068 ! Volume of organ
+is_a: PBPKO:00068 ! Volume of organ
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00094
+id: PBPKO:00094
 name: Fbone
 def: "bone volume as total body weight fraction" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00093 ! Vbone
+is_a: PBPKO:00093 ! Vbone
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00095
+id: PBPKO:00095
 name: Vbrain
 def: "Volume of brain" [] {IAO:0000119="https://doi.org/10.1016/j.envres.2022.114074"}
-is_a: PKPBO:00068 ! Volume of organ
+is_a: PBPKO:00068 ! Volume of organ
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00096
+id: PBPKO:00096
 name: Fbrain
 def: "brain volume as total body weight fraction" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00095 ! Vbrain
+is_a: PBPKO:00095 ! Vbrain
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00097
+id: PBPKO:00097
 name: Vspleen
 def: "Volume of spleen" [] {IAO:0000119="https://doi.org/10.1016/j.envres.2022.114074"}
-is_a: PKPBO:00068 ! Volume of organ
+is_a: PBPKO:00068 ! Volume of organ
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00098
+id: PBPKO:00098
 name: Fspleen
 def: "spleen volume as total body weight fraction" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00097 ! Vspleen
+is_a: PBPKO:00097 ! Vspleen
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00099
+id: PBPKO:00099
 name: Vlung
 def: "Volume of lung" [] {IAO:0000119="https://doi.org/10.1016/j.envres.2022.114074"}
-is_a: PKPBO:00068 ! Volume of organ
+is_a: PBPKO:00068 ! Volume of organ
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00100
+id: PBPKO:00100
 name: Flung
 def: "lung volume as total body weight fraction" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00099 ! Vlung
+is_a: PBPKO:00099 ! Vlung
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00101
+id: PBPKO:00101
 name: Vpoorly perfused
 def: "Volume of poorly perfused tissue/organ" [] {IAO:0000119="https://doi.org/10.1016/j.envres.2022.114074"}
-is_a: PKPBO:00068 ! Volume of organ
+is_a: PBPKO:00068 ! Volume of organ
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00102
+id: PBPKO:00102
 name: Fpoorly perfused
 def: "poorly perfused tissues/organs volume as total body weight fraction" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00101 ! Vpoorly perfused
+is_a: PBPKO:00101 ! Vpoorly perfused
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00103
+id: PBPKO:00103
 name: Vrichly perfused
 def: "Volume of richly perfused tissue/organ" [] {IAO:0000119="https://doi.org/10.1016/j.envres.2022.114074"}
-is_a: PKPBO:00068 ! Volume of organ
+is_a: PBPKO:00068 ! Volume of organ
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00104
+id: PBPKO:00104
 name: Frichly perfused
 def: "richly perfused tissues/organs volume as total body weight fraction" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00103 ! Vrichly perfused
+is_a: PBPKO:00103 ! Vrichly perfused
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00105
+id: PBPKO:00105
 name: Vplasma
 def: "Volume of the plasma" []
-is_a: PKPBO:00068 ! Volume of organ
+is_a: PBPKO:00068 ! Volume of organ
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00106
+id: PBPKO:00106
 name: Fplasma
-is_a: PKPBO:00105 ! Vplasma
+is_a: PBPKO:00105 ! Vplasma
 
 [Term]
-id: PKPBO:00107
+id: PBPKO:00107
 name: Vrestbody
 def: "Volume of the restbody" []
-is_a: PKPBO:00068 ! Volume of organ
+is_a: PBPKO:00068 ! Volume of organ
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00108
+id: PBPKO:00108
 name: Frestbody
-is_a: PKPBO:00107 ! Vrestbody
+is_a: PBPKO:00107 ! Vrestbody
 
 [Term]
-id: PKPBO:00109
+id: PBPKO:00109
 name: scVBlood
 
 [Term]
-id: PKPBO:00110
+id: PBPKO:00110
 name: Vblood
 
 [Term]
-id: PKPBO:00111
+id: PBPKO:00111
 name: VSkin_e
 
 [Term]
-id: PKPBO:00112
+id: PBPKO:00112
 name: fSA_exposed
 
 [Term]
-id: PKPBO:00113
+id: PBPKO:00113
 name: VSkin_u
 
 [Term]
-id: PKPBO:00114
+id: PBPKO:00114
 name: VSkin_sc_e
 
 [Term]
-id: PKPBO:00115
+id: PBPKO:00115
 name: VSkin_sc_u
 
 [Term]
-id: PKPBO:00116
+id: PBPKO:00116
 name: Falv
 
 [Term]
-id: PKPBO:00117
+id: PBPKO:00117
 name: vgallbaldder
 def: "Volume of the gallbaldder " []
-is_a: PKPBO:00068 ! Volume of organ
+is_a: PBPKO:00068 ! Volume of organ
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00118
+id: PBPKO:00118
 name: Fgallbladder
-is_a: PKPBO:00117 ! vgallbaldder
+is_a: PBPKO:00117 ! vgallbaldder
 
 [Term]
-id: PKPBO:00119
+id: PBPKO:00119
 name: vportal vein
 def: "Volume of the portal vein" []
-is_a: PKPBO:00068 ! Volume of organ
+is_a: PBPKO:00068 ! Volume of organ
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00120
+id: PBPKO:00120
 name: Fportal vein
-is_a: PKPBO:00119 ! vportal vein
+is_a: PBPKO:00119 ! vportal vein
 
 [Term]
-id: PKPBO:00121
+id: PBPKO:00121
 name: vlymph
 def: "Volume of the lymph" []
-is_a: PKPBO:00068 ! Volume of organ
+is_a: PBPKO:00068 ! Volume of organ
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00122
+id: PBPKO:00122
 name: Flymph
-is_a: PKPBO:00121 ! vlymph
+is_a: PBPKO:00121 ! vlymph
 
 [Term]
-id: PKPBO:00123
+id: PBPKO:00123
 name: Arterial volume
 def: "Volume of the Arteries" []
-is_a: PKPBO:00068 ! Volume of organ
+is_a: PBPKO:00068 ! Volume of organ
 property_value: closeMatch "http://purl.bioontology.org/ontology/LNC/LP430862-5" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00124
+id: PBPKO:00124
 name: venous volume
 def: "Volume of the veins" []
-is_a: PKPBO:00068 ! Volume of organ
+is_a: PBPKO:00068 ! Volume of organ
 property_value: exactMatch "http://purl.bioontology.org/ontology/LNC/MTHU068040" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00125
+id: PBPKO:00125
 name: Sex
 def: "Characteristics totality of reproductive structure, functions, PHENOTYPE, GENOTYPE to differentiate MALE from  FEMALE organism" []
-is_a: PKPBO:00007 ! Physiological Parameters
+is_a: PBPKO:00007 ! Physiological Parameters
 property_value: exactMatch "http://purl.bioontology.org/ontology/MESH/D012723" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00126
+id: PBPKO:00126
 name: Male
 def: "Males, as sex i,e. produces smaller gametes (e.g. sperm)" [] {IAO:0000119="https://sci-hub.se/https://doi.org/10.1093/molehr/gau068"}
-is_a: PKPBO:00125 ! Sex
+is_a: PBPKO:00125 ! Sex
 property_value: exactMatch "http://purl.bioontology.org/ontology/MESH/D008297" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "M" xsd:string
 
 [Term]
-id: PKPBO:00127
+id: PBPKO:00127
 name: Female
 def: "Females, as sex i,e. produces gamete dimorphism (anisogamy)" [] {IAO:0000119="https://sci-hub.se/https://doi.org/10.1093/molehr/gau069"}
-is_a: PKPBO:00125 ! Sex
+is_a: PBPKO:00125 ! Sex
 property_value: exactMatch "http://purl.bioontology.org/ontology/MESH/D005260" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "F" xsd:string
 
 [Term]
-id: PKPBO:00128
+id: PBPKO:00128
 name: Physicochemical Parameters
 def: "Physicochemical parameters of a compound include molecular weight (MW), lipophilicity, solubility, and pKa values, which can usually be determined in vitro. The physicochemical properties of a compound are used to parameterize the PBPK model" [] {IAO:0000119="10.3390/ijerph20043473\nhttps://cot.food.gov.uk/sites/default/files/2021-01/TOX-2019-34%20PBPK%20used%20for%20human%20health%20risk%20assessment.pdf"}
-is_a: PKPBO:00002 ! Parameters
+is_a: PBPKO:00002 ! Parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00129
+id: PBPKO:00129
 name: Molecular weight
 def: "Sum of weight of all the atoms in a molecule." [] {IAO:0000119="http://purl.bioontology.org/ontology/MESH/D008970"}
-is_a: PKPBO:00128 ! Physicochemical Parameters
+is_a: PBPKO:00128 ! Physicochemical Parameters
 property_value: exactMatch "http://purl.bioontology.org/ontology/MESH/D008970" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "MW" xsd:string
 
 [Term]
-id: PKPBO:00130
+id: PBPKO:00130
 name: Lipophillicity
 def: " Affinity of a molecule or a moiety\nfor a lipophilic environment " [] {IAO:0000119="https://sci-hub.se/10.1016/j.microc.2019.01.030"}
-is_a: PKPBO:00128 ! Physicochemical Parameters
+is_a: PBPKO:00128 ! Physicochemical Parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00131
+id: PBPKO:00131
 name: Distribution coefficients
 def: "LogD distribution constant, better descriptor of lipophilicity of a molecule." [] {IAO:0000119="https://doi.org/10.3109/00498258809041669\nhttps://pubs.acs.org/doi/abs/10.1021/jm00211a010"}
-is_a: PKPBO:00128 ! Physicochemical Parameters
+is_a: PBPKO:00128 ! Physicochemical Parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "Log D" xsd:string
 
 [Term]
-id: PKPBO:00132
+id: PBPKO:00132
 name: Log P
 def: " Ratio of a dissolved xenoboitic substance in a two-phase system. " [] {IAO:0000119="https://doi.org/10.3109/00498258809041669\nhttps://pubs.acs.org/doi/abs/10.1021/jm00211a010\nhttp://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C20610"}
-is_a: PKPBO:00128 ! Physicochemical Parameters
+is_a: PBPKO:00128 ! Physicochemical Parameters
 property_value: closeMatch "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C20610" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00133
+id: PBPKO:00133
 name: Log S
 def: "Xenoboitic Solubility unit corresponding to  10-based logarithm measured in mol/L. or\nlog (solubility measured in mol/l)." [] {IAO:0000119="https://dev.Xenoboiticbank.com/guides/terms/log-s\nhttps://docs.chemaxon.com/display/docs/theory-of-aqueous-solubility-prediction.md"}
-is_a: PKPBO:00128 ! Physicochemical Parameters
+is_a: PBPKO:00128 ! Physicochemical Parameters
 property_value: closeMatch "http://purl.bioontology.org/ontology/MESH/D012995" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00134
+id: PBPKO:00134
 name: Water solubility
-is_a: PKPBO:00128 ! Physicochemical Parameters
+is_a: PBPKO:00128 ! Physicochemical Parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00135
+id: PBPKO:00135
 name: pka (strongest acidic)
 def: "Negative base-10 logarithm of acid dissociation constant (Ka) of a solution" [] {IAO:0000119="http://semanticscience.org/resource/CHEMINF_000195\nhttps://dev.Xenoboiticbank.com/guides/terms/pka"}
-is_a: PKPBO:00128 ! Physicochemical Parameters
+is_a: PBPKO:00128 ! Physicochemical Parameters
 property_value: exactMatch "http://www.bioassayontology.org/bao#BAO_0002131" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "pka" xsd:string
 
 [Term]
-id: PKPBO:00136
+id: PBPKO:00136
 name: pkb (strongest basic)
 def: "Negative base-10 logarithm of base dissociation constant (Ka) of a solution" [] {IAO:0000119="https://uts.nlm.nih.gov/uts.html\nhttp://www.semanticweb.org/ontologies/2010/3/Ontology1271664172453.owl#pKb"}
-is_a: PKPBO:00128 ! Physicochemical Parameters
+is_a: PBPKO:00128 ! Physicochemical Parameters
 property_value: exactMatch "http://www.bioassayontology.org/bao#BAO_0190006" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "pKb pK(b) pK(B) affinity constant, Base dissociation constan" xsd:string
 
 [Term]
-id: PKPBO:00137
+id: PBPKO:00137
 name: physiological charge
-is_a: PKPBO:00128 ! Physicochemical Parameters
+is_a: PBPKO:00128 ! Physicochemical Parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00138
+id: PBPKO:00138
 name: Hydrogen acceptor count
 def: "A descriptor reflects  integer number of hydrogen bond acceptors in a given molecular entity." [] {IAO:0000119="http://purl.obolibrary.org/obo/CHEBI_13193\nhttp://semanticscience.org/resource/CHEMINF_000245"}
-is_a: PKPBO:00128 ! Physicochemical Parameters
+is_a: PBPKO:00128 ! Physicochemical Parameters
 property_value: closeMatch "http://purl.obolibrary.org/obo/CHEBI_13193" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "A" xsd:string
 
 [Term]
-id: PKPBO:00139
+id: PBPKO:00139
 name: Hydrogen donor count
 def: " \nA molecule can undergo oxidation by  loss of hydrogen." [] {IAO:0000119="http://purl.obolibrary.org/obo/CHEBI_17499"}
-is_a: PKPBO:00128 ! Physicochemical Parameters
+is_a: PBPKO:00128 ! Physicochemical Parameters
 property_value: closeMatch "http://purl.obolibrary.org/obo/CHEBI_17499" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00140
+id: PBPKO:00140
 name: rotable bond count
 def: "An integer count of bonds in a given molecular entity" [] {IAO:0000119="http://semanticscience.org/resource/CHEMINF_000233"}
-is_a: PKPBO:00128 ! Physicochemical Parameters
+is_a: PBPKO:00128 ! Physicochemical Parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00141
+id: PBPKO:00141
 name: Biochemical Parameters
-is_a: PKPBO:00006 ! Perfusion Limited Model
+is_a: PBPKO:00006 ! Perfusion Limited Model
 
 [Term]
-id: PKPBO:00142
+id: PBPKO:00142
 name: Absorption
 def: "Drug/chemical absorption is a pharmacokinetic parameter that refers to the way a drug/chemical is absorbed from a particular source (e.g. formulation) into the bloodstream" [] {IAO:0000119="https://www.news-medical.net/health/What-is-Drug-Absorption.aspx\nhttps://www.ncbi.nlm.nih.gov/books/NBK557744/"}
-is_a: PKPBO:00141 ! Biochemical Parameters
+is_a: PBPKO:00141 ! Biochemical Parameters
 property_value: closeMatch "http://vocabs.lter-europe.net/EnvThes/21448" xsd:string
 property_value: exactMatch "http://purl.bioontology.org/ontology/MESH/D000042" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
@@ -1112,85 +1112,85 @@ property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "A" xsd:string
 
 [Term]
-id: PKPBO:00143
+id: PBPKO:00143
 name: Absorption rate constant gut
 def: "The absorption rate constant (kabs) is used in the PBPK model to define absorption, which is the movement of a xenobiotic from its site of delivery (gut) to systemic circulation or another compartment" [] {IAO:0000119="10.3390/ijerph20043473"}
-is_a: PKPBO:00142 ! Absorption
+is_a: PBPKO:00142 ! Absorption
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "Kagut" xsd:string
 
 [Term]
-id: PKPBO:00144
+id: PBPKO:00144
 name: Absorption rate constant intestine
 def: "The absorption rate constant (kabs) is used in the PBPK model to define absorption, which is the movement of a xenobiotic from its site of delivery (intestine) to systemic circulation or another compartment" [] {IAO:0000119="10.3390/ijerph20043473"}
-is_a: PKPBO:00142 ! Absorption
+is_a: PBPKO:00142 ! Absorption
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "Kaintestine" xsd:string
 
 [Term]
-id: PKPBO:00145
+id: PBPKO:00145
 name: Gastric emptying
 def: "Gastric emptying in PBPK refers to the rate at which the stomach empties its contents into the small intestine. It is an important parameter in PBPK modeling as it can affect the absorption of drugs and xenobiotics." [] {IAO:0000119="10.1007/s10928-007-9073-1"}
-is_a: PKPBO:00142 ! Absorption
+is_a: PBPKO:00142 ! Absorption
 property_value: exactMatch "http://purl.bioontology.org/ontology/MESH/D005746" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "GE" xsd:string
 
 [Term]
-id: PKPBO:00146
+id: PBPKO:00146
 name: Enterohepatic recirculation
 def: "Recycling through liver by excretion in bile, reabsorption from intestines into portal circulation, passage back into liver, and re-excretion in bile" [] {IAO:0000119="http://purl.bioontology.org/ontology/MESH/D004764"}
-is_a: PKPBO:00142 ! Absorption
+is_a: PBPKO:00142 ! Absorption
 property_value: closeMatch "http://purl.bioontology.org/ontology/MESH/D004764" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "EHR" xsd:string
 
 [Term]
-id: PKPBO:00147
+id: PBPKO:00147
 name: Specific Intestinal Permeability
 def: "Specific intestinal permeability in PBPK refers to the surface area-normalized transcellular permeability of the intestinal wall for a specific drug or xenobiotic. It is an important parameter in PBPK modeling as it can affect the absorption of drugs and xenobiotics in the intestine" [] {IAO:0000119="10.3390/pharmaceutics11080411"}
-is_a: PKPBO:00142 ! Absorption
+is_a: PBPKO:00142 ! Absorption
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: relatedMatch "http://purl.jp/bio/4/id/201106061280498045" xsd:string
 
 [Term]
-id: PKPBO:00148
+id: PBPKO:00148
 name: Distribution
 def: "Process of drug/chemical movement from systemic circulation to various organs/tissues of the body" [] {IAO:0000119="10.1038/psp.2013.41"}
-is_a: PKPBO:00141 ! Biochemical Parameters
+is_a: PBPKO:00141 ! Biochemical Parameters
 property_value: exactMatch "http://www.stanford.edu/~coulet/phare.owl#DrugDistribution" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00149
+id: PBPKO:00149
 name: Volume of distribution
 def: "It refers to the apparent volume in which a drug/chemical is distributed in the body, taking into account the concentration of the drug/chemical in plasma and tissues" [] {IAO:0000119="10.12793/tcp.2020.28.e19"}
-is_a: PKPBO:00148 ! Distribution
+is_a: PBPKO:00148 ! Distribution
 property_value: exactMatch "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70917" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "Vd" xsd:string
 
 [Term]
-id: PKPBO:00150
+id: PBPKO:00150
 name: Protein Binding
 def: "Process in which substances, either endogenous or exogenous, bind to proteins, peptides, enzymes, protein precursors, or allied compounds." [] {IAO:0000119="http://purl.bioontology.org/ontology/MESH/D011485"}
-is_a: PKPBO:00148 ! Distribution
+is_a: PBPKO:00148 ! Distribution
 property_value: exactMatch "http://purl.bioontology.org/ontology/MESH/D011485" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00151
+id: PBPKO:00151
 name: Unbound fraction
 def: "The fraction of a xenobiotic that is unbound in plasma" []
-is_a: PKPBO:00148 ! Distribution
+is_a: PBPKO:00148 ! Distribution
 property_value: exactMatch "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C135490" xsd:string
 property_value: exactMatch "http://www.bioassayontology.org/bao#BAO_0080040" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
@@ -1198,145 +1198,145 @@ property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "FU" xsd:string
 
 [Term]
-id: PKPBO:00152
+id: PBPKO:00152
 name: fugut
 def: "The fraction of a xenobiotic that is unbound in gut" []
-is_a: PKPBO:00151 ! Unbound fraction
+is_a: PBPKO:00151 ! Unbound fraction
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "Fu gut" xsd:string
 
 [Term]
-id: PKPBO:00153
+id: PBPKO:00153
 name: fustomach
 def: "The fraction of a xenobiotic that is unbound in stomach" []
-is_a: PKPBO:00151 ! Unbound fraction
+is_a: PBPKO:00151 ! Unbound fraction
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "fustomach" xsd:string
 
 [Term]
-id: PKPBO:00154
+id: PBPKO:00154
 name: fuintestine
 def: "The fraction of a xenobiotic that is unbound in intestine" []
-is_a: PKPBO:00151 ! Unbound fraction
+is_a: PBPKO:00151 ! Unbound fraction
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "fuintestine" xsd:string
 
 [Term]
-id: PKPBO:00155
+id: PBPKO:00155
 name: fupancreas
 def: "The fraction of a xenobiotic that is unbound in pancreas" []
-is_a: PKPBO:00151 ! Unbound fraction
+is_a: PBPKO:00151 ! Unbound fraction
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "fupancreas" xsd:string
 
 [Term]
-id: PKPBO:00156
+id: PBPKO:00156
 name: fuliver
 def: "The fraction of a xenobiotic that is unbound in liver" []
-is_a: PKPBO:00151 ! Unbound fraction
+is_a: PBPKO:00151 ! Unbound fraction
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "fuliver" xsd:string
 
 [Term]
-id: PKPBO:00157
+id: PBPKO:00157
 name: fukidney
 def: "The fraction of a xenobiotic that is unbound in kidney" []
-is_a: PKPBO:00151 ! Unbound fraction
+is_a: PBPKO:00151 ! Unbound fraction
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "fukidney" xsd:string
 
 [Term]
-id: PKPBO:00158
+id: PBPKO:00158
 name: fumuscle
 def: "The fraction of a xenobiotic that is unbound in muscle" []
-is_a: PKPBO:00151 ! Unbound fraction
+is_a: PBPKO:00151 ! Unbound fraction
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "fumuscle" xsd:string
 
 [Term]
-id: PKPBO:00159
+id: PBPKO:00159
 name: fuheart
 def: "The fraction of a xenobiotic that is unbound in heart" []
-is_a: PKPBO:00151 ! Unbound fraction
+is_a: PBPKO:00151 ! Unbound fraction
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "fuheart" xsd:string
 
 [Term]
-id: PKPBO:00160
+id: PBPKO:00160
 name: fufat
 def: "The fraction of a xenobiotic that is unbound in fat" []
-is_a: PKPBO:00151 ! Unbound fraction
+is_a: PBPKO:00151 ! Unbound fraction
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "fufat" xsd:string
 
 [Term]
-id: PKPBO:00161
+id: PBPKO:00161
 name: fugonads
 def: "The fraction of a xenobiotic that is unbound in gonads" []
-is_a: PKPBO:00151 ! Unbound fraction
+is_a: PBPKO:00151 ! Unbound fraction
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "fugonads" xsd:string
 
 [Term]
-id: PKPBO:00162
+id: PBPKO:00162
 name: fuskin
 def: "The fraction of a xenobiotic that is unbound in skin" []
-is_a: PKPBO:00151 ! Unbound fraction
+is_a: PBPKO:00151 ! Unbound fraction
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "fuskin" xsd:string
 
 [Term]
-id: PKPBO:00163
+id: PBPKO:00163
 name: fubone
 def: "The fraction of a xenobiotic that is unbound in bone" []
-is_a: PKPBO:00151 ! Unbound fraction
+is_a: PBPKO:00151 ! Unbound fraction
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "fubone" xsd:string
 
 [Term]
-id: PKPBO:00164
+id: PBPKO:00164
 name: fuspleen
 def: "The fraction of a xenobiotic that is unbound in spleen" []
-is_a: PKPBO:00151 ! Unbound fraction
+is_a: PBPKO:00151 ! Unbound fraction
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "fuspleen" xsd:string
 
 [Term]
-id: PKPBO:00165
+id: PBPKO:00165
 name: fulung
 def: "The fraction of a xenobiotic that is unbound in lung" []
-is_a: PKPBO:00151 ! Unbound fraction
+is_a: PBPKO:00151 ! Unbound fraction
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "fulung" xsd:string
 
 [Term]
-id: PKPBO:00166
+id: PBPKO:00166
 name: fuenterocytes
 def: "The fraction of a xenobiotic that is unbound in enterocyte" []
-is_a: PKPBO:00151 ! Unbound fraction
+is_a: PBPKO:00151 ! Unbound fraction
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "fuenterocytes" xsd:string
 
 [Term]
-id: PKPBO:00167
+id: PBPKO:00167
 name: Partition coefficient
 def: "The ratio of the concentration of a drug/chemical in a particular tissue to its concentration in plasma at equilibrium. It is also known as tissue-to-plasma partition coefficient" [] {IAO:0000119="10.1124/dmd.120.090498"}
-is_a: PKPBO:00148 ! Distribution
+is_a: PBPKO:00148 ! Distribution
 property_value: exactMatch "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C20610" xsd:string
 property_value: exactMatch "http://semanticscience.org/resource/CHEMINF_000496" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
@@ -1344,156 +1344,156 @@ property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "Kp" xsd:string
 
 [Term]
-id: PKPBO:00168
+id: PBPKO:00168
 name: gut:plasma
 def: "Partition coefficient of gut to plasma" [] {IAO:0000119="https://doi.org/10.1016/j.toxlet.2023.06.006"}
-is_a: PKPBO:00167 ! Partition coefficient
+is_a: PBPKO:00167 ! Partition coefficient
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "k_gut_plasma" xsd:string
 
 [Term]
-id: PKPBO:00169
+id: PBPKO:00169
 name: Stomach:Plasma
 def: "Partition coefficient of stomach to plasma" []
-is_a: PKPBO:00167 ! Partition coefficient
+is_a: PBPKO:00167 ! Partition coefficient
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "k_Stomach_plasma" xsd:string
 
 [Term]
-id: PKPBO:00170
+id: PBPKO:00170
 name: Intestine:Plasma
 def: "Partition coefficient of intestine to plasma" []
-is_a: PKPBO:00167 ! Partition coefficient
+is_a: PBPKO:00167 ! Partition coefficient
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "k_Intestine_plasma" xsd:string
 
 [Term]
-id: PKPBO:00171
+id: PBPKO:00171
 name: Pancreas:Plasma
 def: "Partition coefficient of pancreas to plasma" []
-is_a: PKPBO:00167 ! Partition coefficient
+is_a: PBPKO:00167 ! Partition coefficient
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "k_Pancreas_plasma" xsd:string
 
 [Term]
-id: PKPBO:00172
+id: PBPKO:00172
 name: Liver:Plasma
 def: "Partition coefficient of liver to plasma" []
-is_a: PKPBO:00167 ! Partition coefficient
+is_a: PBPKO:00167 ! Partition coefficient
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "k_Liver_plasma" xsd:string
 
 [Term]
-id: PKPBO:00173
+id: PBPKO:00173
 name: Kidney: Plasma
 def: "Partition coefficient of kidney to plasma" []
-is_a: PKPBO:00167 ! Partition coefficient
+is_a: PBPKO:00167 ! Partition coefficient
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "k_Kidney_plasma" xsd:string
 
 [Term]
-id: PKPBO:00174
+id: PBPKO:00174
 name: Muscle:Plasma
 def: "Partition coefficient of muscle to plasma" []
-is_a: PKPBO:00167 ! Partition coefficient
+is_a: PBPKO:00167 ! Partition coefficient
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "k_Muscle_plasma" xsd:string
 
 [Term]
-id: PKPBO:00175
+id: PBPKO:00175
 name: Heart:Plasma
 def: "Partition coefficient of heart to plasma" []
-is_a: PKPBO:00167 ! Partition coefficient
+is_a: PBPKO:00167 ! Partition coefficient
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "k_Heart_plasma" xsd:string
 
 [Term]
-id: PKPBO:00176
+id: PBPKO:00176
 name: Fat:Plasma
 def: "Partition coefficient of fat to plasma" []
-is_a: PKPBO:00167 ! Partition coefficient
+is_a: PBPKO:00167 ! Partition coefficient
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "k_fat_plasma" xsd:string
 
 [Term]
-id: PKPBO:00177
+id: PBPKO:00177
 name: Gonads:Plasma
 def: "Partition coefficient of gonads to plasma" []
-is_a: PKPBO:00167 ! Partition coefficient
+is_a: PBPKO:00167 ! Partition coefficient
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "k_gonads_plasma" xsd:string
 
 [Term]
-id: PKPBO:00178
+id: PBPKO:00178
 name: Skin:Plasma
 def: "Partition coefficient of skin to plasma" []
-is_a: PKPBO:00167 ! Partition coefficient
+is_a: PBPKO:00167 ! Partition coefficient
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "k_skin_plasma" xsd:string
 
 [Term]
-id: PKPBO:00179
+id: PBPKO:00179
 name: Bone:Plasma
 def: "Partition coefficient of bone to plasma" []
-is_a: PKPBO:00167 ! Partition coefficient
+is_a: PBPKO:00167 ! Partition coefficient
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "k_bone_plasma" xsd:string
 
 [Term]
-id: PKPBO:00180
+id: PBPKO:00180
 name: Spleen:Plasma
 def: "Partition coefficient of spleen to plasma" []
-is_a: PKPBO:00167 ! Partition coefficient
+is_a: PBPKO:00167 ! Partition coefficient
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "k_spleen_plasma" xsd:string
 
 [Term]
-id: PKPBO:00181
+id: PBPKO:00181
 name: Lung:plasma
 def: "Partition coefficient of lung to plasma" []
-is_a: PKPBO:00167 ! Partition coefficient
+is_a: PBPKO:00167 ! Partition coefficient
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "k_lung_plasma" xsd:string
 
 [Term]
-id: PKPBO:00182
+id: PBPKO:00182
 name: PCRich
 
 [Term]
-id: PKPBO:00183
+id: PBPKO:00183
 name: PCPoor
 
 [Term]
-id: PKPBO:00184
+id: PBPKO:00184
 name: PCSkin_sc
 
 [Term]
-id: PKPBO:00185
+id: PBPKO:00185
 name: PCAir
 
 [Term]
-id: PKPBO:00186
+id: PBPKO:00186
 name: Kp_sc_vs
 
 [Term]
-id: PKPBO:00187
+id: PBPKO:00187
 name: Human serum albumin
 def: "Human serum albumin (HSA) is a protein made by the liver and is the most abundant protein in human blood plasma, representing about half of the total protein content" [] {IAO:0000119="Human serum albumin - Wikipedia"}
-is_a: PKPBO:00148 ! Distribution
+is_a: PBPKO:00148 ! Distribution
 property_value: exactMatch "http://purl.bioontology.org/ontology/LNC/LP62267-7" xsd:string
 property_value: exactMatch "http://purl.bioontology.org/ontology/MESH/D000075462" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
@@ -1501,10 +1501,10 @@ property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "HSA" xsd:string
 
 [Term]
-id: PKPBO:00188
+id: PBPKO:00188
 name: alpha acid glycoprotein
 def: "Orosomucoid, ,i.s  globulin with a molecular weight of 44,000 Da." [] {IAO:0000119="Shargel, Leon, et al. Applied Biopharmaceutics & Pharmacokinetics. 7th ed., McGraw-Hill Education, 2015.Chapter-11, page number-275"}
-is_a: PKPBO:00148 ! Distribution
+is_a: PBPKO:00148 ! Distribution
 property_value: exactMatch " http://purl.bioontology.org/ontology/SNOMEDCT/17003006" xsd:string
 property_value: exactMatch "http://purl.bioontology.org/ontology/LNC/LP15755-9" xsd:string
 property_value: exactMatch "http://purl.bioontology.org/ontology/MEDDRA/10087956" xsd:string
@@ -1514,163 +1514,163 @@ property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "AAG" xsd:string
 
 [Term]
-id: PKPBO:00189
+id: PBPKO:00189
 name: Blood:Plasma ratio
 def: "Ratio of concentration of molecule in whole blood (contains both red blood cells and plasma) to concentration of molecule in plasma" [] {IAO:0000119="http://www.bioassayontology.org/bao#BAO_0080043"}
-is_a: PKPBO:00148 ! Distribution
+is_a: PBPKO:00148 ! Distribution
 property_value: exactMatch "http://www.bioassayontology.org/bao#BAO_0080043" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "CB/CP" xsd:string
 
 [Term]
-id: PKPBO:00190
+id: PBPKO:00190
 name: Metabolism
 def: "The process of drug or chemical transformation within the body, typically involving enzymatic reactions leading to formation of active metabolite, inactivation of parent compound or formation of toxic by-products" [] {IAO:0000119="10.3390/ijerph20043473"}
-is_a: PKPBO:00141 ! Biochemical Parameters
+is_a: PBPKO:00141 ! Biochemical Parameters
 property_value: exactMatch "http://purl.bioontology.org/ontology/MESH/D008660" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "M" xsd:string
 
 [Term]
-id: PKPBO:00191
+id: PBPKO:00191
 name: catalytic rate constant
 def: "Numerical parameter that quantifies  an enzymatic reaction velocity.or\nMaximum number of substrate molecules converted to products per active site per unit time." [] {IAO:0000119="http://purl.obolibrary.org/obo/SBO_0000025\nhttp://www.bioassayontology.org/bao#BAO_0000481"}
-is_a: PKPBO:00190 ! Metabolism
+is_a: PBPKO:00190 ! Metabolism
 property_value: exactMatch "http://biomodels.net/SBO/SBO_0000025" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "kcat" xsd:string
 
 [Term]
-id: PKPBO:00192
+id: PBPKO:00192
 name: Ontogeny
 def: "The incorporation of age-related changes in physiology and anatomy into the modeling of drug pharmacokinetics" [] {IAO:0000119="10.1002/jcph.1489"}
-is_a: PKPBO:00190 ! Metabolism
+is_a: PBPKO:00190 ! Metabolism
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00193
+id: PBPKO:00193
 name: Phase I
 def: "Phase I biotransformation involves  conversion of exogenous substances to more polar metabolites by cytochrome P450 superfamily." [] {IAO:0000119="http://purl.obolibrary.org/obo/PW_0000857"}
-is_a: PKPBO:00190 ! Metabolism
+is_a: PBPKO:00190 ! Metabolism
 property_value: closeMatch "http://purl.jp/bio/4/id/201306049015280881" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00194
+id: PBPKO:00194
 name: CYP enzymes
 def: "The P450s are heme b-containing enzymes\nthat bind and reduce molecular oxygen, leading to\n(usually) mono-oxygenation of substrate and production\nof a molecule of water." [] {IAO:0000119="https://sci-hub.hkvisa.net/10.1016/s1472-9792(03)00051-9"}
-is_a: PKPBO:00193 ! Phase I
+is_a: PBPKO:00193 ! Phase I
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00195
+id: PBPKO:00195
 name: CYP1A2
 def: "CYPIA2|P450 form 4|aryl hydrocarbon hydroxylase|cytochrome P(3)450|cytochrome P450 1A2|cytochrome P450 4|cytochrome P450, subfamily I (aromatic compound-inducible), polypeptide 2|cytochrome P450-P3|dioxin-inducible P3-450|flavoprotein-linked monooxygenase|microsomal monooxygenase|xenobiotic monooxygenase" [] {IAO:0000119="http://www.ncbi.nlm.nih.gov/gene"}
-is_a: PKPBO:00194 ! CYP enzymes
+is_a: PBPKO:00194 ! CYP enzymes
 property_value: exactMatch "http://identifiers.org/ncbigene/1544" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "CYP1A2" xsd:string
 
 [Term]
-id: PKPBO:00196
+id: PBPKO:00196
 name: Cytochrome P-450 CYP2E1
 def: "An ethanol-inducible cytochrome P450 enzyme that metabolizes several precarcinogens, Xenoboitics, and solvents to reactive metabolites." [] {IAO:0000119="http://purl.bioontology.org/ontology/NDFRT/N0000170046"}
-is_a: PKPBO:00194 ! CYP enzymes
+is_a: PBPKO:00194 ! CYP enzymes
 property_value: exactMatch "http://purl.bioontology.org/ontology/MESH/D019392" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "CYP 2E1" xsd:string
 
 [Term]
-id: PKPBO:00197
+id: PBPKO:00197
 name: Cytochrome P-450 CYP3A4
 def: "Cytochrome P450, family 3, subfamily A; polypeptide 4. A heme-thiolate monooxygenase." [] {IAO:0000119="http://purl.org/net/Xenoboitic-interaction-knowledge-base/DIKB_evidence_ontology.owl#CYP3A4\n  http://purl.obolibrary.org/obo/NCIT_C24328"}
-is_a: PKPBO:00194 ! CYP enzymes
+is_a: PBPKO:00194 ! CYP enzymes
 property_value: exactMatch "http://id.nlm.nih.gov/mesh/D051544" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "CYP3A4" xsd:string
 
 [Term]
-id: PKPBO:00198
+id: PBPKO:00198
 name: Cytochrome P-450 CYP2D6
 def: "Cytochrome P450, family 2, subfamily D, polypeptide 6. A heme-thiolate monooxygenase." [] {IAO:0000119="http://purl.org/net/Xenoboitic-interaction-knowledge-base/DIKB_evidence_ontology.owl#CYP2D6\nhttp://purl.obolibrary.org/obo/OGG_3000001565\nhttp://purl.obolibrary.org/obo/NCBIGene_446878"}
-is_a: PKPBO:00194 ! CYP enzymes
+is_a: PBPKO:00194 ! CYP enzymes
 property_value: exactMatch "http://purl.bioontology.org/ontology/MESH/D019389" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "CYP2D6" xsd:string
 
 [Term]
-id: PKPBO:00199
+id: PBPKO:00199
 name: Cytochrome P-450 CYP2C9
 def: "Cytochrome P450, family 2, subfamily C, polypeptide 9.  A heme-thiolate monooxygenase." [] {IAO:0000119="http://purl.org/net/Xenoboitic-interaction-knowledge-base/DIKB_evidence_ontology.owl#CYP2C9\nhttp://purl.obolibrary.org/obo/NCBIGene_1559"}
-is_a: PKPBO:00194 ! CYP enzymes
+is_a: PBPKO:00194 ! CYP enzymes
 property_value: exactMatch "http://purl.bioontology.org/ontology/MESH/D065729" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "CYP2C9" xsd:string
 
 [Term]
-id: PKPBO:00200
+id: PBPKO:00200
 name: Cytochrome p450 CYP3A7
 def: "Cytochrome P450, family 3, subfamily A, polypeptide 7) located on chromosome 7 mapped at 7q21-q22.1." [] {IAO:0000119="http://identifiers.org/ncbigene/1551\n\nhttp://purl.obolibrary.org/obo/OGG_3000001551"}
-is_a: PKPBO:00194 ! CYP enzymes
+is_a: PBPKO:00194 ! CYP enzymes
 property_value: exactMatch "http://purl.bioontology.org/ontology/SNOMEDCT/425316004" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "CYP3A7" xsd:string
 
 [Term]
-id: PKPBO:00201
+id: PBPKO:00201
 name: CYP2C8
 def: "Cytochrome P450, family 2, subfamily C, polypeptide 8) located on chromosome 10 mapped at 10q23.33." [] {IAO:0000119="http://identifiers.org/ncbigene/1558\n\nhttp://purl.obolibrary.org/obo/NCIT_C46071"}
-is_a: PKPBO:00194 ! CYP enzymes
+is_a: PBPKO:00194 ! CYP enzymes
 property_value: exactMatch "http://identifiers.org/ncbigene/1558" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "CYP2C8" xsd:string
 
 [Term]
-id: PKPBO:00202
+id: PBPKO:00202
 name: Phase II
 def: "It involves conjugation of phase I products to various hydrophilic moieties that renders them more suitable for excretion.or\nPhase II, subtype of  metabolic biotransformation reactions involving conjugate enabling efficient excretion." [] {IAO:0000119="http://purl.obolibrary.org/obo/PW_0000858"}
-is_a: PKPBO:00190 ! Metabolism
+is_a: PBPKO:00190 ! Metabolism
 property_value: exactMatch "http://purl.obolibrary.org/obo/HINO_0016344" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00203
+id: PBPKO:00203
 name: UGT1A1
 def: "UGT1A1 (UDP glucuronosyltransferase 1 family, polypeptide A1) located on  chromosome 2 mapped at 2q37." [] {IAO:0000119="http://purl.obolibrary.org/obo/NCBIGene_54658"}
-is_a: PKPBO:00202 ! Phase II
+is_a: PBPKO:00202 ! Phase II
 property_value: exactMatch "http://identifiers.org/ncbigene/54658" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "UGT1A1" xsd:string
 
 [Term]
-id: PKPBO:00204
+id: PBPKO:00204
 name: UGT1A4
 def: "UDP Glucuronosyltransferase 1 Family, Polypeptide A4 Gene involved in xenobiotic metabolism." [] {IAO:0000119="http://identifiers.org/ncbigene/54657\nhttp://purl.obolibrary.org/obo/OMIT_0042415"}
-is_a: PKPBO:00202 ! Phase II
+is_a: PBPKO:00202 ! Phase II
 property_value: exactMatch "http://identifiers.org/ncbigene/54657" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "UGT1A4" xsd:string
 
 [Term]
-id: PKPBO:00205
+id: PBPKO:00205
 name: UGT1A6
-is_a: PKPBO:00202 ! Phase II
+is_a: PBPKO:00202 ! Phase II
 property_value: exactMatch "http://identifiers.org/ncbigene/113992" xsd:string
 property_value: exactMatch "http://identifiers.org/ncbigene/54578" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
@@ -1678,40 +1678,40 @@ property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "UGT1A6" xsd:string
 
 [Term]
-id: PKPBO:00206
+id: PBPKO:00206
 name: UGT1A9
 def: "UGT1A9 (UDP glucuronosyltransferase 1 family, polypeptide A9)  is involved in phenol detoxification" [] {IAO:0000119="http://identifiers.org/ncbigene/54600\nhttp://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C105862"}
-is_a: PKPBO:00202 ! Phase II
+is_a: PBPKO:00202 ! Phase II
 property_value: exactMatch "http://identifiers.org/ncbigene/54600" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "UGT1A9" xsd:string
 
 [Term]
-id: PKPBO:00207
+id: PBPKO:00207
 name: UGT2B4
 def: "UGT2B4 (UDP glucuronosyltransferase 2 family, polypeptide B4) located on  chromosome 4 mapped at 4q13. or\nUDP glucuronosyltransferase family 2 member B4." [] {IAO:0000119="http://identifiers.org/ncbigene/7363\n \n\nhttp://purl.obolibrary.org/obo/OMIT_0036009"}
-is_a: PKPBO:00202 ! Phase II
+is_a: PBPKO:00202 ! Phase II
 property_value: exactMatch "http://identifiers.org/ncbigene/7363" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "UGT2B4" xsd:string
 
 [Term]
-id: PKPBO:00208
+id: PBPKO:00208
 name: UGT2B7
 def: "UDP glucuronosyltransferase 2 family, polypeptide B7" [] {IAO:0000119="http://purl.obolibrary.org/obo/NCBIGene_7364\nhttp://purl.obolibrary.org/obo/OGG_3000007364"}
-is_a: PKPBO:00202 ! Phase II
+is_a: PBPKO:00202 ! Phase II
 property_value: exactMatch "http://identifiers.org/ncbigene/286989" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "UGT2B7" xsd:string
 
 [Term]
-id: PKPBO:00209
+id: PBPKO:00209
 name: SULT
 def: "Sult5a1 (sulfotransferase family 5A, member 1) located on the chromosome 8 mapped at 8 E1|8." [] {IAO:0000119="http://purl.obolibrary.org/obo/NCBIGene_57429"}
-is_a: PKPBO:00202 ! Phase II
+is_a: PBPKO:00202 ! Phase II
 property_value: exactMatch "http://purl.bioontology.org/ontology/PDQ/CDR0000322900" xsd:string
 property_value: exactMatch "http://purl.obolibrary.org/obo/HINO_0025295" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
@@ -1719,46 +1719,46 @@ property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "SULT" xsd:string
 
 [Term]
-id: PKPBO:00210
+id: PBPKO:00210
 name: NAT 2
 def: "Arylamine N-acetyltransferase Nat (arylamine acetylase)" [] {IAO:0000119="http://www.ncbi.nlm.nih.gov/gene"}
-is_a: PKPBO:00202 ! Phase II
+is_a: PBPKO:00202 ! Phase II
 property_value: exactMatch "http://purl.bioontology.org/ontology/PDQ/CDR0000043375" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "NAT 2" xsd:string
 
 [Term]
-id: PKPBO:00211
+id: PBPKO:00211
 name: Phase III
 def: "Occurs post-phase II, where xenobiotics can undergo further metabolism and excretion" [] {IAO:0000119="https://www.ncbi.nlm.nih.gov/books/NBK544353/"}
-is_a: PKPBO:00190 ! Metabolism
+is_a: PBPKO:00190 ! Metabolism
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00212
+id: PBPKO:00212
 name: First pass metabolism
 def: "First pass metabolism, also known as the first pass effect or presystemic metabolism, is a phenomenon in which a drug/chemical undergoes metabolism at a specific location in the body, resulting in a reduced concentration of the active drug/chemical before it reaches its site of action or systemic circulation. " [] {IAO:0000119="First Pass Effect - StatPearls - NCBI Bookshelf (nih.gov)"}
-is_a: PKPBO:00190 ! Metabolism
+is_a: PBPKO:00190 ! Metabolism
 property_value: closeMatch "http://purl.bioontology.org/ontology/LNC/LP213664-8|http://purl.bioontology.org/ontology/SNOMEDCT/258098006" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00213
+id: PBPKO:00213
 name: Vmax_intestine
 def: "Maximum rate of metabolic reaction, when all enzyme s active sites are saturated with substrate in intestine" [] {IAO:0000119="https://teachmephysiology.com/biochemistry/molecules-and-signalling/enzyme-kinetics/"}
-is_a: PKPBO:00190 ! Metabolism
+is_a: PBPKO:00190 ! Metabolism
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: relatedMatch "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C47822" xsd:string
 
 [Term]
-id: PKPBO:00214
+id: PBPKO:00214
 name: Km_intestine
 def: "Substrate concentration at which reaction rate is 50% of Vmax in intestine" [] {IAO:0000119="https://teachmephysiology.com/biochemistry/molecules-and-signalling/enzyme-kinetics/"}
-is_a: PKPBO:00190 ! Metabolism
+is_a: PBPKO:00190 ! Metabolism
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: relatedMatch "http://biomodels.net/SBO/SBO_0000027" xsd:string
@@ -1766,92 +1766,92 @@ property_value: relatedMatch "http://purl.jp/bio/4/id/200906034507257818" xsd:st
 property_value: relatedMatch "http://purl.obolibrary.org/obo/ECOSIMCONCEPT_MichaelisConstant" xsd:string
 
 [Term]
-id: PKPBO:00215
+id: PBPKO:00215
 name: Vmax_liver
 def: "Maximum rate of metabolic reaction, when all enzyme s active sites are saturated with substrate in Liver" [] {IAO:0000119="https://teachmephysiology.com/biochemistry/molecules-and-signalling/enzyme-kinetics/"}
-is_a: PKPBO:00190 ! Metabolism
+is_a: PBPKO:00190 ! Metabolism
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00216
+id: PBPKO:00216
 name: Km_liver
 def: "Substrate concentration at which reaction rate is 50% of Vmax in liver" [] {IAO:0000119="https://teachmephysiology.com/biochemistry/molecules-and-signalling/enzyme-kinetics/"}
-is_a: PKPBO:00190 ! Metabolism
+is_a: PBPKO:00190 ! Metabolism
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00217
+id: PBPKO:00217
 name: Gut Metabolism
 def: "The metabolism of a xenoboitic that occurs in gut" []
-is_a: PKPBO:00190 ! Metabolism
+is_a: PBPKO:00190 ! Metabolism
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: relatedMatch "http://purl.bioontology.org/ontology/MESH/D008660" xsd:string
 
 [Term]
-id: PKPBO:00218
+id: PBPKO:00218
 name: kd
 def: "KD in PBPK modeling refers to the dissociation constant of a drug/chemical-receptor complex, which is a measure of the affinity of the drug/chemical for its target receptor. It affects the distribution and elimination of the drug/chemical in the body. The dissociation constant (KD) is defined as the ratio of the rate constants for the forward and reverse reactions of the drug/chemical-receptor complex. " [] {IAO:0000119="10.1186/s13550-021-00821-7"}
-is_a: PKPBO:00190 ! Metabolism
+is_a: PBPKO:00190 ! Metabolism
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: relatedMatch "http://www.bioassayontology.org/bao#BAO_0000034" xsd:string
 
 [Term]
-id: PKPBO:00219
+id: PBPKO:00219
 name: Transporters
 def: "Responsible for import or export xenobiotics in or out of cell" [] {IAO:0000119="https://pubmed.ncbi.nlm.nih.gov/11936902/"}
-is_a: PKPBO:00190 ! Metabolism
+is_a: PBPKO:00190 ! Metabolism
 property_value: exactMatch "http://sbmi.uth.tmc.edu/ontology/ochv#41637" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00220
+id: PBPKO:00220
 name: OATP
 def: "Family of transmembrane proteins that transport of organic anions including bile acids and bilirubin" [] {IAO:0000119="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C107150"}
-is_a: PKPBO:00219 ! Transporters
+is_a: PBPKO:00219 ! Transporters
 property_value: exactMatch "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C107150" xsd:string
 property_value: exactMatch "http://purl.jp/bio/4/id/200906030923265689" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00221
+id: PBPKO:00221
 name: Abcc3
 def: "Human ABCC3 wild-type allele is located in vicinity of 17q22 and is approximately 57 kb in length, plays a role in bile metabolism and transport" [] {IAO:0000119="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C106022"}
-is_a: PKPBO:00219 ! Transporters
+is_a: PBPKO:00219 ! Transporters
 property_value: exactMatch "http://identifiers.org/ncbigene/8714" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "ABCC3" xsd:string
 
 [Term]
-id: PKPBO:00222
+id: PBPKO:00222
 name: Abcc2
 def: "Protein-coding gene ABCC2 located on chromosome 10 mapped at 10q24" [] {IAO:0000119="http://identifiers.org/ncbigene/1244"}
-is_a: PKPBO:00219 ! Transporters
+is_a: PBPKO:00219 ! Transporters
 property_value: exactMatch "http://identifiers.org/ncbigene/1244" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "ABCC2" xsd:string
 
 [Term]
-id: PKPBO:00223
+id: PBPKO:00223
 name: kdeg
 def: "Degradation rate constant of metabolizing enzyme" [] {seeAlso="http://www.w3.org/2002/07/Guideline%20on%20the%20reporting%20of%20physiologically%20based%20pharmacokinetic%20(PBPK)%20modelling%20and%20simulation%20(europa.eu)", IAO:0000119="Guideline on the reporting of physiologically based pharmacokinetic (PBPK) modelling and simulation (europa.eu)"}
-is_a: PKPBO:00190 ! Metabolism
+is_a: PBPKO:00190 ! Metabolism
 property_value: exactMatch "http://www.owl-ontologies.com/2009/11/5/PKO.owl#Kdeg" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00224
+id: PBPKO:00224
 name: ki
 def: "inhibition constant for a specific enzyme or transporter" [] {IAO:0000119="Guideline on the reporting of physiologically based pharmacokinetic (PBPK) modelling and simulation (europa.eu)"}
-is_a: PKPBO:00190 ! Metabolism
+is_a: PBPKO:00190 ! Metabolism
 property_value: exactMatch "http://purl.bioontology.org/ontology/LNC/LP89241-1" xsd:string
 property_value: exactMatch "http://www.bioassayontology.org/bao#BAO_0000192" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
@@ -1859,20 +1859,20 @@ property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "ki" xsd:string
 
 [Term]
-id: PKPBO:00225
+id: PBPKO:00225
 name: Excretion
 def: "Removal of a compound from the body through various routes such as urine, feces, and exhalation" [] {IAO:0000119="10.3390/ijerph20043473"}
-is_a: PKPBO:00141 ! Biochemical Parameters
+is_a: PBPKO:00141 ! Biochemical Parameters
 property_value: exactMatch "http://purl.obolibrary.org/obo/GO_0007588" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "E" xsd:string
 
 [Term]
-id: PKPBO:00226
+id: PBPKO:00226
 name: Renal excretion
 def: "Process by which xenoboitics and their metabolites are eliminated from body, primarily through urine." [] {IAO:0000119="Shargel, Leon, et al. Applied Biopharmaceutics & Pharmacokinetics. 7th ed., McGraw-Hill Education, 2015. Chapter 7, Page Number-149"}
-is_a: PKPBO:00225 ! Excretion
+is_a: PBPKO:00225 ! Excretion
 property_value: exactMatch "http://purl.bioontology.org/ontology/NDFRT/N0000000042" xsd:string
 property_value: exactMatch "http://purl.jp/bio/4/id/201206097580900130" xsd:string
 property_value: exactMatch "http://purl.obolibrary.org/obo/dinto_000260" xsd:string
@@ -1880,57 +1880,57 @@ property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00227
+id: PBPKO:00227
 name: Hepatic Excretion
 def: "Removing  xenoboitic fraction from liver." []
-is_a: PKPBO:00225 ! Excretion
+is_a: PBPKO:00225 ! Excretion
 property_value: exactMatch "http://purl.jp/bio/4/id/201206066039451029" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00228
+id: PBPKO:00228
 name: Fecal excretion
 def: "Removing chemical and its metabolites through feces" []
-is_a: PKPBO:00225 ! Excretion
+is_a: PBPKO:00225 ! Excretion
 property_value: exactMatch "http://purl.bioontology.org/ontology/NDFRT/N0000000045" xsd:string
 property_value: exactMatch "http://purl.jp/bio/4/id/200906052120961019" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00229
+id: PBPKO:00229
 name: Exhalation
 def: "Removing chemical and its metabolites through respiration" []
-is_a: PKPBO:00225 ! Excretion
+is_a: PBPKO:00225 ! Excretion
 property_value: closeMatch "http://purl.bioontology.org/ontology/MESH/D045853" xsd:string
 property_value: exactMatch "http://radlex.org/RID/RID50633" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00230
+id: PBPKO:00230
 name: Sweat excretion
 def: "Removing chemical and its metabolites through sweat." []
-is_a: PKPBO:00225 ! Excretion
+is_a: PBPKO:00225 ! Excretion
 property_value: exactMatch "http://purl.bioontology.org/ontology/NDFRT/N0000000050" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00231
+id: PBPKO:00231
 name: Hair excretion
 def: "Removing chemical and its metabolites through hair." []
-is_a: PKPBO:00225 ! Excretion
+is_a: PBPKO:00225 ! Excretion
 property_value: exactMatch "http://purl.bioontology.org/ontology/NDFRT/N0000000052" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00232
+id: PBPKO:00232
 name: Clearance
 def: "Volume of fluid cleared of xenoboitic from body per unit  time. " [] {IAO:0000119="Shargel, Leon, et al. Applied Biopharmaceutics & Pharmacokinetics. 7th ed., McGraw-Hill Education, 2015."}
-is_a: PKPBO:00225 ! Excretion
+is_a: PBPKO:00225 ! Excretion
 property_value: exactMatch "http://purl.bioontology.org/ontology/LNC/LP267658-5" xsd:string
 property_value: exactMatch "http://purl.bioontology.org/ontology/SNOMEDCT/260695007" xsd:string
 property_value: exactMatch "http://sbmi.uth.tmc.edu/ontology/ochv#C0449297" xsd:string
@@ -1941,1673 +1941,1673 @@ property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "Cl" xsd:string
 
 [Term]
-id: PKPBO:00233
+id: PBPKO:00233
 name: Fecal clearance
 def: " Fecal cleared volume of  xenoboitic from body per unit  time. " [] {IAO:0000119="Shargel, Leon, et al. Applied Biopharmaceutics & Pharmacokinetics. 7th ed., McGraw-Hill Education, 2015."}
-is_a: PKPBO:00232 ! Clearance
+is_a: PBPKO:00232 ! Clearance
 property_value: exactMatch "http://purl.bioontology.org/ontology/LNC/LP71059-7" xsd:string
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00234
+id: PBPKO:00234
 name: sweat clearance
 def: " Sweat cleared volume of  xenoboitic from body per unit  time. " [] {IAO:0000119="Shargel, Leon, et al. Applied Biopharmaceutics & Pharmacokinetics. 7th ed., McGraw-Hill Education, 2015.Chapter 7, Page Number-152"}
-is_a: PKPBO:00232 ! Clearance
+is_a: PBPKO:00232 ! Clearance
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00235
+id: PBPKO:00235
 name: urinary clearance
 def: " Urine cleared volume of  xenoboitic from body per unit time. " [] {IAO:0000119="Shargel, Leon, et al. Applied Biopharmaceutics & Pharmacokinetics. 7th ed., McGraw-Hill Education, 2015.Chapter 7, Page Number-153"}
-is_a: PKPBO:00232 ! Clearance
+is_a: PBPKO:00232 ! Clearance
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00236
+id: PBPKO:00236
 name: biliary clearance
 def: " Bile cleared volume of  xenoboitic from body per unit time. " [] {IAO:0000119="Shargel, Leon, et al. Applied Biopharmaceutics & Pharmacokinetics. 7th ed., McGraw-Hill Education, 2015.Chapter 7, Page Number-154"}
-is_a: PKPBO:00232 ! Clearance
+is_a: PBPKO:00232 ! Clearance
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00237
+id: PBPKO:00237
 name: Hepatic clearance
 def: " Liver cleared volume of  xenoboitic from body per unit time. " [] {IAO:0000119="Shargel, Leon, et al. Applied Biopharmaceutics & Pharmacokinetics. 7th ed., McGraw-Hill Education, 2015.Chapter 7, Page Number-155"}
-is_a: PKPBO:00232 ! Clearance
+is_a: PBPKO:00232 ! Clearance
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00238
+id: PBPKO:00238
 name: intrinsic clearance
 def: "the rate at which a compound is metabolized or eliminated by a specific organ or tissue, independent of the concentration of the compound in the blood" [] {IAO:0000119="Shargel, Leon, et al. Applied Biopharmaceutics & Pharmacokinetics. 7th ed., McGraw-Hill Education, 2015.Chapter 7, Page Number-354"}
-is_a: PKPBO:00232 ! Clearance
+is_a: PBPKO:00232 ! Clearance
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "Clint" xsd:string
 
 [Term]
-id: PKPBO:00239
+id: PBPKO:00239
 name: fecal elimination rate constant
 def: "the rate at which a compound is eliminated from the body through fecal excretion" []
-is_a: PKPBO:00225 ! Excretion
+is_a: PBPKO:00225 ! Excretion
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: relatedMatch "http://purl.bioontology.org/ontology/npo#NPO_1526" xsd:string
 
 [Term]
-id: PKPBO:00240
+id: PBPKO:00240
 name: Renal elimination rate constant
 def: "the rate at which a compound is eliminated from the body through urine excretion" []
-is_a: PKPBO:00225 ! Excretion
+is_a: PBPKO:00225 ! Excretion
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: relatedMatch "http://purl.bioontology.org/ontology/npo#NPO_1526" xsd:string
 
 [Term]
-id: PKPBO:00241
+id: PBPKO:00241
 name: Biliary elimination
 def: "Irreversible transfer of Xenoboitic or Xenoboitic metabolites from plasma to the bile through hepatocytes" [] {IAO:0000119="https://sepia2.unil.ch/pharmacology/mechanisms/biliary-excretion/"}
-is_a: PKPBO:00225 ! Excretion
+is_a: PBPKO:00225 ! Excretion
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00242
+id: PBPKO:00242
 name: Route of exposure
 def: "Designated body part through which exposure is introduced" [] {IAO:0000119="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C83121"}
-is_a: PKPBO:00002 ! Parameters
+is_a: PBPKO:00002 ! Parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00243
+id: PBPKO:00243
 name: oral
 def: "administration to or by way of mouth" [] {IAO:0000119="http://radlex.org/RID/RID11173"}
-is_a: PKPBO:00242 ! Route of exposure
+is_a: PBPKO:00242 ! Route of exposure
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00244
+id: PBPKO:00244
 name: dermal
 def: "exposure through the skin" [] {IAO:0000119="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25478"}
-is_a: PKPBO:00242 ! Route of exposure
+is_a: PBPKO:00242 ! Route of exposure
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00245
+id: PBPKO:00245
 name: Inhalation
 def: "exposure through breath" [] {IAO:0000119="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C95464"}
-is_a: PKPBO:00242 ! Route of exposure
+is_a: PBPKO:00242 ! Route of exposure
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00246
+id: PBPKO:00246
 name: intravenous bolus
 def: "Type of IV therapy where a single dose of medication/chemical/ nutrients is administered over a short period of time, typically less than 30 minutes" [] {IAO:0000119="IV Bolus vs. IV Push | Mobile IV Nurses"}
-is_a: PKPBO:00242 ! Route of exposure
+is_a: PBPKO:00242 ! Route of exposure
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "IVB" xsd:string
 
 [Term]
-id: PKPBO:00247
+id: PBPKO:00247
 name: intravenous infusion
 def: "The administration of fluids, medication, nutrition, or blood directly into the bloodstream through a vein" [] {IAO:0000119="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C38275"}
-is_a: PKPBO:00242 ! Route of exposure
+is_a: PBPKO:00242 ! Route of exposure
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "IVI" xsd:string
 
 [Term]
-id: PKPBO:00248
+id: PBPKO:00248
 name: intramuscular
 def: "Administration within a muscle" [] {IAO:0000119="http://radlex.org/RID/RID11139"}
-is_a: PKPBO:00242 ! Route of exposure
+is_a: PBPKO:00242 ! Route of exposure
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00249
+id: PBPKO:00249
 name: intraarterial
 def: "Administration within an artery or arteries" [] {IAO:0000119="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C38222"}
-is_a: PKPBO:00242 ! Route of exposure
+is_a: PBPKO:00242 ! Route of exposure
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00250
+id: PBPKO:00250
 name: intrathecal
 def: "Administration inside spinal canal" [] {IAO:0000119="http://uri.neuinfo.org/nif/nifstd/nlx_inv_090911"}
-is_a: PKPBO:00242 ! Route of exposure
+is_a: PBPKO:00242 ! Route of exposure
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00251
+id: PBPKO:00251
 name: subcutaneous
 def: "site for administration of xenobiotics into subcutaneous tissue" [] {IAO:0000119="http://purl.bioontology.org/ontology/SNOMEDCT/764295003"}
-is_a: PKPBO:00242 ! Route of exposure
+is_a: PBPKO:00242 ! Route of exposure
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00252
+id: PBPKO:00252
 name: nasal
 def: "Administration to the nose or via way of nose" [] {IAO:0000119="http://radlex.org/RID/RID11169"}
-is_a: PKPBO:00242 ! Route of exposure
+is_a: PBPKO:00242 ! Route of exposure
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00253
+id: PBPKO:00253
 name: transdermal
 def: "Administration through skin dermal layer to systemic circulation by diffusion" [] {IAO:0000119="http://radlex.org/RID/RID11193"}
-is_a: PKPBO:00242 ! Route of exposure
+is_a: PBPKO:00242 ! Route of exposure
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00254
+id: PBPKO:00254
 name: ocular
 def: "Site for xenobiotics administration to eye or eye structures" [] {IAO:0000119="http://purl.bioontology.org/ontology/SNOMEDCT/738952007"}
-is_a: PKPBO:00242 ! Route of exposure
+is_a: PBPKO:00242 ! Route of exposure
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00255
+id: PBPKO:00255
 name: Output parameters
 def: "Refers to result or predictions generated by the model in PBPK" []
-is_a: PKPBO:00002 ! Parameters
+is_a: PBPKO:00002 ! Parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00256
+id: PBPKO:00256
 name: Peak Concentration
 def: "The highest concentration of a drug/chemical in the blood, cerebrospinal fluid, or target organ after exposure" [] {IAO:0000119="Shargel, Leon, et al. Applied Biopharmaceutics & Pharmacokinetics. 7th ed., McGraw-Hill Education, 2015."}
-is_a: PKPBO:00255 ! Output parameters
+is_a: PBPKO:00255 ! Output parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "Cmax" xsd:string
 
 [Term]
-id: PKPBO:00257
+id: PBPKO:00257
 name: Cmaxss
 def: "Maximum steady state concentration" []
-is_a: PKPBO:00255 ! Output parameters
+is_a: PBPKO:00255 ! Output parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00258
+id: PBPKO:00258
 name: Tmax
 def: "The time required to reach maximum xenoboitic concentration after xenoboitic administration" [] {IAO:0000119="Shargel, Leon, et al. Applied Biopharmaceutics & Pharmacokinetics. 7th ed., McGraw-Hill Education, 2015."}
-is_a: PKPBO:00255 ! Output parameters
+is_a: PBPKO:00255 ! Output parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "Tmax" xsd:string
 
 [Term]
-id: PKPBO:00259
+id: PBPKO:00259
 name: Area under curve
 def: "It is the definite integral of the concentration of a drug/chemical in blood or plasma as a function of time" [] {IAO:0000119="Shargel, Leon, et al. Applied Biopharmaceutics & Pharmacokinetics. 7th ed., McGraw-Hill Education, 2015, Chaper-2,page number-37."}
-is_a: PKPBO:00255 ! Output parameters
+is_a: PBPKO:00255 ! Output parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "AUC" xsd:string
 
 [Term]
-id: PKPBO:00260
+id: PBPKO:00260
 name: AUC0-t
 def: "the area under the concentration-time curve from dosing (time 0) to the last quantifiable time point (t)" [] {IAO:0000119="Shargel, Leon, et al. Applied Biopharmaceutics & Pharmacokinetics. 7th ed., McGraw-Hill Education, 2015, Chaper-7, page number-154."}
-is_a: PKPBO:00259 ! Area under curve
+is_a: PBPKO:00259 ! Area under curve
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00261
+id: PBPKO:00261
 name: AUClast
 def: "the area under the concentration-time curve from dosing (time 0) to the time of the last measured concentration of a drug." [] {IAO:0000119="https://pubmed.ncbi.nlm.nih.gov/22673011/"}
-is_a: PKPBO:00259 ! Area under curve
+is_a: PBPKO:00259 ! Area under curve
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00262
+id: PBPKO:00262
 name: AUC0-infinity
 def: "the area under the concentration-time curve from dosing (time 0) to infinity, which means the total drug/chemical exposure across time" [] {IAO:0000119="Shargel, Leon, et al. Applied Biopharmaceutics & Pharmacokinetics. 7th ed., McGraw-Hill Education, 2015, Chaper-4, page number-79."}
-is_a: PKPBO:00259 ! Area under curve
+is_a: PBPKO:00259 ! Area under curve
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00263
+id: PBPKO:00263
 name: Area under moment curve
 def: "AUMC is a pharmacokinetic parameter that is calculated by measuring the concentration of a drug/chemical in blood plasma as a function of time and then taking the definite integral of the product of time and concentration squared" [] {IAO:0000119="10.1111/bcp.12685"}
-is_a: PKPBO:00255 ! Output parameters
+is_a: PBPKO:00255 ! Output parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "AUMC" xsd:string
 
 [Term]
-id: PKPBO:00264
+id: PBPKO:00264
 name: Mean residence time
 def: "Average time a drug/chemical molecule resides in the body" [] {IAO:0000119="Mean Residence Time (MRT): Understanding How Long Drug Molecules Stay in the Body | Certara"}
-is_a: PKPBO:00255 ! Output parameters
+is_a: PBPKO:00255 ! Output parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "MRT" xsd:string
 
 [Term]
-id: PKPBO:00265
+id: PBPKO:00265
 name: half-life
 def: "the time it takes for the concentration of a drug/chemical in the body to decrease by half" [] {IAO:0000119="What is a Half-life? | Certara"}
-is_a: PKPBO:00255 ! Output parameters
+is_a: PBPKO:00255 ! Output parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "t1/2" xsd:string
 
 [Term]
-id: PKPBO:00266
+id: PBPKO:00266
 name: bioavailavility
 def: " Bioavailability is defined as the rate and extent to which the active ingredient or active moiety is absorbed from a Xenoboitic product and becomes available at the site of action (US-FDA, CDER, 2014a)." [] {IAO:0000119="Shargel, Leon, et al. Applied Biopharmaceutics & Pharmacokinetics. 7th ed., McGraw-Hill Education, 2015.\nChapter 16, Page Number-471"}
-is_a: PKPBO:00255 ! Output parameters
+is_a: PBPKO:00255 ! Output parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "F" xsd:string
 
 [Term]
-id: PKPBO:00267
+id: PBPKO:00267
 name: Relative bioavailability
 def: "Relative bioavailability is a term used to describe the extent and rate at which a drug/chemical is absorbed into the systemic circulation after administration compared to a reference formulation/source chemical," [] {IAO:0000119="Shargel, Leon, et al. Applied Biopharmaceutics & Pharmacokinetics. 7th ed., McGraw-Hill Education, 2015.\nChapter 16, Page Number-473"}
-is_a: PKPBO:00266 ! bioavailavility
+is_a: PBPKO:00266 ! bioavailavility
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "F rel" xsd:string
 
 [Term]
-id: PKPBO:00268
+id: PBPKO:00268
 name: Mean absorption time
 def: "Average time it takes for drug/chemical to be absorbed into systemic circulation" [] {IAO:0000119="Shargel, Leon, et al. Applied Biopharmaceutics & Pharmacokinetics. 7th ed., McGraw-Hill Education, 2015.Chapter-25,Page number-837"}
-is_a: PKPBO:00255 ! Output parameters
+is_a: PBPKO:00255 ! Output parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "MAT" xsd:string
 
 [Term]
-id: PKPBO:00269
+id: PBPKO:00269
 name: Mean dissolution time
 def: "Average time it takes for drug/chemical to dissolve in body" [] {IAO:0000119="Shargel, Leon, et al. Applied Biopharmaceutics & Pharmacokinetics. 7th ed., McGraw-Hill Education, 2015.\nChapter-25,Page number-837"}
-is_a: PKPBO:00255 ! Output parameters
+is_a: PBPKO:00255 ! Output parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "MDT" xsd:string
 
 [Term]
-id: PKPBO:00270
+id: PBPKO:00270
 name: Bioequivalence
 def: "Identical comparison between test (T) and reference (R) xenoboitic product" [] {IAO:0000119="Shargel, Leon, et al. Applied Biopharmaceutics & Pharmacokinetics. 7th ed., McGraw-Hill Education, 2015.Chapter 16, Page Number-471"}
-is_a: PKPBO:00255 ! Output parameters
+is_a: PBPKO:00255 ! Output parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "BE" xsd:string
 
 [Term]
-id: PKPBO:00271
+id: PBPKO:00271
 name: absolute bioavailability
 def: "Fraction of treatment dose that reaches systemic circulation and ratio of xenobiotics amount in system after administration of a test xenobiotics to xenobiotics in system after IV administration" [] {IAO:0000119="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C154838"}
-is_a: PKPBO:00266 ! bioavailavility
+is_a: PBPKO:00266 ! bioavailavility
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "FABS" xsd:string
 
 [Term]
-id: PKPBO:00272
+id: PBPKO:00272
 name: elimination phase
-is_a: PKPBO:00255 ! Output parameters
+is_a: PBPKO:00255 ! Output parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00273
+id: PBPKO:00273
 name: absorption phase
 def: "Phase describing how drug/chemical goes in systemic circulation from site of administration" [] {IAO:0000119="Drug Absorption - Clinical Pharmacology - Merck Manuals Professional Edition"}
-is_a: PKPBO:00255 ! Output parameters
+is_a: PBPKO:00255 ! Output parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00274
+id: PBPKO:00274
 name: CL/F
 def: "describes the rate at which a drug/chemical is eliminated from the body after oral administration" [] {IAO:0000119="tcp.2015.23.2.42 (tcpharm.org)"}
-is_a: PKPBO:00255 ! Output parameters
+is_a: PBPKO:00255 ! Output parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00275
+id: PBPKO:00275
 name: Aurine
 def: "Amount of substance present in urine" []
-is_a: PKPBO:00255 ! Output parameters
+is_a: PBPKO:00255 ! Output parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00276
+id: PBPKO:00276
 name: Afeces
 def: "Amount of substance present in feces" []
-is_a: PKPBO:00255 ! Output parameters
+is_a: PBPKO:00255 ! Output parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00277
+id: PBPKO:00277
 name: Cumulative amount in urine
 def: "total amount of drug/chemical or metabolite excreted in urine over specific period of time" [] {IAO:0000119="Chapter 19. Cumulative Urinary Excretion | Handbook of Basic Pharmacokinetics  Including Clinical Applications, 7th Edition | PharmacyLibrary"}
-is_a: PKPBO:00255 ! Output parameters
+is_a: PBPKO:00255 ! Output parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00278
+id: PBPKO:00278
 name: Cumulative amount in feces
 def: "total amount of drug/chemical or metabolite excreted in feces over specific period of time" []
-is_a: PKPBO:00255 ! Output parameters
+is_a: PBPKO:00255 ! Output parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00279
+id: PBPKO:00279
 name: Creatinine
 def: "breakdown product of creatine which excreted in urine" [] {IAO:0000119="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C399"}
-is_a: PKPBO:00255 ! Output parameters
+is_a: PBPKO:00255 ! Output parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00280
+id: PBPKO:00280
 name: AUCss
-is_a: PKPBO:00259 ! Area under curve
+is_a: PBPKO:00259 ! Area under curve
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00281
+id: PBPKO:00281
 name: Plasma concentration
 def: "Xenobiotic concentration in plasma, derived from full blood" []
-is_a: PKPBO:00255 ! Output parameters
+is_a: PBPKO:00255 ! Output parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00282
+id: PBPKO:00282
 name: Min Organ Concentration
-is_a: PKPBO:00255 ! Output parameters
+is_a: PBPKO:00255 ! Output parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00283
+id: PBPKO:00283
 name: Max organ concentration
-is_a: PKPBO:00255 ! Output parameters
+is_a: PBPKO:00255 ! Output parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00284
+id: PBPKO:00284
 name: Median Organ concentration
-is_a: PKPBO:00255 ! Output parameters
+is_a: PBPKO:00255 ! Output parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00285
+id: PBPKO:00285
 name: Percentile 2.5 plasma concentration
-is_a: PKPBO:00281 ! Plasma concentration
+is_a: PBPKO:00281 ! Plasma concentration
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00286
+id: PBPKO:00286
 name: percentile 97.5 plasma concentration
-is_a: PKPBO:00281 ! Plasma concentration
+is_a: PBPKO:00281 ! Plasma concentration
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00287
+id: PBPKO:00287
 name: Tolerable daily intake
 def: "estimate of the amount of a substance in air, food or drinking water that can be taken in daily over a lifetime without appreciable health risk" [] {IAO:0000119="Tolerable daily intake - Wikipedia"}
-is_a: PKPBO:00255 ! Output parameters
+is_a: PBPKO:00255 ! Output parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00288
+id: PBPKO:00288
 name: Reconstructed exposure
-is_a: PKPBO:00255 ! Output parameters
+is_a: PBPKO:00255 ! Output parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00289
+id: PBPKO:00289
 name: Estimated daily intake
 def: "measure used to estimate the amount of a substance that a person consumes daily through food or other sources" [] {IAO:0000119="Guidance for Industry: Estimating Dietary Intake of Substances in Food | FDA"}
-is_a: PKPBO:00255 ! Output parameters
+is_a: PBPKO:00255 ! Output parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00290
+id: PBPKO:00290
 name: Biomonitoring equivalent
 def: "chemical concentration (or metabolite) in biological medium (eg. blood, urine, human milk) consistent with defined exposure guidance values or toxicity criteria including reference doses and reference concentrations, minimal risk levels or tolerable daily intakes" [] {IAO:0000119="Hays S. M., et al. Guidelines for the derivation of biomonitoring equivalents: Report from the biomonitoring equivalents expert workshop. Regulatory Toxicology and Pharmacology V51(3), 2008, Pages S4-S15. https://doi.org/10.1016/j.yrtph.2008.05.004"}
-is_a: PKPBO:00255 ! Output parameters
+is_a: PBPKO:00255 ! Output parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "BE" xsd:string
 
 [Term]
-id: PKPBO:00291
+id: PBPKO:00291
 name: HBM-HBGV
 def: "Human Biomonitoring Health-Based Guidance Value. It is a measure used to establish safe levels of a substance in blood or urine based on human biomonitoring data" [] {IAO:0000119="10.1016/j.envint.2020.105978"}
-is_a: PKPBO:00255 ! Output parameters
+is_a: PBPKO:00255 ! Output parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00292
+id: PBPKO:00292
 name: Reference dose
 def: "Daily oral or dermal exposure estimation to human population (including sensitive subgroups)" [] {IAO:0000119="https://www.chemsafetypro.com/Topics/CRA/What_is_Point_of_Departure_(POD)_in_Toxicology_and_How_to_Use_It_to_Calculate_Reference_Dose_RfD.html"}
-is_a: PKPBO:00255 ! Output parameters
+is_a: PBPKO:00255 ! Output parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "RfD" xsd:string
 
 [Term]
-id: PKPBO:00293
+id: PBPKO:00293
 name: Acceptable daily intake
 def: "Substance in food or drinking water that consumed daily over a lifetime without presenting appreciable risk to health" [] {IAO:0000119="https://www.efsa.europa.eu/en/glossary/adi"}
-is_a: PKPBO:00255 ! Output parameters
+is_a: PBPKO:00255 ! Output parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "ADI" xsd:string
 
 [Term]
-id: PKPBO:00294
+id: PBPKO:00294
 name: Human biomonitoring
 def: "Measuring instrument for internal dose of exogenous substances/chemicals that enter a body during a certain exposure period from different sources" [] {IAO:0000119="World Health Organization. Regional Office for Europe. (?2023)?. Human biomonitoring. Basics: educational course. World Health Organization. Regional Office for Europe. https://apps.who.int/iris/handle/10665/368163. License: CC BY-NC-SA 3.0 IGO"}
-is_a: PKPBO:00255 ! Output parameters
+is_a: PBPKO:00255 ! Output parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "HBM" xsd:string
 
 [Term]
-id: PKPBO:00295
+id: PBPKO:00295
 name: Reverse dosimetry
 def: "Environmental exposures estimation, consistent with measured biological monitoring data" [] {IAO:0000119="Ruiz, P., & Fowler, B. A. (2015). Exposure Assessment, Forward and Reverse Dosimetry. Handbook on the Toxicology of Metals, 141 153. doi:10.1016/b978-0-444-59453-2.00007-X"}
-is_a: PKPBO:00255 ! Output parameters
+is_a: PBPKO:00255 ! Output parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00296
+id: PBPKO:00296
 name: Forward dosimetry
 def: "Estimation from external exposure mesurements in studies characterizing chemical toxicity" [] {IAO:0000119="Ruiz, P., & Fowler, B. A. (2015). Exposure Assessment, Forward and Reverse Dosimetry. Handbook on the Toxicology of Metals, 141 153. doi:10.1016/b978-0-444-59453-2.00007-X"}
-is_a: PKPBO:00255 ! Output parameters
+is_a: PBPKO:00255 ! Output parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00297
+id: PBPKO:00297
 name: Spot urine
 def: "Single, untimed urine specimen, voided spontaneously by patient and is used to determine its protein, creatinine, or electrolyte content" [] {IAO:0000119="https://medical-dictionary.thefreedictionary.com/collection%2C+spot+urine"}
-is_a: PKPBO:00255 ! Output parameters
+is_a: PBPKO:00255 ! Output parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00298
+id: PBPKO:00298
 name: Specific gravity
 def: "Ratio of material density to some standard material density like water or air at specified temperature" [] {IAO:0000119="http://purl.bioontology.org/ontology/MESH/D013046"}
-is_a: PKPBO:00255 ! Output parameters
+is_a: PBPKO:00255 ! Output parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00299
+id: PBPKO:00299
 name: Reference human
-is_a: PKPBO:00007 ! Physiological Parameters
+is_a: PBPKO:00007 ! Physiological Parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00300
+id: PBPKO:00300
 name: Biological matrix
 def: "A biological matrix is a biological material, such as blood, urine, or tissue, that is used for analysis in scientific research and medical testing" []
-is_a: PKPBO:00007 ! Physiological Parameters
+is_a: PBPKO:00007 ! Physiological Parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00301
+id: PBPKO:00301
 name: Hair
 def: "Keratin composed filament-like structure, consisting of shaft, projecting to skin surface from root which is softer than shaft and lodges in hair follicle cavity" [] {IAO:0000119="http://purl.bioontology.org/ontology/CSP/2716-0900"}
-is_a: PKPBO:00300 ! Biological matrix
+is_a: PBPKO:00300 ! Biological matrix
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00302
+id: PBPKO:00302
 name: Nail
 def: "Cutaneous plate on dorsal surface of distal end of finger or toe" [] {IAO:0000119="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C33156"}
-is_a: PKPBO:00300 ! Biological matrix
+is_a: PBPKO:00300 ! Biological matrix
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00303
+id: PBPKO:00303
 name: Teeth
 def: "Set of bone-like structures in mouth used for biting and chewing" [] {IAO:0000119="http://purl.bioontology.org/ontology/MESH/D014070"}
-is_a: PKPBO:00300 ! Biological matrix
+is_a: PBPKO:00300 ! Biological matrix
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00304
+id: PBPKO:00304
 name: Blood
 def: "Liquid tissue which transport oxygen, nutrients, removes waste products, and contains various components of immune system defending body against infection" [] {IAO:0000119="http://purl.obolibrary.org/obo/NCIT_C12434"}
-is_a: PKPBO:00300 ! Biological matrix
+is_a: PBPKO:00300 ! Biological matrix
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00305
+id: PBPKO:00305
 name: Urine
 def: "Fluid, excreted by the kidneys and is stored in bladder and discharged through urethra" [] {IAO:0000119="http://purl.obolibrary.org/obo/NCIT_C13283"}
-is_a: PKPBO:00300 ! Biological matrix
+is_a: PBPKO:00300 ! Biological matrix
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00306
+id: PBPKO:00306
 name: Permeability limited PBPK
-is_a: PKPBO:00003 ! PBPK types
+is_a: PBPKO:00003 ! PBPK types
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00307
+id: PBPKO:00307
 name: Vmax_baso_in vitro 
-is_a: PKPBO:00306 ! Permeability limited PBPK
+is_a: PBPKO:00306 ! Permeability limited PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00308
+id: PBPKO:00308
 name: km_baso
-is_a: PKPBO:00306 ! Permeability limited PBPK
+is_a: PBPKO:00306 ! Permeability limited PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00309
+id: PBPKO:00309
 name: Vmax_apical_invitro
-is_a: PKPBO:00306 ! Permeability limited PBPK
+is_a: PBPKO:00306 ! Permeability limited PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00310
+id: PBPKO:00310
 name: km_apical
-is_a: PKPBO:00306 ! Permeability limited PBPK
+is_a: PBPKO:00306 ! Permeability limited PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00311
+id: PBPKO:00311
 name: RAFapi
-is_a: PKPBO:00306 ! Permeability limited PBPK
+is_a: PBPKO:00306 ! Permeability limited PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00312
+id: PBPKO:00312
 name: RAFbaso
-is_a: PKPBO:00306 ! Permeability limited PBPK
+is_a: PBPKO:00306 ! Permeability limited PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00313
+id: PBPKO:00313
 name: Kiff
-is_a: PKPBO:00306 ! Permeability limited PBPK
+is_a: PBPKO:00306 ! Permeability limited PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00314
+id: PBPKO:00314
 name: KeffluxC
-is_a: PKPBO:00306 ! Permeability limited PBPK
+is_a: PBPKO:00306 ! Permeability limited PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00315
+id: PBPKO:00315
 name: Plasma Space
-is_a: PKPBO:00306 ! Permeability limited PBPK
+is_a: PBPKO:00306 ! Permeability limited PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00316
+id: PBPKO:00316
 name: Endosomal Space
-is_a: PKPBO:00306 ! Permeability limited PBPK
+is_a: PBPKO:00306 ! Permeability limited PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00317
+id: PBPKO:00317
 name: Interstitial Space
-is_a: PKPBO:00306 ! Permeability limited PBPK
+is_a: PBPKO:00306 ! Permeability limited PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00318
+id: PBPKO:00318
 name: effective permeability (Peff)
 def: "Effective permeability is a measure of the rate at which a substance can pass through a barrier, such as a cell membrane or capillary wal" [] {IAO:0000119="10.1111/cts.13314"}
-is_a: PKPBO:00306 ! Permeability limited PBPK
+is_a: PBPKO:00306 ! Permeability limited PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "Peff" xsd:string
 
 [Term]
-id: PKPBO:00319
+id: PBPKO:00319
 name: Population PBPK
 def: "model used for interindividual variability identification in population, its physiological characterization and ADME related sources" [] {IAO:0000119="Krauss M., et al. Bayesian Population Physiologically-Based Pharmacokinetic (PBPK) Approach for a Physiologically Realistic Characterization of Interindividual Variability in Clinically Relevant Populations. PLoS ONE 2015. 10(10): e0139423. https://doi.org/10.1371/journal.pone.0139423"}
-is_a: PKPBO:00003 ! PBPK types
+is_a: PBPKO:00003 ! PBPK types
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00320
+id: PBPKO:00320
 name: top-down PBPK
 def: "Modelling and simulation approach based on observed clinical data, empirical with utilization scope, narrowed down to input data range" [] {IAO:0000119="Tylutki, Z. et al. Top-down, Bottom-up and Middle-out Strategies for Xenoboitic Cardiac Safety Assessment via Modeling and Simulations. Curr Pharmacol Rep 2, 171 177 (2016). https://doi.org/10.1007/s40495-016-0060-3"}
-is_a: PKPBO:00003 ! PBPK types
+is_a: PBPKO:00003 ! PBPK types
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00321
+id: PBPKO:00321
 name: bottom-up pbpk
 def: "Modelling and simulation approach based on knowledge of human body, therefore, as mechanistic as possible, utilizing in vitro information as input data" [] {IAO:0000119="Tylutki, Z. et al. Top-down, Bottom-up and Middle-out Strategies for Xenoboitic Cardiac Safety Assessment via Modeling and Simulations. Curr Pharmacol Rep 2, 171 177 (2016). https://doi.org/10.1007/s40495-016-0060-3"}
-is_a: PKPBO:00003 ! PBPK types
+is_a: PBPKO:00003 ! PBPK types
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00322
+id: PBPKO:00322
 name: one-compartment PBPK
-is_a: PKPBO:00003 ! PBPK types
+is_a: PBPKO:00003 ! PBPK types
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00323
+id: PBPKO:00323
 name: central compartment
 def: "component of a two compartment pharmacokinetic model representing plasma and highly perfused organs" [] {IAO:0000119="Pharmacokinetics & Compartmental Modeling | Allucent"}
-is_a: PKPBO:00322 ! one-compartment PBPK
+is_a: PBPKO:00322 ! one-compartment PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00324
+id: PBPKO:00324
 name: Peripheral Compartment
 def: "It consists of tissues where Xenoboitic distribution is slower" [] {IAO:0000119="Two Compartment Body Model and Vd Terms (ufl.edu)"}
-is_a: PKPBO:00322 ! one-compartment PBPK
+is_a: PBPKO:00322 ! one-compartment PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00325
+id: PBPKO:00325
 name: elimination
-is_a: PKPBO:00141 ! Biochemical Parameters
+is_a: PBPKO:00141 ! Biochemical Parameters
 
 [Term]
-id: PKPBO:00326
+id: PBPKO:00326
 name: linear elimination
-is_a: PKPBO:00325 ! elimination
+is_a: PBPKO:00325 ! elimination
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00327
+id: PBPKO:00327
 name: non-linear elimination
-is_a: PKPBO:00325 ! elimination
+is_a: PBPKO:00325 ! elimination
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00328
+id: PBPKO:00328
 name: goodness of fit
-is_a: PKPBO:00001 ! Statistical Method
+is_a: PBPKO:00001 ! Statistical Method
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00329
+id: PBPKO:00329
 name: Observed
-is_a: PKPBO:00001 ! Statistical Method
+is_a: PBPKO:00001 ! Statistical Method
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00330
+id: PBPKO:00330
 name: Predicted
-is_a: PKPBO:00001 ! Statistical Method
+is_a: PBPKO:00001 ! Statistical Method
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00331
+id: PBPKO:00331
 name: visual predictive check
-is_a: PKPBO:00001 ! Statistical Method
+is_a: PBPKO:00001 ! Statistical Method
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00332
+id: PBPKO:00332
 name: average fold error
-is_a: PKPBO:00001 ! Statistical Method
+is_a: PBPKO:00001 ! Statistical Method
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00333
+id: PBPKO:00333
 name: Residual error magnitude
-is_a: PKPBO:00001 ! Statistical Method
+is_a: PBPKO:00001 ! Statistical Method
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00334
+id: PBPKO:00334
 name: Mean Relative derivation
 def: "a measure of the deviation of a set of values from their mean, expressed as a percentage" [] {IAO:0000119="How to Find a Relative Average Deviation | Sciencing"}
-is_a: PKPBO:00001 ! Statistical Method
+is_a: PBPKO:00001 ! Statistical Method
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00335
+id: PBPKO:00335
 name: Geometric mean fold error
 def: "a measure used to compare predicted and observed values in pharmacokinetic models" [] {IAO:0000119="10.1002/psp4.12646"}
-is_a: PKPBO:00001 ! Statistical Method
+is_a: PBPKO:00001 ! Statistical Method
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00336
+id: PBPKO:00336
 name: Sensitivty Analysis
 def: "Quantifying process of investigating input parameters role in determining model output" [] {IAO:0000119="https://gsa-module.readthedocs.io/en/develop/implementation/gsa.html"}
-is_a: PKPBO:00000 ! PBPK Evaluation
+is_a: PBPKO:00000 ! PBPK Evaluation
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "SA" xsd:string
 
 [Term]
-id: PKPBO:00337
+id: PBPKO:00337
 name: Local Senstivity analysis
 def: "analyzes the effect of one model parameter at a time, keeping the other parameters fixed" [] {IAO:0000119="Sensitivity Analysis in SimBiology - MATLAB & Simulink (mathworks.com)"}
-is_a: PKPBO:00336 ! Sensitivty Analysis
+is_a: PBPKO:00336 ! Sensitivty Analysis
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "LSA" xsd:string
 
 [Term]
-id: PKPBO:00338
+id: PBPKO:00338
 name: Global Sensitvity analysis
 def: "quantifies the impact of variations in model inputs on the model output. A sensitivity analysis is considered to be global when all the input factors are varied simultaneously and the sensitivity is evaluated over the entire range of each input factor." [] {IAO:0000119="10.1007/978-0-387-35973-1_538"}
-is_a: PKPBO:00336 ! Sensitivty Analysis
+is_a: PBPKO:00336 ! Sensitivty Analysis
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "GSA" xsd:string
 
 [Term]
-id: PKPBO:00339
+id: PBPKO:00339
 name: one at a time sensitivity analysis
 def: "It analyzes effect of one parameter on cost function at a time, keeping other parameters fixed. eg. Local sensitivity analysis" [] {IAO:0000119="https://www.mathworks.com/help/sldo/ug/what-is-sensitivity-analysis.html"}
-is_a: PKPBO:00336 ! Sensitivty Analysis
+is_a: PBPKO:00336 ! Sensitivty Analysis
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "OTA" xsd:string
 
 [Term]
-id: PKPBO:00340
+id: PBPKO:00340
 name: Lifetsages
 def: "Life stages in the context of the human species refer to the different phases of an individual's life, from birth to death." []
-is_a: PKPBO:00007 ! Physiological Parameters
+is_a: PBPKO:00007 ! Physiological Parameters
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00341
+id: PBPKO:00341
 name: Fetus
 def: "Unborn offspring in uterus representing  postembryonic stage of development until birth." [] {IAO:0000119="https://link.springer.com/referenceworkentry/10.1007/978-3-319-47829-6_62-1"}
-is_a: PKPBO:00340 ! Lifetsages
+is_a: PBPKO:00340 ! Lifetsages
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00342
+id: PBPKO:00342
 name: Infants
 def: "An infant is a very young child, under age of one year." [] {IAO:0000119="https://www.cdc.gov/ncbddd/childdevelopment/positiveparenting/adolescence2.html"}
-is_a: PKPBO:00340 ! Lifetsages
+is_a: PBPKO:00340 ! Lifetsages
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "Inf" xsd:string
 
 [Term]
-id: PKPBO:00343
+id: PBPKO:00343
 name: Toddlers
 def: "Young children who are  between  ages of one and three years old.  (infancy to early childhood)" [] {IAO:0000119="https://www.cdc.gov/ncbddd/childdevelopment/positiveparenting/adolescence3.html"}
-is_a: PKPBO:00340 ! Lifetsages
+is_a: PBPKO:00340 ! Lifetsages
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "Tdl" xsd:string
 
 [Term]
-id: PKPBO:00344
+id: PBPKO:00344
 name: Children
 def: "Children, who are in  early ages ranging from 3-11 years." [] {IAO:0000119="https://www.cdc.gov/ncbddd/childdevelopment/positiveparenting/adolescence4.html"}
-is_a: PKPBO:00340 ! Lifetsages
+is_a: PBPKO:00340 ! Lifetsages
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00345
+id: PBPKO:00345
 name: Teenagers
 def: "A human life stage that begins at eleven years of age and continues until fifteen years of age." [] {IAO:0000119="https://www.cdc.gov/ncbddd/childdevelopment/positiveparenting/adolescence5.html"}
-is_a: PKPBO:00340 ! Lifetsages
+is_a: PBPKO:00340 ! Lifetsages
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00346
+id: PBPKO:00346
 name: Adolescent
 def: "An adolescent, transitional stage between Teenagers and adulthood.(Age range of 15 till 18 years)" [] {IAO:0000119="https://www.cdc.gov/ncbddd/childdevelopment/positiveparenting/adolescence6.html"}
-is_a: PKPBO:00340 ! Lifetsages
+is_a: PBPKO:00340 ! Lifetsages
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00347
+id: PBPKO:00347
 name: Adult
 def: "A human life stage that begins at eighteen years of age and continues until thirty years of age." [] {IAO:0000119="http://purl.bioontology.org/ontology/BIN/BIN_00000008"}
-is_a: PKPBO:00340 ! Lifetsages
+is_a: PBPKO:00340 ! Lifetsages
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00348
+id: PBPKO:00348
 name: Middle age
 def: "A human life stage that begins at thirty years of age and continues until forty-five years of age." [] {IAO:0000119="http://purl.bioontology.org/ontology/BIN/BIN_00000008"}
-is_a: PKPBO:00340 ! Lifetsages
+is_a: PBPKO:00340 ! Lifetsages
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00349
+id: PBPKO:00349
 name: old age
 def: "A human life stage that begins at forty-five years of age and continues until sixty years of age." [] {IAO:0000119="http://purl.bioontology.org/ontology/BIN/BIN_00000008"}
-is_a: PKPBO:00340 ! Lifetsages
+is_a: PBPKO:00340 ! Lifetsages
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00350
+id: PBPKO:00350
 name: pediatric
 def: "A human population, below fifteen years of age" [] {IAO:0000119="http://purl.bioontology.org/ontology/SNOMEDCT/376171000221106"}
-is_a: PKPBO:00340 ! Lifetsages
+is_a: PBPKO:00340 ! Lifetsages
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00351
+id: PBPKO:00351
 name: geriatric
 def: "Geriatric refers to the medical specialty focused on providing care for the unique health needs of older adults" [] {IAO:0000119="Geriatrics - Wikipedia"}
-is_a: PKPBO:00340 ! Lifetsages
+is_a: PBPKO:00340 ! Lifetsages
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00352
+id: PBPKO:00352
 name: Normal child
 def: "A normal child, has no serious physical or mental health problems. " [] {IAO:0000119="http://www.gamuts.net/entity#normal_young_child"}
-is_a: PKPBO:00344 ! Children
+is_a: PBPKO:00344 ! Children
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00353
+id: PBPKO:00353
 name: obese child
 def: "A Body Mass Index (BMI) greater than or equal to the 95th percentile for age and gender in children aged two years and older." [] {IAO:0000119="https://www.ncbi.nlm.nih.gov/books/NBK570626/"}
-is_a: PKPBO:00344 ! Children
+is_a: PBPKO:00344 ! Children
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00354
+id: PBPKO:00354
 name: Uncertainity
 def: "Uncertainty in Physiologically Based Pharmacokinetic (PBPK) modeling is introduced by two main sources: the underlying biology or mechanisms, and drug/chemical-related parameters" [] {IAO:0000119="10.1002/cpt.1013"}
-is_a: PKPBO:00000 ! PBPK Evaluation
+is_a: PBPKO:00000 ! PBPK Evaluation
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00355
+id: PBPKO:00355
 name: Variability
 def: "Inter-individual differences  in anatomical and physiological characteristics " [] {IAO:0000119="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=web&cd=&ved=0CDcQw7AJahcKEwjQvMPUjaCBAxUAAAAAHQAAAAAQAw&url=https%3A%2F%2Fineris.hal.science%2Fineris-00961755%2Fdocument&psig=AOvVaw3AvQT5ScYcsFkSX2UzYiCn&ust=1694437476436418&opi=89978449"}
-is_a: PKPBO:00000 ! PBPK Evaluation
+is_a: PBPKO:00000 ! PBPK Evaluation
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00356
+id: PBPKO:00356
 name: Monte carlo simulation
 def: "Monte Carlo simulation is a form of uncertainty analysis that allows the propagation of uncertainty through a model, which results in an estimate of the variance in model output" [] {IAO:0000119="10.1289/ehp.96104858"}
-is_a: PKPBO:00354 ! Uncertainity
+is_a: PBPKO:00354 ! Uncertainity
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "MC" xsd:string
 
 [Term]
-id: PKPBO:00357
+id: PBPKO:00357
 name: Brain PBPK
-is_a: PKPBO:00003 ! PBPK types
+is_a: PBPKO:00003 ! PBPK types
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00358
+id: PBPKO:00358
 name: Spinal CSF volume
-is_a: PKPBO:00357 ! Brain PBPK
+is_a: PBPKO:00357 ! Brain PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00359
+id: PBPKO:00359
 name: Cranial CSF volume
-is_a: PKPBO:00357 ! Brain PBPK
+is_a: PBPKO:00357 ! Brain PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00360
+id: PBPKO:00360
 name: Brain mass
-is_a: PKPBO:00357 ! Brain PBPK
+is_a: PBPKO:00357 ! Brain PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00361
+id: PBPKO:00361
 name: BBB
-is_a: PKPBO:00357 ! Brain PBPK
+is_a: PBPKO:00357 ! Brain PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00362
+id: PBPKO:00362
 name: Spinal CSF flow
-is_a: PKPBO:00357 ! Brain PBPK
+is_a: PBPKO:00357 ! Brain PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00363
+id: PBPKO:00363
 name: Cranial CSF flow
-is_a: PKPBO:00357 ! Brain PBPK
+is_a: PBPKO:00357 ! Brain PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00364
+id: PBPKO:00364
 name: BCSFB
-is_a: PKPBO:00357 ! Brain PBPK
+is_a: PBPKO:00357 ! Brain PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00365
+id: PBPKO:00365
 name: vhippocampus
-is_a: PKPBO:00357 ! Brain PBPK
+is_a: PBPKO:00357 ! Brain PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00366
+id: PBPKO:00366
 name: vfrontalcortex
-is_a: PKPBO:00357 ! Brain PBPK
+is_a: PBPKO:00357 ! Brain PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00367
+id: PBPKO:00367
 name: vcerebrum
-is_a: PKPBO:00357 ! Brain PBPK
+is_a: PBPKO:00357 ! Brain PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00368
+id: PBPKO:00368
 name: vcerebellum
-is_a: PKPBO:00357 ! Brain PBPK
+is_a: PBPKO:00357 ! Brain PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00369
+id: PBPKO:00369
 name: Qhippocampus
-is_a: PKPBO:00357 ! Brain PBPK
+is_a: PBPKO:00357 ! Brain PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00370
+id: PBPKO:00370
 name: Qfrontalcortex
-is_a: PKPBO:00357 ! Brain PBPK
+is_a: PBPKO:00357 ! Brain PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00371
+id: PBPKO:00371
 name: Qcerebrum
-is_a: PKPBO:00357 ! Brain PBPK
+is_a: PBPKO:00357 ! Brain PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00372
+id: PBPKO:00372
 name: Qcerebellum
-is_a: PKPBO:00357 ! Brain PBPK
+is_a: PBPKO:00357 ! Brain PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00373
+id: PBPKO:00373
 name: Khippocampus:brain
-is_a: PKPBO:00357 ! Brain PBPK
+is_a: PBPKO:00357 ! Brain PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00374
+id: PBPKO:00374
 name: kcerebrum:brain
-is_a: PKPBO:00357 ! Brain PBPK
+is_a: PBPKO:00357 ! Brain PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00375
+id: PBPKO:00375
 name: kcerebellum:brain
-is_a: PKPBO:00357 ! Brain PBPK
+is_a: PBPKO:00357 ! Brain PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00376
+id: PBPKO:00376
 name: kfrontalcortex:brain
-is_a: PKPBO:00357 ! Brain PBPK
+is_a: PBPKO:00357 ! Brain PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00377
+id: PBPKO:00377
 name: Pappcerebrum:brain
-is_a: PKPBO:00357 ! Brain PBPK
+is_a: PBPKO:00357 ! Brain PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00378
+id: PBPKO:00378
 name: Pappcerebellum:brain
-is_a: PKPBO:00357 ! Brain PBPK
+is_a: PBPKO:00357 ! Brain PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00379
+id: PBPKO:00379
 name: Papphippocampus:brain
-is_a: PKPBO:00357 ! Brain PBPK
+is_a: PBPKO:00357 ! Brain PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00380
+id: PBPKO:00380
 name: Pappcortex:brain
-is_a: PKPBO:00357 ! Brain PBPK
+is_a: PBPKO:00357 ! Brain PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00381
+id: PBPKO:00381
 name: Pregnant PBPK
-is_a: PKPBO:00003 ! PBPK types
+is_a: PBPKO:00003 ! PBPK types
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00382
+id: PBPKO:00382
 name: fetoplacental volume
-is_a: PKPBO:00381 ! Pregnant PBPK
+is_a: PBPKO:00381 ! Pregnant PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00383
+id: PBPKO:00383
 name: vfetus
-is_a: PKPBO:00381 ! Pregnant PBPK
+is_a: PBPKO:00381 ! Pregnant PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00384
+id: PBPKO:00384
 name: vplacenta
-is_a: PKPBO:00381 ! Pregnant PBPK
+is_a: PBPKO:00381 ! Pregnant PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00385
+id: PBPKO:00385
 name: vamnioticfluid
-is_a: PKPBO:00381 ! Pregnant PBPK
+is_a: PBPKO:00381 ! Pregnant PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00386
+id: PBPKO:00386
 name: vliverfetus
-is_a: PKPBO:00381 ! Pregnant PBPK
+is_a: PBPKO:00381 ! Pregnant PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00387
+id: PBPKO:00387
 name: vbrainfetus
-is_a: PKPBO:00381 ! Pregnant PBPK
+is_a: PBPKO:00381 ! Pregnant PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00388
+id: PBPKO:00388
 name: vkidneyfetus
-is_a: PKPBO:00381 ! Pregnant PBPK
+is_a: PBPKO:00381 ! Pregnant PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00389
+id: PBPKO:00389
 name: vrestbodyfetus
-is_a: PKPBO:00381 ! Pregnant PBPK
+is_a: PBPKO:00381 ! Pregnant PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00390
+id: PBPKO:00390
 name: placenta volume
-is_a: PKPBO:00381 ! Pregnant PBPK
+is_a: PBPKO:00381 ! Pregnant PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00391
+id: PBPKO:00391
 name: fetoplacental blood flow
-is_a: PKPBO:00381 ! Pregnant PBPK
+is_a: PBPKO:00381 ! Pregnant PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00392
+id: PBPKO:00392
 name: fetal cardiac output
-is_a: PKPBO:00381 ! Pregnant PBPK
+is_a: PBPKO:00381 ! Pregnant PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00393
+id: PBPKO:00393
 name: Qliverfetus
-is_a: PKPBO:00381 ! Pregnant PBPK
+is_a: PBPKO:00381 ! Pregnant PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00394
+id: PBPKO:00394
 name: Qkidneyfetus
-is_a: PKPBO:00381 ! Pregnant PBPK
+is_a: PBPKO:00381 ! Pregnant PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00395
+id: PBPKO:00395
 name: Qbrainfetus
-is_a: PKPBO:00381 ! Pregnant PBPK
+is_a: PBPKO:00381 ! Pregnant PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00396
+id: PBPKO:00396
 name: Qrestbodyfetus
-is_a: PKPBO:00381 ! Pregnant PBPK
+is_a: PBPKO:00381 ! Pregnant PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00397
+id: PBPKO:00397
 name: Gestational age
-is_a: PKPBO:00381 ! Pregnant PBPK
+is_a: PBPKO:00381 ! Pregnant PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00398
+id: PBPKO:00398
 name: Gestational week
-is_a: PKPBO:00381 ! Pregnant PBPK
+is_a: PBPKO:00381 ! Pregnant PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00399
+id: PBPKO:00399
 name: Vmax fetus
-is_a: PKPBO:00381 ! Pregnant PBPK
+is_a: PBPKO:00381 ! Pregnant PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00400
+id: PBPKO:00400
 name: aminotic transfer coefficient
-is_a: PKPBO:00381 ! Pregnant PBPK
+is_a: PBPKO:00381 ! Pregnant PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00401
+id: PBPKO:00401
 name: Kliverfetus:plasma
-is_a: PKPBO:00381 ! Pregnant PBPK
+is_a: PBPKO:00381 ! Pregnant PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00402
+id: PBPKO:00402
 name: kbrainfetus:plasma
-is_a: PKPBO:00381 ! Pregnant PBPK
+is_a: PBPKO:00381 ! Pregnant PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00403
+id: PBPKO:00403
 name: kkidneyfetus:plasma
-is_a: PKPBO:00381 ! Pregnant PBPK
+is_a: PBPKO:00381 ! Pregnant PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00404
+id: PBPKO:00404
 name: krestbodyfetus:plasma
-is_a: PKPBO:00381 ! Pregnant PBPK
+is_a: PBPKO:00381 ! Pregnant PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00405
+id: PBPKO:00405
 name: Kidney PBPK
-is_a: PKPBO:00003 ! PBPK types
+is_a: PBPKO:00003 ! PBPK types
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00406
+id: PBPKO:00406
 name: Bowmans capsule
 def: "Double-walled epithelial capsule that is bulbous closed proximal end of kidney tubular system" [] {IAO:0000119="http://purl.bioontology.org/ontology/MESH/D050476"}
-is_a: PKPBO:00405 ! Kidney PBPK
+is_a: PBPKO:00405 ! Kidney PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00407
+id: PBPKO:00407
 name: Filterate
 def: "Role of liquid outcome of filtration process, commonly mechanical or physical operation which is used for solids separation from fluids (liquids or gases) by interposing medium through which only fluid can pass" [] {IAO:0000119="http://purl.allotrope.org/ontologies/role#AFRL_0000228"}
-is_a: PKPBO:00405 ! Kidney PBPK
+is_a: PBPKO:00405 ! Kidney PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00408
+id: PBPKO:00408
 name: Proximal tubule
 def: "Proximal segment of pronephric tubule, closest to glomus and functioning in solute resorption and waste excretion" [] {IAO:0000119="http://purl.obolibrary.org/obo/XAO_0004518"}
-is_a: PKPBO:00405 ! Kidney PBPK
+is_a: PBPKO:00405 ! Kidney PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00409
+id: PBPKO:00409
 name: loop of henle
 def: "Highly specialized segment of mammalian kidney tubules that dips into medulla" [] {IAO:0000119="http://purl.obolibrary.org/obo/VHOG_0001270"}
-is_a: PKPBO:00405 ! Kidney PBPK
+is_a: PBPKO:00405 ! Kidney PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00410
+id: PBPKO:00410
 name: distal tubule
 def: "Distal segment of pronephric tubule, functioning in water resorption, with urine passing through it into pronephric duct" [] {IAO:0000119="http://purl.obolibrary.org/obo/XAO_0004519"}
-is_a: PKPBO:00405 ! Kidney PBPK
+is_a: PBPKO:00405 ! Kidney PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00411
+id: PBPKO:00411
 name: collecting duct
-is_a: PKPBO:00405 ! Kidney PBPK
+is_a: PBPKO:00405 ! Kidney PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00412
+id: PBPKO:00412
 name: bladder
 def: "Distensible sac-like organ, functioning as urine reservoir, collecting from kidneys and eliminating via urethra" [] {IAO:0000119="http://purl.obolibrary.org/obo/NCIT_C12414"}
-is_a: PKPBO:00405 ! Kidney PBPK
+is_a: PBPKO:00405 ! Kidney PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00413
+id: PBPKO:00413
 name: lung PBPK
-is_a: PKPBO:00003 ! PBPK types
+is_a: PBPKO:00003 ! PBPK types
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00414
+id: PBPKO:00414
 name: extrathoracic
-is_a: PKPBO:00413 ! lung PBPK
+is_a: PBPKO:00413 ! lung PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00415
+id: PBPKO:00415
 name: thoracic
-is_a: PKPBO:00413 ! lung PBPK
+is_a: PBPKO:00413 ! lung PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00416
+id: PBPKO:00416
 name: bronchiolar
-is_a: PKPBO:00413 ! lung PBPK
+is_a: PBPKO:00413 ! lung PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00417
+id: PBPKO:00417
 name: alveolar
-is_a: PKPBO:00413 ! lung PBPK
+is_a: PBPKO:00413 ! lung PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00418
+id: PBPKO:00418
 name: Gut PBPK or ADAM model
-is_a: PKPBO:00003 ! PBPK types
+is_a: PBPKO:00003 ! PBPK types
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00419
+id: PBPKO:00419
 name: FQduodenum
-is_a: PKPBO:00418 ! Gut PBPK or ADAM model
+is_a: PBPKO:00418 ! Gut PBPK or ADAM model
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00420
+id: PBPKO:00420
 name: FQjejunum
-is_a: PKPBO:00418 ! Gut PBPK or ADAM model
+is_a: PBPKO:00418 ! Gut PBPK or ADAM model
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00421
+id: PBPKO:00421
 name: FQileum
-is_a: PKPBO:00418 ! Gut PBPK or ADAM model
+is_a: PBPKO:00418 ! Gut PBPK or ADAM model
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00422
+id: PBPKO:00422
 name: FQcolon
-is_a: PKPBO:00418 ! Gut PBPK or ADAM model
+is_a: PBPKO:00418 ! Gut PBPK or ADAM model
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00423
+id: PBPKO:00423
 name: FQcecum
-is_a: PKPBO:00418 ! Gut PBPK or ADAM model
+is_a: PBPKO:00418 ! Gut PBPK or ADAM model
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00424
+id: PBPKO:00424
 name: Qduodenum
-is_a: PKPBO:00418 ! Gut PBPK or ADAM model
+is_a: PBPKO:00418 ! Gut PBPK or ADAM model
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00425
+id: PBPKO:00425
 name: Qjejunum
-is_a: PKPBO:00418 ! Gut PBPK or ADAM model
+is_a: PBPKO:00418 ! Gut PBPK or ADAM model
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00426
+id: PBPKO:00426
 name: Qileum
-is_a: PKPBO:00418 ! Gut PBPK or ADAM model
+is_a: PBPKO:00418 ! Gut PBPK or ADAM model
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00427
+id: PBPKO:00427
 name: Qcolon
-is_a: PKPBO:00418 ! Gut PBPK or ADAM model
+is_a: PBPKO:00418 ! Gut PBPK or ADAM model
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00428
+id: PBPKO:00428
 name: Qcecum
-is_a: PKPBO:00418 ! Gut PBPK or ADAM model
+is_a: PBPKO:00418 ! Gut PBPK or ADAM model
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00429
+id: PBPKO:00429
 name: Fduodenum
-is_a: PKPBO:00418 ! Gut PBPK or ADAM model
+is_a: PBPKO:00418 ! Gut PBPK or ADAM model
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00430
+id: PBPKO:00430
 name: Fjejunum
-is_a: PKPBO:00418 ! Gut PBPK or ADAM model
+is_a: PBPKO:00418 ! Gut PBPK or ADAM model
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00431
+id: PBPKO:00431
 name: Fileum
-is_a: PKPBO:00418 ! Gut PBPK or ADAM model
+is_a: PBPKO:00418 ! Gut PBPK or ADAM model
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00432
+id: PBPKO:00432
 name: Fcolon
-is_a: PKPBO:00418 ! Gut PBPK or ADAM model
+is_a: PBPKO:00418 ! Gut PBPK or ADAM model
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00433
+id: PBPKO:00433
 name: Fcecum
-is_a: PKPBO:00418 ! Gut PBPK or ADAM model
+is_a: PBPKO:00418 ! Gut PBPK or ADAM model
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00434
+id: PBPKO:00434
 name: Vduodenum
-is_a: PKPBO:00418 ! Gut PBPK or ADAM model
+is_a: PBPKO:00418 ! Gut PBPK or ADAM model
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00435
+id: PBPKO:00435
 name: Vjejunum
-is_a: PKPBO:00418 ! Gut PBPK or ADAM model
+is_a: PBPKO:00418 ! Gut PBPK or ADAM model
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00436
+id: PBPKO:00436
 name: Vileum
-is_a: PKPBO:00418 ! Gut PBPK or ADAM model
+is_a: PBPKO:00418 ! Gut PBPK or ADAM model
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00437
+id: PBPKO:00437
 name: Vcolon
-is_a: PKPBO:00418 ! Gut PBPK or ADAM model
+is_a: PBPKO:00418 ! Gut PBPK or ADAM model
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00438
+id: PBPKO:00438
 name: Vcecum
-is_a: PKPBO:00418 ! Gut PBPK or ADAM model
+is_a: PBPKO:00418 ! Gut PBPK or ADAM model
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00439
+id: PBPKO:00439
 name: blilesalt effect solubilization ratio
-is_a: PKPBO:00418 ! Gut PBPK or ADAM model
+is_a: PBPKO:00418 ! Gut PBPK or ADAM model
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00440
+id: PBPKO:00440
 name: mean precipitation time
-is_a: PKPBO:00418 ! Gut PBPK or ADAM model
+is_a: PBPKO:00418 ! Gut PBPK or ADAM model
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00441
+id: PBPKO:00441
 name: diffusion coefficient
 def: "Xenoboitic amount ,i.s diffuses across a membrane of a given unit area per unit time" [] {IAO:0000119="Shargel, Leon, et al. Applied Biopharmaceutics & Pharmacokinetics. 7th ed., McGraw-Hill Education, 2015. Chaper-14,page number-380"}
-is_a: PKPBO:00418 ! Gut PBPK or ADAM model
+is_a: PBPKO:00418 ! Gut PBPK or ADAM model
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "D" xsd:string
 
 [Term]
-id: PKPBO:00442
+id: PBPKO:00442
 name: particle density
 def: "Measure of mass per unit volume of particle" [] {IAO:0000119="http://ecoursesonline.iasri.res.in/mod/page/view.php?id=6358"}
-is_a: PKPBO:00418 ! Gut PBPK or ADAM model
+is_a: PBPKO:00418 ! Gut PBPK or ADAM model
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 property_value: IAO:0000605 "?s" xsd:string
 
 [Term]
-id: PKPBO:00443
+id: PBPKO:00443
 name: particle radius
-is_a: PKPBO:00418 ! Gut PBPK or ADAM model
+is_a: PBPKO:00418 ! Gut PBPK or ADAM model
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00444
+id: PBPKO:00444
 name: intestinal transit time
-is_a: PKPBO:00418 ! Gut PBPK or ADAM model
+is_a: PBPKO:00418 ! Gut PBPK or ADAM model
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00445
+id: PBPKO:00445
 name: Lactational PBPK
-is_a: PKPBO:00003 ! PBPK types
+is_a: PBPKO:00003 ! PBPK types
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00446
+id: PBPKO:00446
 name: Milk:plasma ratio
-is_a: PKPBO:00445 ! Lactational PBPK
+is_a: PBPKO:00445 ! Lactational PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00447
+id: PBPKO:00447
 name: fumilk
-is_a: PKPBO:00445 ! Lactational PBPK
+is_a: PBPKO:00445 ! Lactational PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00448
+id: PBPKO:00448
 name: Cmilk
-is_a: PKPBO:00445 ! Lactational PBPK
+is_a: PBPKO:00445 ! Lactational PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00449
+id: PBPKO:00449
 name: daily milk intake
-is_a: PKPBO:00445 ! Lactational PBPK
+is_a: PBPKO:00445 ! Lactational PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00450
+id: PBPKO:00450
 name: phmilk
-is_a: PKPBO:00445 ! Lactational PBPK
+is_a: PBPKO:00445 ! Lactational PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00451
+id: PBPKO:00451
 name: Blood-milk-barrier
-is_a: PKPBO:00445 ! Lactational PBPK
+is_a: PBPKO:00445 ! Lactational PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
 [Term]
-id: PKPBO:00452
+id: PBPKO:00452
 name: milk:plasma partition
-is_a: PKPBO:00445 ! Lactational PBPK
+is_a: PBPKO:00445 ! Lactational PBPK
 property_value: IAO:0000117 "0000-0001-8345-1349" xsd:string
 property_value: IAO:0000117 "0000-0002-9795-5967" xsd:string
 
