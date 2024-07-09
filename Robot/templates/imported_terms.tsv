@@ -1,0 +1,19 @@
+ID	Label	Type	Parent
+ID	LABEL	TYPE	SC %
+UBERON:0000174	excreta		Compartment
+UBERON:0002113	kidney		Compartment
+UBERON:0001969	blood plasma		Compartment
+UBERON:0001988	feces		Compartment
+UBERON:0001088	urine		Compartment
+UBERON:0000160	intestine		Compartment
+UBERON:0002048	lungs		Compartment
+UBERON:0000479	tissue		Compartment
+UBERON:0002097	skin of body		Compartment
+UBERON:0002107	liver		Compartment
+UBERON:0013755	arterial blood		Compartment
+UBERON:0013756	venous blood		Compartment
+UBERON:0001013	adipose tissue		Compartment
+UBERON:0001555	digestive tract		Compartment
+UBERON:0001007	digestive system		Compartment
+UBERON:0000945	stomach		Compartment
+UBERON:0002027	stratum corneum of epidermis		Compartment
