@@ -74,6 +74,11 @@ robot_report:
   use_labels: true
 robot_settings: null
 robot_version: null
+import_group:
+  products:
+    - id: uberon
+    - id: iao
+
 sssom_mappingset_group: null
 subset_group: null
 title: pharmokinetic-ontology
@@ -95,4 +100,4 @@ components:
       use_template: TRUE
       template_options: --add-prefixes config/context.json
       templates:
-        - vocab_updated.tsv #
+        - vocab.tsv
