@@ -19,6 +19,10 @@
         <terms:title>PBPK ontology</terms:title>
         <rdfs:comment>This ontology is designed for Physiologically-Based Pharmacokinetic (PBPK) modeling.</rdfs:comment>
         <rdfs:label>PBPK Ontology</rdfs:label>
+        <terms:contributor xml:lang="en">saurav Kumar</terms:contributor>
+        <terms:contributor xml:lang="en">Shubh Sharma</terms:contributor>
+        <terms:contributor xml:lang="en">Deepika Deepika</terms:contributor>
+        <terms:contributor xml:lang="en">Vikas kumar</terms:contributor>
     </owl:Ontology>
     
 
