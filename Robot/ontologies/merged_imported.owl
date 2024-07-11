@@ -1,0 +1,2150 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:sssom="https://w3id.org/sssom/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
+        <obo:IAO_0000111 xml:lang="en">editor preferred term</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+        <obo:IAO_0000111 xml:lang="en">example of usage</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">example of usage</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
+        <obo:IAO_0000111 xml:lang="en">has curation status</obo:IAO_0000111>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Bill Bug</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">has curation status</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2012-04-05: 
+Barry Smith
+
+The official OBI definition, explaining the meaning of a class or property: &apos;Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions&apos;  is terrible.
+
+Can you fix to something like:
+
+A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.
+
+Alan Ruttenberg
+
+Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can&apos;t be evaluated by those criteria. 
+
+On the specifics of the proposed definition:
+
+We don&apos;t have definitions of &apos;meaning&apos; or &apos;expression&apos; or &apos;property&apos;. For &apos;reference&apos; in the intended sense I think we use the term &apos;denotation&apos;. For &apos;expression&apos;, I think we you mean symbol, or identifier. For &apos;meaning&apos; it differs for class and property. For class we want documentation that let&apos;s the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let&apos;s the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The &apos;intended reader&apos; part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. 
+
+Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
+
+We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2012-04-05: 
+Barry Smith
+
+The official OBI definition, explaining the meaning of a class or property: &apos;Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions&apos;  is terrible.
+
+Can you fix to something like:
+
+A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.
+
+Alan Ruttenberg
+
+Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can&apos;t be evaluated by those criteria. 
+
+On the specifics of the proposed definition:
+
+We don&apos;t have definitions of &apos;meaning&apos; or &apos;expression&apos; or &apos;property&apos;. For &apos;reference&apos; in the intended sense I think we use the term &apos;denotation&apos;. For &apos;expression&apos;, I think we you mean symbol, or identifier. For &apos;meaning&apos; it differs for class and property. For class we want documentation that let&apos;s the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let&apos;s the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The &apos;intended reader&apos; part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. 
+
+Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
+
+We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  </obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label>definition</rdfs:label>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
+        <obo:IAO_0000111 xml:lang="en">editor note</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obofoundry.org/obo/obi&gt;</obo:IAO_0000119>
+        <oboInOwl:hasDbXref>IAO:0000116</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>editor_note</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>editor_note</oboInOwl:shorthand>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label>editor note</rdfs:label>
+        <rdfs:label xml:lang="en">editor note</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+        <obo:IAO_0000111 xml:lang="en">term editor</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">Name of editor entering the term in the file. The term editor is a point of contact for information regarding the term. The term editor may be, but is not always, the author of the definition, which may have been worked upon by several people</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">20110707, MC: label update to term editor and definition modified accordingly. See https://github.com/information-artifact-ontology/IAO/issues/115.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">term editor</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
+        <obo:IAO_0000111 xml:lang="en">definition source</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">definition source</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000232 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232">
+        <obo:IAO_0000115 xml:lang="en">An administrative note of use for a curator but of no use for a user</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>IAO:0000232</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>curator_notes</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>curator_notes</oboInOwl:shorthand>
+        <rdfs:label>curator note</rdfs:label>
+        <rdfs:label xml:lang="en">curator note</rdfs:label>
+        <rdfs:label>curator notes</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000233 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233">
+        <obo:IAO_0000111 xml:lang="en">term tracker item</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">An IRI or similar locator for a request or discussion of an ontology term.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000119>
+        <rdfs:comment xml:lang="en">The &apos;tracker item&apos; can associate a tracker with a specific ontology term.</rdfs:comment>
+        <rdfs:label xml:lang="en">term tracker item</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000425 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000425"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002161 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002161">
+        <obo:IAO_0000112>tooth SubClassOf &apos;never in taxon&apos; value &apos;Aves&apos;</obo:IAO_0000112>
+        <obo:IAO_0000115>S never_in_taxon T iff: S SubClassOf in_taxon only not T.</obo:IAO_0000115>
+        <obo:IAO_0000115>x never in taxon T if and only if T is a class, and x does not instantiate the class expression &quot;in taxon some T&quot;. Note that this is a shortcut relation, and should be used as a hasValue restriction in OWL.</obo:IAO_0000115>
+        <obo:IAO_0000425>Class: &lt;http://www.w3.org/2002/07/owl#Nothing&gt; EquivalentTo: ?X and (RO_0002162 some ?Y)</obo:IAO_0000425>
+        <obo:IAO_0000425>Class: ?X DisjointWith: RO_0002162 some ?Y </obo:IAO_0000425>
+        <oboInOwl:hasDbXref>RO:0002161</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>never_in_taxon</oboInOwl:id>
+        <oboInOwl:is_class_level rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_class_level>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>never_in_taxon</oboInOwl:shorthand>
+        <rdfs:label>never in taxon</rdfs:label>
+        <rdfs:label>never_in_taxon</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/obophenotype/uberon/wiki/Taxon-constraints"/>
+    </AnnotationProperty>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_0002161"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>S never_in_taxon T iff: S SubClassOf in_taxon only not T.</annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:20973947</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002171 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002171">
+        <obo:IAO_0000115>A is mutually_spatially_disjoint_with B if both A and B are classes, and there exists no p such that p is part_of some A and p is part_of some B.</obo:IAO_0000115>
+        <obo:IAO_0000425>Class: &lt;http://www.w3.org/2002/07/owl#Nothing&gt; EquivalentTo: (BFO_0000050 some ?X) and (BFO_0000050 some ?Y)</obo:IAO_0000425>
+        <oboInOwl:hasDbXref>RO:0002171</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>mutually_spatially_disjoint_with</oboInOwl:id>
+        <oboInOwl:is_class_level rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_class_level>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>mutually_spatially_disjoint_with</oboInOwl:shorthand>
+        <rdfs:label xml:lang="en">mutually spatially disjoint with</rdfs:label>
+        <rdfs:label>mutually_spatially_disjoint_with</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/RO_0002163"/>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/obophenotype/uberon/wiki/Part-disjointness-Design-Pattern</rdfs:seeAlso>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002175 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002175">
+        <obo:IAO_0000115>S present_in_taxon T if some instance of T has some S. This does not means that all instances of T have an S - it may only be certain life stages or sexes that have S</obo:IAO_0000115>
+        <obo:IAO_0000115>S present_in_taxon T if some instance of T has some S. This does not means that all instances of T have an S - it may only be certain life stages or sexes that have S.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>RO:0002175</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>applicable for taxon</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>present_in_taxon</oboInOwl:id>
+        <oboInOwl:is_class_level rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_class_level>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>present_in_taxon</oboInOwl:shorthand>
+        <rdfs:comment>The SPARQL expansion for this relation introduces new named classes into the ontology. For this reason it is likely that the expansion should only be performed during a QC pipeline; the expanded output should usually not be included in a published version of the ontology.</rdfs:comment>
+        <rdfs:label xml:lang="en">present in taxon</rdfs:label>
+        <rdfs:label>present_in_taxon</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/obophenotype/uberon/wiki/Taxon-constraints"/>
+    </AnnotationProperty>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_0002175"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>S present_in_taxon T if some instance of T has some S. This does not means that all instances of T have an S - it may only be certain life stages or sexes that have S.</annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000001 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000001">
+        <obo:IAO_0000115>An alternate textual definition for a class taken unmodified from an external source. This definition may have been used to derive a generalized definition for the new class.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>UBPROP:0000001</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>external_definition</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>external_definition</oboInOwl:shorthand>
+        <rdfs:comment>This annotation property may be replaced with an annotation property from an external ontology such as IAO</rdfs:comment>
+        <rdfs:label>external_definition</rdfs:label>
+    </AnnotationProperty>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>An alternate textual definition for a class taken unmodified from an external source. This definition may have been used to derive a generalized definition for the new class.</annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000002 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000002">
+        <obo:IAO_0000115>A textual description of an axiom loss in this ontology compared to an external ontology.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>UBPROP:0000002</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>axiom_lost_from_external_ontology</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>axiom_lost_from_external_ontology</oboInOwl:shorthand>
+        <rdfs:comment>This annotation property may be replaced with an annotation property from an external ontology such as IAO</rdfs:comment>
+        <rdfs:label>axiom_lost_from_external_ontology</rdfs:label>
+    </AnnotationProperty>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000002"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A textual description of an axiom loss in this ontology compared to an external ontology.</annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000003 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000003">
+        <obo:IAO_0000115>Notes on the homology status of this class.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>UBPROP:0000003</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>homology_notes</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>homology_notes</oboInOwl:shorthand>
+        <rdfs:comment>This annotation property may be replaced with an annotation property from an external ontology such as IAO</rdfs:comment>
+        <rdfs:label>homology_notes</rdfs:label>
+    </AnnotationProperty>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000003"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Notes on the homology status of this class.</annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000007 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000007">
+        <obo:IAO_0000232>Used to connect a class to an adjectival form of its label. For example, a class with label &apos;intestine&apos; may have a relational adjective &apos;intestinal&apos;.</obo:IAO_0000232>
+        <oboInOwl:hasDbXref>UBPROP:0000007</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>has_relational_adjective</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>has_relational_adjective</oboInOwl:shorthand>
+        <rdfs:label>has_relational_adjective</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000008 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000008">
+        <obo:IAO_0000115>Notes on the how instances of this class vary across species.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>UBPROP:0000008</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>taxon_notes</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>taxon_notes</oboInOwl:shorthand>
+        <rdfs:label>taxon_notes</rdfs:label>
+    </AnnotationProperty>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000008"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Notes on the how instances of this class vary across species.</annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000009 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000009">
+        <obo:IAO_0000115>Notes on the evolved function of instances of this class.</obo:IAO_0000115>
+        <obo:IAO_0000116>This annotation property may be replaced with an annotation property from an external ontology such as IAO</obo:IAO_0000116>
+        <oboInOwl:hasDbXref>UBPROP:0000009</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>function_notes</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>function_notes</oboInOwl:shorthand>
+        <rdfs:label>function_notes</rdfs:label>
+    </AnnotationProperty>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000009"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Notes on the evolved function of instances of this class.</annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000010 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000010">
+        <obo:IAO_0000115>Notes on the structure, composition or histology of instances of this class.</obo:IAO_0000115>
+        <obo:IAO_0000116>This annotation property may be replaced with an annotation property from an external ontology such as IAO</obo:IAO_0000116>
+        <oboInOwl:hasDbXref>UBPROP:0000010</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>structure_notes</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>structure_notes</oboInOwl:shorthand>
+        <rdfs:label>structure_notes</rdfs:label>
+    </AnnotationProperty>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000010"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Notes on the structure, composition or histology of instances of this class.</annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000012 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000012">
+        <obo:IAO_0000115>Notes on how similar or equivalent classes are represented in other ontologies.</obo:IAO_0000115>
+        <obo:IAO_0000116>This annotation property may be replaced with an annotation property from an external ontology such as IAO</obo:IAO_0000116>
+        <oboInOwl:hasDbXref>UBPROP:0000012</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>external_ontology_notes</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>external_ontology_notes</oboInOwl:shorthand>
+        <rdfs:label>external_ontology_notes</rdfs:label>
+    </AnnotationProperty>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Notes on how similar or equivalent classes are represented in other ontologies.</annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000013 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000013">
+        <obo:IAO_0000115>Notes on how lexical conventions regarding this class, in particular any issues that may arise due to homonyny or synonymy.</obo:IAO_0000115>
+        <obo:IAO_0000116>This annotation property may be replaced with an annotation property from an external ontology such as IAO</obo:IAO_0000116>
+        <oboInOwl:hasDbXref>UBPROP:0000013</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>terminology_notes</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>terminology_notes</oboInOwl:shorthand>
+        <rdfs:label>terminology_notes</rdfs:label>
+    </AnnotationProperty>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000013"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Notes on how lexical conventions regarding this class, in particular any issues that may arise due to homonyny or synonymy.</annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000202 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/UBPROP_0000202">
+        <obo:UBPROP_0000012>FMA has terms like &apos;set of X&apos;. In general we do not include set-of terms in uberon, but provide a mapping between the singular form and the FMA set term</obo:UBPROP_0000012>
+        <oboInOwl:hasDbXref>UBPROP:0000202</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>fma_set_term</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>fma_set_term</oboInOwl:shorthand>
+        <rdfs:label>fma_set_term</rdfs:label>
+    </AnnotationProperty>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000202"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
+        <annotatedTarget>FMA has terms like &apos;set of X&apos;. In general we do not include set-of terms in uberon, but provide a mapping between the singular form and the FMA set term</annotatedTarget>
+        <oboInOwl:external_ontology>FMA</oboInOwl:external_ontology>
+    </Axiom>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor">
+        <oboInOwl:hasDbXref>http://purl.org/dc/terms/contributor</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>dc-contributor</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>dc-contributor</oboInOwl:shorthand>
+        <rdfs:label>contributor</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#date_retrieved -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#date_retrieved"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#editor -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#editor"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#external_class -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#external_class"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#external_ontology -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#external_ontology"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId">
+        <rdfs:label>has_alternative_id</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym">
+        <obo:IAO_0000115>An alternative label for a class or property which has a more general meaning than the preferred name/primary label.</obo:IAO_0000115>
+        <obo:IAO_0000233>https://github.com/information-artifact-ontology/ontology-metadata/issues/18</obo:IAO_0000233>
+        <rdfs:label xml:lang="en">has broad synonym</rdfs:label>
+        <rdfs:label>has_broad_synonym</rdfs:label>
+        <rdfs:seeAlso>https://github.com/information-artifact-ontology/ontology-metadata/issues/18</rdfs:seeAlso>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <rdfs:label>database_cross_reference</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <obo:IAO_0000115>An alternative label for a class or property which has the exact same meaning than the preferred name/primary label.</obo:IAO_0000115>
+        <obo:IAO_0000233>https://github.com/information-artifact-ontology/ontology-metadata/issues/20</obo:IAO_0000233>
+        <rdfs:label xml:lang="en">has exact synonym</rdfs:label>
+        <rdfs:label>has_exact_synonym</rdfs:label>
+        <rdfs:seeAlso>https://github.com/information-artifact-ontology/ontology-metadata/issues/20</rdfs:seeAlso>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym">
+        <obo:IAO_0000115>An alternative label for a class or property which has a more specific meaning than the preferred name/primary label.</obo:IAO_0000115>
+        <obo:IAO_0000233>https://github.com/information-artifact-ontology/ontology-metadata/issues/19</obo:IAO_0000233>
+        <rdfs:label xml:lang="en">has narrow synonym</rdfs:label>
+        <rdfs:label>has_narrow_synonym</rdfs:label>
+        <rdfs:seeAlso>https://github.com/information-artifact-ontology/ontology-metadata/issues/19</rdfs:seeAlso>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
+        <rdfs:label>has_obo_namespace</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
+        <obo:IAO_0000115>An alternative label for a class or property that has been used synonymously with the primary term name, but the usage is not strictly correct.</obo:IAO_0000115>
+        <obo:IAO_0000233>https://github.com/information-artifact-ontology/ontology-metadata/issues/21</obo:IAO_0000233>
+        <rdfs:label xml:lang="en">has related synonym</rdfs:label>
+        <rdfs:label>has_related_synonym</rdfs:label>
+        <rdfs:seeAlso>https://github.com/information-artifact-ontology/ontology-metadata/issues/21</rdfs:seeAlso>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasSynonymType -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasSynonymType">
+        <rdfs:label>has_synonym_type</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id">
+        <rdfs:label>id</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
+        <rdfs:label>in_subset</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#is_class_level -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_class_level"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#is_metadata_tag -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_metadata_tag"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#ontology -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#ontology"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#source -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#source"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+        <oboInOwl:hasDbXref>http://www.w3.org/2000/01/rdf-schema#seeAlso</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>spatial</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>seeAlso</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>seeAlso</oboInOwl:shorthand>
+        <rdfs:label>see also</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/depiction -->
+
+    <AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/depiction">
+        <oboInOwl:hasDbXref>http://xmlns.com/foaf/0.1/depiction</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>depiction</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>depiction</oboInOwl:shorthand>
+        <rdfs:label>depiction</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/sssom/author_id -->
+
+    <AnnotationProperty rdf:about="https://w3id.org/sssom/author_id"/>
+    
+
+
+    <!-- https://w3id.org/sssom/mapping_justification -->
+
+    <AnnotationProperty rdf:about="https://w3id.org/sssom/mapping_justification"/>
+    
+
+
+    <!-- https://w3id.org/sssom/mapping_provider -->
+
+    <AnnotationProperty rdf:about="https://w3id.org/sssom/mapping_provider"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000605 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000605">
+        <obo:IAO_0000111 xml:lang="en">abbreviation textual entity</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">From Shiba et al. Acta Neuropathol Commun. 2013; 1: 45. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3893467/):
+
+BAC: Bacterial artificial chromosome; CR: Calretinin; GFAP: Glial fibrillary acidic protein; MAP: Microtubule-associated protein; MRI: Magnetic resonance imaging; NSC: Neural stem cell; PDA: Patent ductus arteriosus; PMG: Polymicrogyria; PNH: Periventricular nodular heterotopia; VSD: Ventricular septal defect.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A textual entity listing abbreviations and their expansions that are used in a document.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
+        <rdfs:label xml:lang="en">abbreviation textual entity</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000160 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000160">
+        <obo:IAO_0000115>Segment of the alimentary canal extending from the stomach to the anus and, in humans and other mammals, consists of two segments, the small intestine and the large intestine.</obo:IAO_0000115>
+        <obo:IAO_0000116>This class is probably too inclusive</obo:IAO_0000116>
+        <obo:UBPROP_0000001>Portion of the alimentary canal bounded anteriorly by the pyloric sphincter and posteriorly by the cloacal sphincter.[AAO]</obo:UBPROP_0000001>
+        <obo:UBPROP_0000001>The tract of the alimentary canal. [Dorian_AF, Elsevier&apos;s_encyclopaedic_dictionary_of_medicine, Part_B:_Anatomy_(1988)_Amsterdam_etc.:_Elsevier][VHOG]</obo:UBPROP_0000001>
+        <obo:UBPROP_0000007>intestinal</obo:UBPROP_0000007>
+        <obo:UBPROP_0000008>In zebrafish, No stomach, small intestine, or large intestine can be distinguished. However, differences can be found in the morphology of the mucosa columnar epithelial cells and the number of goblet cells, suggesting functional differentiation. The intestine has numerous folds that become progressively shorter in a rostral-to-caudal direction. Proportionally, these folds are significantly larger than the finger-like intestinal villi of mammals and other amniotes (Wallace et al. 2005). Columnar-shaped absorptive enterocytes are the most numerous in the zebrafish intestinal epithelium. Goblet cells are the second most populous epithelial cell type.</obo:UBPROP_0000008>
+        <oboInOwl:hasDbXref>AAO:0000246</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ANISEED:1235303</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BSA:0000093</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BTO:0000648</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CALOHA:TS-0490</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0000834</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EMAPA:32874</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EV:0100071</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:7199</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GAID:295</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MA:0000328</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MA:0001524</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D007422</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MIAA:0000043</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C12736</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:256876008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TAO:0001338</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0021853</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>VHOG:0000056</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>WBbt:0005772</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Intestine</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>XAO:0000129</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFA:0001338</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>galen:Intestine</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>bowel</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>intestinal tract</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0000160</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#efo_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#uberon_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#vertebrate_core"/>
+        <rdfs:label>intestine</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000160"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Segment of the alimentary canal extending from the stomach to the anus and, in humans and other mammals, consists of two segments, the small intestine and the large intestine.</annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:GO</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Intestine</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000160"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
+        <annotatedTarget>Portion of the alimentary canal bounded anteriorly by the pyloric sphincter and posteriorly by the cloacal sphincter.[AAO]</annotatedTarget>
+        <oboInOwl:date_retrieved>2012-06-20</oboInOwl:date_retrieved>
+        <oboInOwl:external_class>AAO:0000246</oboInOwl:external_class>
+        <oboInOwl:ontology>AAO</oboInOwl:ontology>
+        <oboInOwl:source>AAO:EJS</oboInOwl:source>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000160"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
+        <annotatedTarget>The tract of the alimentary canal. [Dorian_AF, Elsevier&apos;s_encyclopaedic_dictionary_of_medicine, Part_B:_Anatomy_(1988)_Amsterdam_etc.:_Elsevier][VHOG]</annotatedTarget>
+        <oboInOwl:date_retrieved>2012-09-17</oboInOwl:date_retrieved>
+        <oboInOwl:external_class>VHOG:0000056</oboInOwl:external_class>
+        <oboInOwl:ontology>VHOG</oboInOwl:ontology>
+        <oboInOwl:source>http://bgee.unil.ch/</oboInOwl:source>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000160"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>UMLS:C0021853</annotatedTarget>
+        <oboInOwl:source>ncithesaurus:Intestine</oboInOwl:source>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000174 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000174">
+        <obo:IAO_0000115>A portion of organism substance that is the product of an excretion process that will be eliminated from the body. An excretion process is elimination by an organism of the waste products that arise as a result of metabolic activity.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>UBERON:0000324</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>UBERON:0007550</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>AEO:0000184</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BTO:0000491</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EHDAA2_RETIRED:0003184</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ENVO:02000022</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:9674</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>galen:Excretion</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>excreted substance</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>portion of excreted substance</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>waste substance</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>excretion</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0000174</oboInOwl:id>
+        <rdfs:label>excreta</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000174"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A portion of organism substance that is the product of an excretion process that will be eliminated from the body. An excretion process is elimination by an organism of the waste products that arise as a result of metabolic activity.</annotatedTarget>
+        <oboInOwl:hasDbXref>GO:0007588</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000174"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>portion of excreted substance</annotatedTarget>
+        <oboInOwl:hasDbXref>FMA:9674</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000174"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>waste substance</annotatedTarget>
+        <oboInOwl:hasDbXref>AEO:0000184</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000174"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <annotatedTarget>excretion</annotatedTarget>
+        <oboInOwl:hasDbXref>BTO:0000491</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000479 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000479">
+        <obo:IAO_0000115>Multicellular anatomical structure that consists of many cells of one or a few types, arranged in an extracellular matrix such that their long-range organisation is at least partly a repetition of their short-range organisation.</obo:IAO_0000115>
+        <obo:IAO_0000116>changed label and definition to reflect CARO2</obo:IAO_0000116>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33090"/>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33208"/>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4751"/>
+        <oboInOwl:hasDbXref>AAO:0000607</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>AAO:0010054</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>AEO:0000043</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BILA:0000043</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BIRNLEX:19</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CALOHA:TS-2090</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CARO:0000043</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EHDAA2:0003043</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EMAPA:35868</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBbt:00007003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:9637</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>HAO:0000043</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MA:0003002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D014024</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C12801</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TAO:0001477</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TGMA:0001844</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0040300</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>VHOG:0001757</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>WBbt:0005729</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>XAO:0003040</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFA:0001477</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>galen:Tissue</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>portion of tissue</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tissue portion</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>simple tissue</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>UBERON:0000479</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#common_anatomy"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#upper_level"/>
+        <rdfs:label>tissue</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000479"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Multicellular anatomical structure that consists of many cells of one or a few types, arranged in an extracellular matrix such that their long-range organisation is at least partly a repetition of their short-range organisation.</annotatedTarget>
+        <oboInOwl:hasDbXref>CARO:0000043</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000479"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>FBbt:00007003</annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000479"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>UMLS:C0040300</annotatedTarget>
+        <oboInOwl:source>ncithesaurus:Tissue</oboInOwl:source>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000479"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>portion of tissue</annotatedTarget>
+        <oboInOwl:hasDbXref>CARO:0000043</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000479"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <annotatedTarget>simple tissue</annotatedTarget>
+        <oboInOwl:hasDbXref>AEO:0000043</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000945 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000945">
+        <obo:IAO_0000115>An expanded region of the vertebrate alimentary tract that serves as a food storage compartment and digestive organ. A stomach is lined, in whole or in part by a glandular epithelium.</obo:IAO_0000115>
+        <obo:RO_0002161 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7864"/>
+        <obo:RO_0002161 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7878"/>
+        <obo:RO_0002161 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7955"/>
+        <obo:RO_0002161 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9259"/>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <obo:UBPROP_0000001>Portion of alimentary canal with increased circular and longitudinal smooth muscle. Bounded posteriorly by the pyloric sphincter. Mucosal lining has increased folding.[AAO]</obo:UBPROP_0000001>
+        <obo:UBPROP_0000003>It appears that the stomach has an ancient origin. The stomach first appears in the fish lineage. The prevertebrate chordates do not have a true stomach, whereas the cartilaginous and bony fish do. Although most fish do have a true stomach, some fish species appear to have lost the stomach secondarily. The remaining vertebrate lineages do have a true stomach (at least in the adult animal), although there is great variation in the size and shape of the stomach.[well established][VHOG]</obo:UBPROP_0000003>
+        <obo:UBPROP_0000008>We restrict this to the vertebrate specific structure - see the grouping class &apos;food storage organ&apos; for analogous structures in other species. Teleosts: Zebrafish is functionally stomach-less, but may retain ontogenic footprint. Although the precise shape and size of the stomach varies widely among different vertebrates, the relative positions of the oesophageal and duodenal openings remain relatively constant. As a result, the organ always curves somewhat to the left before curving back to meet the pyloric sphincter. However, lampreys, hagfishes, chimaeras, lungfishes, and some teleost fish have no stomach at all, with the oesophagus opening directly into the intestine. The gastric lining is usually divided into two regions, an anterior portion lined by fundic glands, and a posterior with pyloric glands. Cardiac glands are unique to mammals, and even then are absent in a number of species. The distributions of these glands vary between species, and do not always correspond with the same regions as in man. Furthermore, in many non-human mammals, a portion of the stomach anterior to the cardiac glands is lined with epithelium essentially identical to that of the oesophagus. Ruminants, in particular, have a complex stomach, the first three chambers of which are all lined with oesophageal mucosa</obo:UBPROP_0000008>
+        <oboInOwl:hasDbXref>AAO:0000579</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ANISEED:1235297</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BTO:0001307</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CALOHA:TS-0980</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0000837</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EHDAA2:0001915</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EHDAA:2993</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EMAPA:17021</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EV:0100070</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:7148</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GAID:293</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MA:0000353</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MAT:0000051</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D013270</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MIAA:0000051</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C12391</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:181246003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TAO:0002121</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0038351</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>VHOG:0000408</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Stomach</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>XAO:0000128</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>galen:Stomach</oboInOwl:hasDbXref>
+        <oboInOwl:hasNarrowSynonym>stomach chamber</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>anterior intestine</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>gaster</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>mesenteron</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>ventriculus</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0000945</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#efo_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#major_organ"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#organ_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#uberon_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#vertebrate_core"/>
+        <rdfs:label>stomach</rdfs:label>
+        <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://upload.wikimedia.org/wikipedia/commons/e/e0/Stomach_diagram.svg</foaf:depiction>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000945"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>An expanded region of the vertebrate alimentary tract that serves as a food storage compartment and digestive organ. A stomach is lined, in whole or in part by a glandular epithelium.</annotatedTarget>
+        <oboInOwl:hasDbXref>ISBN:0073040584</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Stomach</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000945"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002161"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7864"/>
+        <oboInOwl:source>Wikipedia</oboInOwl:source>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000945"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002161"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7878"/>
+        <oboInOwl:source>Wikipedia</oboInOwl:source>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000945"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002161"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7955"/>
+        <oboInOwl:source>ZFA</oboInOwl:source>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000945"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002161"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9259"/>
+        <oboInOwl:source>Wikipedia</oboInOwl:source>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000945"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
+        <annotatedTarget>Portion of alimentary canal with increased circular and longitudinal smooth muscle. Bounded posteriorly by the pyloric sphincter. Mucosal lining has increased folding.[AAO]</annotatedTarget>
+        <oboInOwl:date_retrieved>2012-06-20</oboInOwl:date_retrieved>
+        <oboInOwl:external_class>AAO:0000579</oboInOwl:external_class>
+        <oboInOwl:ontology>AAO</oboInOwl:ontology>
+        <oboInOwl:source>AAO:EJS</oboInOwl:source>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000945"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000003"/>
+        <annotatedTarget>It appears that the stomach has an ancient origin. The stomach first appears in the fish lineage. The prevertebrate chordates do not have a true stomach, whereas the cartilaginous and bony fish do. Although most fish do have a true stomach, some fish species appear to have lost the stomach secondarily. The remaining vertebrate lineages do have a true stomach (at least in the adult animal), although there is great variation in the size and shape of the stomach.[well established][VHOG]</annotatedTarget>
+        <oboInOwl:date_retrieved>2012-09-17</oboInOwl:date_retrieved>
+        <oboInOwl:external_class>VHOG:0000408</oboInOwl:external_class>
+        <oboInOwl:ontology>VHOG</oboInOwl:ontology>
+        <oboInOwl:source>DOI:10.1046/j.1525-142x.2000.00076.x Smith DM, Grasty RC, Theodosiou NA, Tabin CJ, Nascone-Yoder NM, Evolutionary relationships between the amphibian, avian, and mammalian stomachs. Evolution and development (2000)</oboInOwl:source>
+        <oboInOwl:source>http://bgee.unil.ch/</oboInOwl:source>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000945"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000008"/>
+        <annotatedTarget>We restrict this to the vertebrate specific structure - see the grouping class &apos;food storage organ&apos; for analogous structures in other species. Teleosts: Zebrafish is functionally stomach-less, but may retain ontogenic footprint. Although the precise shape and size of the stomach varies widely among different vertebrates, the relative positions of the oesophageal and duodenal openings remain relatively constant. As a result, the organ always curves somewhat to the left before curving back to meet the pyloric sphincter. However, lampreys, hagfishes, chimaeras, lungfishes, and some teleost fish have no stomach at all, with the oesophagus opening directly into the intestine. The gastric lining is usually divided into two regions, an anterior portion lined by fundic glands, and a posterior with pyloric glands. Cardiac glands are unique to mammals, and even then are absent in a number of species. The distributions of these glands vary between species, and do not always correspond with the same regions as in man. Furthermore, in many non-human mammals, a portion of the stomach anterior to the cardiac glands is lined with epithelium essentially identical to that of the oesophagus. Ruminants, in particular, have a complex stomach, the first three chambers of which are all lined with oesophageal mucosa</annotatedTarget>
+        <oboInOwl:source>WP:Stomach#In_other_animals</oboInOwl:source>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000945"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>UMLS:C0038351</annotatedTarget>
+        <oboInOwl:source>ncithesaurus:Stomach</oboInOwl:source>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000945"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <annotatedTarget>gaster</annotatedTarget>
+        <oboInOwl:hasDbXref>BTO:0001307</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000945"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <annotatedTarget>ventriculus</annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:Stomach</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003011"/>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001007 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001007">
+        <obo:IAO_0000115>Anatomical system that has as its parts the organs devoted to the ingestion, digestion, and assimilation of food and the discharge of residual wastes.</obo:IAO_0000115>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <obo:UBPROP_0000001>An anatomical system consisting of the alimentary canal and digestive glands responsible for intake, absorption, digestion and excretion of food.[AAO]</obo:UBPROP_0000001>
+        <obo:UBPROP_0000007>digestive</obo:UBPROP_0000007>
+        <obo:UBPROP_0000012>many anatomy ontologies consider gastrointestinal system synonymous with digestive system. here we follow MA in dividing digestive system into gastrointestinal and hepatobiliary. hepatobiliary includes the liver and biliary tract. species-specific AO classes are categorized according to whether liver is included. For example, XAO includes liver as part of XAO:0000125 alimentary system, so we assume this class is the more generic class</obo:UBPROP_0000012>
+        <oboInOwl:hasDbXref>AAO:0000129</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BILA:0000082</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BTO:0000058</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CALOHA:TS-1293</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0000793</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBbt:00005055</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:7152</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GAID:278</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MA:0002431</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MAT:0000018</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D004064</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MIAA:0000018</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:278859004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TADS:0000170</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TAO:0000339</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>WBbt:0005748</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Digestive_system</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>XAO:0000125</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFA:0000339</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>galen:DigestiveSystem</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ncithesaurus:Digestive_System</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>alimentary system</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>alimentary tract</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>gastrointestinal system</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>gut</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0001007</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#efo_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#uberon_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#vertebrate_core"/>
+        <rdfs:label>digestive system</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001007"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Anatomical system that has as its parts the organs devoted to the ingestion, digestion, and assimilation of food and the discharge of residual wastes.</annotatedTarget>
+        <oboInOwl:hasDbXref>FB:gg</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NLM:alimentary+system</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Digestive_system</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001007"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
+        <annotatedTarget>An anatomical system consisting of the alimentary canal and digestive glands responsible for intake, absorption, digestion and excretion of food.[AAO]</annotatedTarget>
+        <oboInOwl:date_retrieved>2012-06-20</oboInOwl:date_retrieved>
+        <oboInOwl:external_class>AAO:0000129</oboInOwl:external_class>
+        <oboInOwl:ontology>AAO</oboInOwl:ontology>
+        <oboInOwl:source>AAO:BJB</oboInOwl:source>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001007"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
+        <annotatedTarget>many anatomy ontologies consider gastrointestinal system synonymous with digestive system. here we follow MA in dividing digestive system into gastrointestinal and hepatobiliary. hepatobiliary includes the liver and biliary tract. species-specific AO classes are categorized according to whether liver is included. For example, XAO includes liver as part of XAO:0000125 alimentary system, so we assume this class is the more generic class</annotatedTarget>
+        <oboInOwl:external_ontology>MA</oboInOwl:external_ontology>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001007"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>FBbt:00005055</annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001013 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000479"/>
+        <obo:IAO_0000115>Portion of connective tissue composed of adipocytes enmeshed in areolar tissue.</obo:IAO_0000115>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <obo:UBPROP_0000001>Connective tissue in which fat is stored.[TAO]</obo:UBPROP_0000001>
+        <obo:UBPROP_0000001>Tissue that contains adipocytes, used for cushioning, thermal insulation, lubrication (primarily in the pericardium) and energy storage.[AAO]</obo:UBPROP_0000001>
+        <obo:UBPROP_0000002>relationship loss: subclass connective tissue proper (AAO:0000099)[AAO]</obo:UBPROP_0000002>
+        <obo:UBPROP_0000003>Adipose tissue is unique to vertebrates. It is found in mostmammals, birds, reptiles and amphibians, and a variety is found in some species of fish. Furthermore, in insects the fat body found in larvae as well as in adults shares some homology with adipose tissue.[well established][VHOG]</obo:UBPROP_0000003>
+        <obo:UBPROP_0000007>adipose</obo:UBPROP_0000007>
+        <obo:UBPROP_0000008>In humans, adipose tissue is located beneath the skin (subcutaneous fat), around internal organs (visceral fat), in bone marrow (yellow bone marrow) and in breast tissue. Adipose tissue is found in specific locations, which are referred to as adipose depots. Adipose tissue contains several cell types, with the highest percentage of cells being adipocytes, which contain fat droplets. Other cell types include fibroblasts, macrophages, and endothelial cells. Adipose tissue contains many small blood vessels.; Mice have eight major adipose depots, four of which are within the abdominal cavity. The paired gonadal depots are attached to the uterus and ovaries in females and the epididymis and testes in males; the paired retroperitoneal depots are found along the dorsal wall of the abdomen, surrounding the kidney, and, when massive, extend into the pelvis. The mesenteric depot forms a glue-like web that supports the intestines, and the omental depot, which originates near the stomach and spleen, and, when massive, extends into the ventral abdomen.</obo:UBPROP_0000008>
+        <obo:UBPROP_0000012>in FMA this is dense irregular connective tissue</obo:UBPROP_0000012>
+        <oboInOwl:hasDbXref>AAO:0000001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>AEO:000020</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BTO:0001487</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CALOHA:TS-0013</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0000790</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EHDAA2:0003120</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EMAPA:35112</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EV:0100381</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:20110</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GAID:920</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MA:0000009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MAT:0000015</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D000273</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MIAA:0000015</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C12472</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:55603005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TAO:0002134</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0001527</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>VHOG:0001284</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Adipose_tissue</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>XAO:0003049</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFA:0005345</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>galen:FattyTissue</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>fat</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>fat tissue</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>fatty tissue</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>adipose</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>bodyfat</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>fatty depot</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0001013</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#efo_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#uberon_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#vertebrate_core"/>
+        <rdfs:label>adipose tissue</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001013"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Portion of connective tissue composed of adipocytes enmeshed in areolar tissue.</annotatedTarget>
+        <oboInOwl:hasDbXref>MESH:A10.165.114</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MGI:cwg</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MP:0000003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Adipose_tissue</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001013"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
+        <annotatedTarget>Connective tissue in which fat is stored.[TAO]</annotatedTarget>
+        <oboInOwl:date_retrieved>2012-08-14</oboInOwl:date_retrieved>
+        <oboInOwl:external_class>TAO:0002134</oboInOwl:external_class>
+        <oboInOwl:ontology>TAO</oboInOwl:ontology>
+        <oboInOwl:source>ZFIN:curator</oboInOwl:source>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001013"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
+        <annotatedTarget>Tissue that contains adipocytes, used for cushioning, thermal insulation, lubrication (primarily in the pericardium) and energy storage.[AAO]</annotatedTarget>
+        <oboInOwl:date_retrieved>2012-06-20</oboInOwl:date_retrieved>
+        <oboInOwl:external_class>AAO:0000001</oboInOwl:external_class>
+        <oboInOwl:ontology>AAO</oboInOwl:ontology>
+        <oboInOwl:source>AAO:LAP</oboInOwl:source>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001013"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000002"/>
+        <annotatedTarget>relationship loss: subclass connective tissue proper (AAO:0000099)[AAO]</annotatedTarget>
+        <oboInOwl:date_retrieved>2012-06-20</oboInOwl:date_retrieved>
+        <oboInOwl:external_class>AAO:0000001</oboInOwl:external_class>
+        <oboInOwl:ontology>AAO</oboInOwl:ontology>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001013"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000003"/>
+        <annotatedTarget>Adipose tissue is unique to vertebrates. It is found in mostmammals, birds, reptiles and amphibians, and a variety is found in some species of fish. Furthermore, in insects the fat body found in larvae as well as in adults shares some homology with adipose tissue.[well established][VHOG]</annotatedTarget>
+        <oboInOwl:date_retrieved>2012-09-17</oboInOwl:date_retrieved>
+        <oboInOwl:external_class>VHOG:0001284</oboInOwl:external_class>
+        <oboInOwl:ontology>VHOG</oboInOwl:ontology>
+        <oboInOwl:source>DOI:10.1017/S0029665107005423 Haugen F, Drevon CA, The interplay between nutrients and the adipose tissue. The Proceedings of the Nutrition Society (2007)</oboInOwl:source>
+        <oboInOwl:source>http://bgee.unil.ch/</oboInOwl:source>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001013"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
+        <annotatedTarget>in FMA this is dense irregular connective tissue</annotatedTarget>
+        <oboInOwl:external_ontology>FMA</oboInOwl:external_ontology>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001013"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>UMLS:C0001527</annotatedTarget>
+        <oboInOwl:source>ncithesaurus:Adipose_Tissue</oboInOwl:source>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001013"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>fat</annotatedTarget>
+        <oboInOwl:hasDbXref>MA:0000009</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001013"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <annotatedTarget>adipose</annotatedTarget>
+        <oboInOwl:hasDbXref>BTO:0001487</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001013"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <annotatedTarget>bodyfat</annotatedTarget>
+        <oboInOwl:hasDbXref>BTO:0001487</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001088 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001088">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000174"/>
+        <obo:IAO_0000115>Excretion that is the output of a kidney.</obo:IAO_0000115>
+        <obo:UBPROP_0000008>kidney excreta from some taxa (e.g. in aves) may not be liquid</obo:UBPROP_0000008>
+        <oboInOwl:hasDbXref>BTO:0001419</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CALOHA:TS-1092</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0001939</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EMAPA:36554</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ENVO:00002047</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:12274</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GAID:1189</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MA:0002545</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MAT:0000058</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D014556</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MIAA:0000058</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C13283</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0042036</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Urine</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>galen:Urine</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>UBERON:0001088</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#efo_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#uberon_slim"/>
+        <rdfs:label>urine</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001088"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Excretion that is the output of a kidney.</annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:Urine</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://github.com/geneontology/go-ontology/issues/11025</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001088"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>UMLS:C0042036</annotatedTarget>
+        <oboInOwl:source>ncithesaurus:Urine</oboInOwl:source>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001555 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001555">
+        <obo:IAO_0000115>A tube extending from the mouth to the anus.</obo:IAO_0000115>
+        <obo:RO_0002161 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_147099"/>
+        <obo:RO_0002161 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_41324"/>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <obo:UBPROP_0000001>The alimentary or digestive tract, and associated organs.[TAO]</obo:UBPROP_0000001>
+        <obo:UBPROP_0000003>The bilaterian gut is typically a complete tube that opens to the exterior at both ends. It consists of mouth, foregut, midgut, hindgut, and anus (reference 1); Although all vertebrates have a digestive tract and accessory glands, various parts of this system are not necessarily homologous, analogous, or even present in all species. Therefore, broad comparisons can be best made under the listings of headgut, foregut, midgut, pancreas and biliary system, hindgut (reference 2).[well established][VHOG]</obo:UBPROP_0000003>
+        <obo:UBPROP_0000012>FMA also has a term &apos;gastrointestinal tract&apos;, but this includes the liver.</obo:UBPROP_0000012>
+        <obo:UBPROP_0000012>we place the MA and EMAPA class here, although the intent is probably a smaller region. See https://github.com/obophenotype/uberon/issues/509</obo:UBPROP_0000012>
+        <obo:UBPROP_0000013>we following Kardong in naming the entire tube from mouth to anus the alimentary canal. Kardong calls the portion of this tract that excludes buccal cavity and pharynx the &apos;alimentary canal&apos;, consider adding an extra class for this</obo:UBPROP_0000013>
+        <oboInOwl:hasBroadSynonym>gut</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>AAO:0010023</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BILA:0000083</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BTO:0000511</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BTO:0000545</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EHDAA2:0000726</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EHDAA:518</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EMAPA:16247</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBbt:00003125</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:45615</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MA:0000917</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D041981</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C34082</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TAO:0000112</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TGMA:0001819</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0017189</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>VHOG:0000309</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>WBbt:0005743</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFA:0000112</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>galen:AlimentaryTract</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>digestive tube</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>enteric tract</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>alimentary canal</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>alimentary tract</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>digestive canal</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>gut tube</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0001555</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#uberon_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#vertebrate_core"/>
+        <rdfs:label>digestive tract</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001555"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A tube extending from the mouth to the anus.</annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:Talk:Human_gastrointestinal_tract</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://github.com/geneontology/go-ontology/issues/7549</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001555"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002161"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_147099"/>
+        <oboInOwl:source>Wikipedia:Acoelomorpha</oboInOwl:source>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001555"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002161"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_41324"/>
+        <oboInOwl:source>DOI:10.1371/journal.pone.0016309</oboInOwl:source>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001555"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
+        <annotatedTarget>The alimentary or digestive tract, and associated organs.[TAO]</annotatedTarget>
+        <oboInOwl:date_retrieved>2012-08-14</oboInOwl:date_retrieved>
+        <oboInOwl:external_class>TAO:0000112</oboInOwl:external_class>
+        <oboInOwl:ontology>TAO</oboInOwl:ontology>
+        <oboInOwl:source>ZFIN:curator</oboInOwl:source>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001555"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000003"/>
+        <annotatedTarget>The bilaterian gut is typically a complete tube that opens to the exterior at both ends. It consists of mouth, foregut, midgut, hindgut, and anus (reference 1); Although all vertebrates have a digestive tract and accessory glands, various parts of this system are not necessarily homologous, analogous, or even present in all species. Therefore, broad comparisons can be best made under the listings of headgut, foregut, midgut, pancreas and biliary system, hindgut (reference 2).[well established][VHOG]</annotatedTarget>
+        <oboInOwl:date_retrieved>2012-09-17</oboInOwl:date_retrieved>
+        <oboInOwl:external_class>VHOG:0000309</oboInOwl:external_class>
+        <oboInOwl:ontology>VHOG</oboInOwl:ontology>
+        <oboInOwl:source>ISBN:978-0030259821 Ruppert EE, Fox RS, Barnes RD, Invertebrate zoology: a functional evolutionary approach (2003) p.203, ISBN:978-0521617147 Stevens CE and Hume ID, Comparative physiology of the vertebrate digestive system (2004) p.11</oboInOwl:source>
+        <oboInOwl:source>http://bgee.unil.ch/</oboInOwl:source>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001555"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
+        <annotatedTarget>FMA also has a term &apos;gastrointestinal tract&apos;, but this includes the liver.</annotatedTarget>
+        <oboInOwl:external_ontology>FMA</oboInOwl:external_ontology>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001555"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
+        <annotatedTarget>we place the MA and EMAPA class here, although the intent is probably a smaller region. See https://github.com/obophenotype/uberon/issues/509</annotatedTarget>
+        <oboInOwl:external_ontology>MA</oboInOwl:external_ontology>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001555"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>FBbt:00003125</annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001555"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>MESH:D041981</annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/LexicalMatching"/>
+        <sssom:mapping_provider>https://github.com/biopragmatics/biomappings</sssom:mapping_provider>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001555"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>UMLS:C0017189</annotatedTarget>
+        <oboInOwl:source>ncithesaurus:Gastrointestinal_Tract</oboInOwl:source>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001555"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>enteric tract</annotatedTarget>
+        <oboInOwl:hasDbXref>ZFA:0000112</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001555"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <annotatedTarget>digestive canal</annotatedTarget>
+        <oboInOwl:hasDbXref>BTO:0000058</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001969 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001969">
+        <obo:IAO_0000115>The liquid component of blood, in which erythrocytes are suspended.</obo:IAO_0000115>
+        <oboInOwl:hasBroadSynonym>plasma</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>portion of plasma</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>BTO:0000131</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CALOHA:TS-0800</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0001905</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EMAPA:35690</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:62970</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GAID:1178</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MA:0002501</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MAT:0000052</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D010949</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MIAA:0000052</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C13356</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0032105</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Blood_plasma</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>blood plasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>portion of blood plasma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>UBERON:0001969</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#efo_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#uberon_slim"/>
+        <rdfs:label>blood plasma</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001969"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>The liquid component of blood, in which erythrocytes are suspended.</annotatedTarget>
+        <oboInOwl:hasDbXref>http://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001969"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+        <annotatedTarget>plasma</annotatedTarget>
+        <oboInOwl:hasDbXref>MA:0002501</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001969"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+        <annotatedTarget>portion of plasma</annotatedTarget>
+        <oboInOwl:hasDbXref>FMA:62970</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001969"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>UMLS:C0032105</annotatedTarget>
+        <oboInOwl:source>ncithesaurus:Plasma</oboInOwl:source>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001988 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001988">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000174"/>
+        <obo:IAO_0000115>Portion of semisolid bodily waste discharged through the anus[MW,modified].</obo:IAO_0000115>
+        <obo:UBPROP_0000001>Excretion in semisolid state processed by the intestine.[FMA]</obo:UBPROP_0000001>
+        <obo:UBPROP_0000007>fecal</obo:UBPROP_0000007>
+        <oboInOwl:hasBroadSynonym>excreta</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>BTO:0000440</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CALOHA:TS-2345</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ENVO:00002003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:64183</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GAID:1199</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MA:0002509</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MAT:0000053</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D005243</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MIAA:0000053</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C13234</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0015733</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Feces</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>galen:Feces</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>faeces</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>fecal material</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>fecal matter</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>piece of shit</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>portion of excrement</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>portion of faeces</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>portion of fecal material</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>portion of fecal matter</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>portion of feces</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>portionem cacas</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>stool</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>cow dung</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>cow pat</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>dung</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>fewmet</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>frass</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>guano</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>portion of dung</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>portion of guano</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>portion of scat</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>scat</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>spraint</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>droppings</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>excrement</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>ordure</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>spoor</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0001988</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#uberon_slim"/>
+        <rdfs:label>feces</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001988"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Portion of semisolid bodily waste discharged through the anus[MW,modified].</annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:Feces</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://www.merriam-webster.com/dictionary/feces</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001988"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
+        <annotatedTarget>Excretion in semisolid state processed by the intestine.[FMA]</annotatedTarget>
+        <oboInOwl:source>FMA:64183</oboInOwl:source>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001988"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>UMLS:C0015733</annotatedTarget>
+        <oboInOwl:source>ncithesaurus:Feces</oboInOwl:source>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001988"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>piece of shit</annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:23285307</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001988"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>portionem cacas</annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003011"/>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001988"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <annotatedTarget>cow dung</annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:Cow_dung</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001988"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <annotatedTarget>cow pat</annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:Cow_dung</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001988"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <annotatedTarget>fewmet</annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:Fewmet</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001988"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <annotatedTarget>frass</annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:Frass</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001988"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <annotatedTarget>guano</annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:Guano</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001988"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <annotatedTarget>spraint</annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:Spraint</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001988"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <annotatedTarget>excrement</annotatedTarget>
+        <oboInOwl:hasDbXref>BTO:0000440</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002027 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002027">
+        <obo:IAO_0000115>The outer layer of the epidermis, consisting of several layers of flat keratinized non-nucleated cells.</obo:IAO_0000115>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <obo:UBPROP_0000001>The keratinized outermost layer of the epidermis, which is periodically shed.[AAO]</obo:UBPROP_0000001>
+        <obo:UBPROP_0000010>some oral epitehlium also has cornified layer / stratum corneum</obo:UBPROP_0000010>
+        <oboInOwl:hasBroadSynonym>horny layer</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>keratinized squame layer</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>stratum corneum</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>AAO:0010597</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BTO:0000344</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CALOHA:TS-0981</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EMAPA:32787</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:67545</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MA:0000804</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C33625</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:361695002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0221921</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Stratum_corneum</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>cornified layer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>epidermis stratum corneum</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>horny layer of epidermis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>keratinized squame layer of epidermis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>stratum corneum epidermidis</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0002027</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
+        <rdfs:label>stratum corneum of epidermis</rdfs:label>
+        <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://upload.wikimedia.org/wikipedia/commons/2/20/Skinlayers.png</foaf:depiction>
+        <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://upload.wikimedia.org/wikipedia/commons/e/e4/Epidermal_layers.png</foaf:depiction>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002027"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>The outer layer of the epidermis, consisting of several layers of flat keratinized non-nucleated cells.</annotatedTarget>
+        <oboInOwl:hasDbXref>ISBN:0-683-40008-8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MP:0001240</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002027"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
+        <annotatedTarget>The keratinized outermost layer of the epidermis, which is periodically shed.[AAO]</annotatedTarget>
+        <oboInOwl:date_retrieved>2012-06-20</oboInOwl:date_retrieved>
+        <oboInOwl:external_class>AAO:0010597</oboInOwl:external_class>
+        <oboInOwl:ontology>AAO</oboInOwl:ontology>
+        <oboInOwl:source>AAO:CAM</oboInOwl:source>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002027"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+        <annotatedTarget>horny layer</annotatedTarget>
+        <oboInOwl:hasDbXref>BTO:0000344</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002027"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>UMLS:C0221921</annotatedTarget>
+        <oboInOwl:source>ncithesaurus:Stratum_Corneum</oboInOwl:source>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002027"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>horny layer of epidermis</annotatedTarget>
+        <oboInOwl:hasDbXref>FMA:67545</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002027"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <annotatedTarget>stratum corneum epidermidis</annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:Stratum_corneum</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003011"/>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002048 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002048">
+        <obo:IAO_0000115>Respiration organ that develops as an outpocketing of the esophagus.</obo:IAO_0000115>
+        <obo:RO_0002161 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_32443"/>
+        <obo:RO_0002161 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7777"/>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <obo:UBPROP_0000001>Either of two organs which allow gas exchange absorbing oxygen from inhaled air and releasing carbon dioxide with exhaled air.[AAO]</obo:UBPROP_0000001>
+        <obo:UBPROP_0000003>Lungs had already developed as paired ventral pockets from the intestine in the ancestor of Osteognathostomata. (...) In actinopterygian fishes, apart from Cladistia, the ventral intestinal pocket migrates dorsally and becomes the swim-bladder, a mainly hydrostatical organ (reference 1); Comparative transcriptome analyses indicate molecular homology of zebrafish swimbladder and Mammalian lung (reference 2).[well established][VHOG]</obo:UBPROP_0000003>
+        <obo:UBPROP_0000007>pulmonary</obo:UBPROP_0000007>
+        <obo:UBPROP_0000008>respiration organ in all air-breathing animals, including most tetrapods, a few fish and a few snails. In mammals and the more complex life forms, the two lungs are located in the chest on either side of the heart. Their principal function is to transport oxygen from the atmosphere into the bloodstream, and to release carbon dioxide from the bloodstream into the atmosphere. This exchange of gases is accomplished in the mosaic of specialized cells that form millions of tiny, exceptionally thin-walled air sacs called alveoli. // Avian lungs do not have alveoli as mammalian lungs do, they have Faveolar lungs. They contain millions of tiny passages known as para-bronchi, connected at both ends by the dorsobronchi</obo:UBPROP_0000008>
+        <oboInOwl:hasDbXref>AAO:0000275</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>AAO:0010567</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BTO:0000763</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CALOHA:TS-0568</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0000934</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EHDAA2:0001042</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EHDAA:1554</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EHDAA:2205</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EMAPA:16728</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EV:0100042</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:7195</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GAID:345</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MA:0000415</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MAT:0000135</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D008168</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MIAA:0000135</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C12468</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:181216001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0024109</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Lung</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>XAO:0000119</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>galen:Lung</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>pulmo</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>UBERON:0002048</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#efo_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#major_organ"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#organ_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#uberon_slim"/>
+        <rdfs:comment>Snakes and limbless lizards typically possess only the right lung as a major respiratory organ; the left lung is greatly reduced, or even absent. Amphisbaenians, however, have the opposite arrangement, with a major left lung, and a reduced or absent right lung [WP]</rdfs:comment>
+        <rdfs:label>lung</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/obophenotype/uberon/issues/701</rdfs:seeAlso>
+        <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.humanatlas.io/digital-objects/ref-organ/lung-female/v1.0/assets/VH_F_Lung.glb</foaf:depiction>
+        <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.humanatlas.io/digital-objects/ref-organ/lung-female/v1.1/assets/VH_F_Lung.glb</foaf:depiction>
+        <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.humanatlas.io/digital-objects/ref-organ/lung-female/v1.2/assets/VH_F_Lung.glb</foaf:depiction>
+        <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.humanatlas.io/digital-objects/ref-organ/lung-female/v1.3/assets/3d-vh-f-lung.glb</foaf:depiction>
+        <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.humanatlas.io/digital-objects/ref-organ/lung-female/v1.4/assets/3d-vh-f-lung.glb</foaf:depiction>
+        <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.humanatlas.io/digital-objects/ref-organ/lung-male/v1.0/assets/VH_M_Lung.glb</foaf:depiction>
+        <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.humanatlas.io/digital-objects/ref-organ/lung-male/v1.2/assets/VH_M_Lung.glb</foaf:depiction>
+        <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.humanatlas.io/digital-objects/ref-organ/lung-male/v1.3/assets/3d-vh-m-lung.glb</foaf:depiction>
+        <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.humanatlas.io/digital-objects/ref-organ/lung-male/v1.4/assets/3d-vh-m-lung.glb</foaf:depiction>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002048"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>Respiration organ that develops as an outpocketing of the esophagus.</annotatedTarget>
+        <oboInOwl:hasDbXref>http://orcid.org/0000-0002-6601-2165</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002048"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002161"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_32443"/>
+        <oboInOwl:editor>https://orcid.org/0000-0002-9415-5104</oboInOwl:editor>
+        <oboInOwl:source>https://github.com/obophenotype/uberon/issues/701</oboInOwl:source>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002048"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002161"/>
+        <annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7777"/>
+        <oboInOwl:editor>https://orcid.org/0000-0002-9415-5104</oboInOwl:editor>
+        <oboInOwl:source>https://github.com/obophenotype/uberon/issues/701</oboInOwl:source>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002048"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
+        <annotatedTarget>Either of two organs which allow gas exchange absorbing oxygen from inhaled air and releasing carbon dioxide with exhaled air.[AAO]</annotatedTarget>
+        <oboInOwl:date_retrieved>2012-06-20</oboInOwl:date_retrieved>
+        <oboInOwl:external_class>AAO:0010567</oboInOwl:external_class>
+        <oboInOwl:ontology>AAO</oboInOwl:ontology>
+        <oboInOwl:source>AAO:SBH</oboInOwl:source>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002048"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000003"/>
+        <annotatedTarget>Lungs had already developed as paired ventral pockets from the intestine in the ancestor of Osteognathostomata. (...) In actinopterygian fishes, apart from Cladistia, the ventral intestinal pocket migrates dorsally and becomes the swim-bladder, a mainly hydrostatical organ (reference 1); Comparative transcriptome analyses indicate molecular homology of zebrafish swimbladder and Mammalian lung (reference 2).[well established][VHOG]</annotatedTarget>
+        <oboInOwl:date_retrieved>2012-09-17</oboInOwl:date_retrieved>
+        <oboInOwl:external_class>VHOG:0000310</oboInOwl:external_class>
+        <oboInOwl:ontology>VHOG</oboInOwl:ontology>
+        <oboInOwl:source>ISBN:978-0198566694 Schmidt-Rhaesa A, The evolution of organ systems (2007) p.210, DOI:10.1371/journal.pone.0024019 Zheng W, Wang Z, Collins JE, Andrews RM, Stemple D, Gong Z, Comparative transcriptome analyses indicate molecular homology of zebrafish swimbladder and Mammalian lung. PLoS One (2011)</oboInOwl:source>
+        <oboInOwl:source>http://bgee.unil.ch/</oboInOwl:source>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002048"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>UMLS:C0024109</annotatedTarget>
+        <oboInOwl:source>ncithesaurus:Lung</oboInOwl:source>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002048"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>pulmo</annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003011"/>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002097 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002097">
+        <obo:IAO_0000115>The organ covering the body that consists of the dermis and epidermis.</obo:IAO_0000115>
+        <obo:IAO_0000232>consider &apos;integumentary system&apos; for invertebrates</obo:IAO_0000232>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <obo:UBPROP_0000012>MA uses the term skin to refer to what is called here: zone of skin</obo:UBPROP_0000012>
+        <oboInOwl:hasDbXref>BTO:0001253</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CALOHA:TS-0934</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0000962</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EHDAA2:0001844</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EMAPA:17525</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:7163</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D012867</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MFMO:0000099</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C12470</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:181469002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C1123023</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Skin</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>XAO:0000023</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>galen:Skin</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>entire skin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>skin organ</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>entire integument</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>integument</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>integumental organ</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>pelt</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>skin</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0002097</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#efo_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#major_organ"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#uberon_slim"/>
+        <rdfs:label>skin of body</rdfs:label>
+        <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://upload.wikimedia.org/wikipedia/commons/6/6d/Skin.svg</foaf:depiction>
+        <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.humanatlas.io/digital-objects/ref-organ/skin-female/v1.0/assets/VH_F_Skin.glb</foaf:depiction>
+        <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.humanatlas.io/digital-objects/ref-organ/skin-female/v1.1/assets/VH_F_Skin.glb</foaf:depiction>
+        <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.humanatlas.io/digital-objects/ref-organ/skin-female/v1.2/assets/VH_F_Skin.glb</foaf:depiction>
+        <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.humanatlas.io/digital-objects/ref-organ/skin-female/v1.3/assets/3d-vh-f-skin.glb</foaf:depiction>
+        <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.humanatlas.io/digital-objects/ref-organ/skin-female/v1.4/assets/3d-vh-f-skin.glb</foaf:depiction>
+        <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.humanatlas.io/digital-objects/ref-organ/skin-male/v1.0/assets/VH_M_Skin.glb</foaf:depiction>
+        <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.humanatlas.io/digital-objects/ref-organ/skin-male/v1.1/assets/VH_M_Skin.glb</foaf:depiction>
+        <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.humanatlas.io/digital-objects/ref-organ/skin-male/v1.2/assets/VH_M_Skin.glb</foaf:depiction>
+        <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.humanatlas.io/digital-objects/ref-organ/skin-male/v1.3/assets/3d-vh-m-skin.glb</foaf:depiction>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002097"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>The organ covering the body that consists of the dermis and epidermis.</annotatedTarget>
+        <oboInOwl:hasDbXref>UBERON:cjm</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002097"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
+        <annotatedTarget>MA uses the term skin to refer to what is called here: zone of skin</annotatedTarget>
+        <oboInOwl:external_ontology>FMA</oboInOwl:external_ontology>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002097"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>UMLS:C1123023</annotatedTarget>
+        <oboInOwl:source>ncithesaurus:Skin</oboInOwl:source>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002107 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002107">
+        <obo:IAO_0000115>An exocrine gland which secretes bile and functions in metabolism of protein and carbohydrate and fat, synthesizes substances involved in the clotting of the blood, synthesizes vitamin A, detoxifies poisonous substances, stores glycogen, and breaks down worn-out erythrocytes[GO].</obo:IAO_0000115>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <obo:UBPROP_0000001>Organ which secretes bile and participates in formation of certain blood proteins.[AAO]</obo:UBPROP_0000001>
+        <obo:UBPROP_0000002>relationship type change: differentiates_from endoderm (AAO:0000139) CHANGED TO: develops_from endoderm (UBERON:0000925)[AAO]</obo:UBPROP_0000002>
+        <obo:UBPROP_0000003>All vertebrates possess a liver (reference 1); Later in craniate evolution, an anterior gill arch was transformed into jaws, and many new types of feeding subsequently evolved.(...) A liver evolved that, among its many functions, stores considerable energy as glycogen or lipid (reference 2).[well established][VHOG]</obo:UBPROP_0000003>
+        <obo:UBPROP_0000007>hepatic</obo:UBPROP_0000007>
+        <obo:UBPROP_0000008>An organ sometimes referred to as a liver is found associated with the digestive tract of the primitive chordate Amphioxus. However, this is an enzyme secreting gland, not a metabolic organ, and it is unclear how truly homologous it is to the vertebrate liver. The zebrafish liver differs from the mammalian liver in that the hepatocytes are not clearly organized in cords or lobules and the typical portal triads are not apparent. In addition, the zebrafish liver does not have Kuppfer cells. Furthermore, a clear distinction can be made between the male and female liver in the adult zebrafish. The female hepatocytes are very basophilic (Figure 15c) as a result of the production of vitellogenin (Van der Ven et al. 2003).</obo:UBPROP_0000008>
+        <obo:UBPROP_0000008>The liver is found in all vertebrates, and is typically the largest visceral organ. Its form varies considerably in different species, and is largely determined by the shape and arrangement of the surrounding organs. Nonetheless, in most species it is divided into right and left lobes; exceptions to this general rule include snakes, where the shape of the body necessitates a simple cigar-like form. The internal structure of the liver is broadly similar in all vertebrates.</obo:UBPROP_0000008>
+        <obo:UBPROP_0000009>secretes bile and functions in metabolism of protein and carbohydrate and fat, synthesizes substances involved in the clotting of the blood, synthesizes vitamin A, detoxifies poisonous substances, stores glycogen, and breaks down worn-out erythrocytes[GO].</obo:UBPROP_0000009>
+        <obo:UBPROP_0000012>Only ZFA considers this part_of immune system - we weaken this to an overlaps relation, as in general it&apos;s only a subset of cells that have clear immune function.</obo:UBPROP_0000012>
+        <oboInOwl:hasDbXref>AAO:0010111</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BTO:0000759</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CALOHA:TS-0564</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EFO:0000887</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EHDAA2:0000997</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EHDAA:2197</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EMAPA:16846</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EV:0100089</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:7197</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GAID:288</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MA:0000358</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MAT:0000097</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D008099</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MIAA:0000097</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C12392</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SCTID:181268008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TAO:0000123</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0023884</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>VHOG:0000257</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Liver</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>XAO:0000133</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFA:0000123</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>galen:Liver</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>iecur</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>jecur</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0002107</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#efo_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#major_organ"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#organ_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#uberon_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#vertebrate_core"/>
+        <rdfs:label>liver</rdfs:label>
+        <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.humanatlas.io/digital-objects/ref-organ/liver-female/v1.0/assets/VH_F_Liver.glb</foaf:depiction>
+        <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.humanatlas.io/digital-objects/ref-organ/liver-female/v1.1/assets/VH_F_Liver.glb</foaf:depiction>
+        <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.humanatlas.io/digital-objects/ref-organ/liver-female/v1.2/assets/3d-vh-f-liver.glb</foaf:depiction>
+        <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.humanatlas.io/digital-objects/ref-organ/liver-male/v1.0/assets/VH_M_Liver.glb</foaf:depiction>
+        <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.humanatlas.io/digital-objects/ref-organ/liver-male/v1.1/assets/VH_M_Liver.glb</foaf:depiction>
+        <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.humanatlas.io/digital-objects/ref-organ/liver-male/v1.2/assets/3d-vh-m-liver.glb</foaf:depiction>
+        <foaf:depiction rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://upload.wikimedia.org/wikipedia/commons/6/64/Leber_Schaf.jpg</foaf:depiction>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002107"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000003"/>
+        <annotatedTarget>All vertebrates possess a liver (reference 1); Later in craniate evolution, an anterior gill arch was transformed into jaws, and many new types of feeding subsequently evolved.(...) A liver evolved that, among its many functions, stores considerable energy as glycogen or lipid (reference 2).[well established][VHOG]</annotatedTarget>
+        <oboInOwl:date_retrieved>2012-09-17</oboInOwl:date_retrieved>
+        <oboInOwl:external_class>VHOG:0000257</oboInOwl:external_class>
+        <oboInOwl:ontology>VHOG</oboInOwl:ontology>
+        <oboInOwl:source>ISBN:978-0072528305 Kardong KV, Vertebrates: Comparative Anatomy, Function, Evolution (2006) p.526, ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.43</oboInOwl:source>
+        <oboInOwl:source>http://bgee.unil.ch/</oboInOwl:source>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002107"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
+        <annotatedTarget>Only ZFA considers this part_of immune system - we weaken this to an overlaps relation, as in general it&apos;s only a subset of cells that have clear immune function.</annotatedTarget>
+        <oboInOwl:external_ontology>ZFA</oboInOwl:external_ontology>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002107"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>UMLS:C0023884</annotatedTarget>
+        <oboInOwl:source>ncithesaurus:Liver</oboInOwl:source>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002107"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <annotatedTarget>iecur</annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:Liver</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003011"/>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002107"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <annotatedTarget>jecur</annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:Liver</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003011"/>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002107"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>An exocrine gland which secretes bile and functions in metabolism of protein and carbohydrate and fat, synthesizes substances involved in the clotting of the blood, synthesizes vitamin A, detoxifies poisonous substances, stores glycogen, and breaks down worn-out erythrocytes[GO].</annotatedTarget>
+        <oboInOwl:hasDbXref>BTO:0000759</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Liver</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002107"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
+        <annotatedTarget>Organ which secretes bile and participates in formation of certain blood proteins.[AAO]</annotatedTarget>
+        <oboInOwl:date_retrieved>2012-06-20</oboInOwl:date_retrieved>
+        <oboInOwl:external_class>AAO:0010111</oboInOwl:external_class>
+        <oboInOwl:ontology>AAO</oboInOwl:ontology>
+        <oboInOwl:source>AAO:BJB</oboInOwl:source>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002107"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000002"/>
+        <annotatedTarget>relationship type change: differentiates_from endoderm (AAO:0000139) CHANGED TO: develops_from endoderm (UBERON:0000925)[AAO]</annotatedTarget>
+        <oboInOwl:date_retrieved>2012-06-20</oboInOwl:date_retrieved>
+        <oboInOwl:external_class>AAO:0010111</oboInOwl:external_class>
+        <oboInOwl:ontology>AAO</oboInOwl:ontology>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002113 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002113">
+        <obo:IAO_0000115>A paired organ of the urinary tract that produces urine and maintains bodily fluid homeostasis, blood pressure, pH levels, red blood cell production and skeleton mineralization.</obo:IAO_0000115>
+        <obo:RO_0002171 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000160"/>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <obo:UBPROP_0000001>One of either of a pair of structures lying on either side of the dorsal aorta in which fluid balance is regulated and waste is excreted out in the form of urine.[AAO]</obo:UBPROP_0000001>
+        <obo:UBPROP_0000007>renal</obo:UBPROP_0000007>
+        <obo:UBPROP_0000202 rdf:resource="http://purl.obolibrary.org/obo/FMA_264815"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-7655-4833"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-2804-127X"/>
+        <oboInOwl:hasDbXref>AAO:0000250</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BTO:0000671</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CALOHA:TS-0510</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GAID:423</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MAT:0000119</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D007668</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MIAA:0000119</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0022646</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Kidney</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>XAO:0003267</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>galen:Kidney</oboInOwl:hasDbXref>
+        <oboInOwl:hasNarrowSynonym>reniculate kidney</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>UBERON:0002113</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#efo_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#major_organ"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#organ_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#uberon_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#vertebrate_core"/>
+        <rdfs:label>kidney</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002113"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A paired organ of the urinary tract that produces urine and maintains bodily fluid homeostasis, blood pressure, pH levels, red blood cell production and skeleton mineralization.</annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:25140012</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:35003210</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Kidney</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://anatomy.uams.edu/anatomyhtml/kidney.html</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://www.kidney.org/kidneydisease/top-5-jobs-kidneys-do</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002113"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
+        <annotatedTarget>One of either of a pair of structures lying on either side of the dorsal aorta in which fluid balance is regulated and waste is excreted out in the form of urine.[AAO]</annotatedTarget>
+        <oboInOwl:date_retrieved>2012-06-20</oboInOwl:date_retrieved>
+        <oboInOwl:external_class>AAO:0000250</oboInOwl:external_class>
+        <oboInOwl:ontology>AAO</oboInOwl:ontology>
+        <oboInOwl:source>AAO:BJB</oboInOwl:source>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002113"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>UMLS:C0022646</annotatedTarget>
+        <oboInOwl:source>ncithesaurus:Kidney</oboInOwl:source>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002113"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <annotatedTarget>reniculate kidney</annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:Reniculate_kidney</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#SENSU"/>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0013755 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0013755">
+        <obo:IAO_0000115>A blood that is part of a artery.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>BTO:0006188</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:83066</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>arterial blood</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>blood in artery</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>portion of arterial blood</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>UBERON:0013755</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
+        <rdfs:label>arterial blood</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013755"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A blood that is part of a artery.</annotatedTarget>
+        <oboInOwl:hasDbXref>OBOL:automatic</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013755"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>BTO:0006188</annotatedTarget>
+        <sssom:author_id rdf:resource="https://orcid.org/0000-0003-4423-4370"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+        <sssom:mapping_provider>https://github.com/biopragmatics/biomappings</sssom:mapping_provider>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013755"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>arterial blood</annotatedTarget>
+        <oboInOwl:hasDbXref>FMA:83066</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013755"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>blood in artery</annotatedTarget>
+        <oboInOwl:hasDbXref>FMA:83066</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013755"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>portion of arterial blood</annotatedTarget>
+        <oboInOwl:hasDbXref>FMA:83066</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0013756 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0013756">
+        <obo:IAO_0000115>A blood that is part of a vein.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>BTO:0006187</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:83067</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>blood in vein</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>portion of venous blood</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>venous blood</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>UBERON:0013756</oboInOwl:id>
+        <rdfs:label>venous blood</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013756"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>A blood that is part of a vein.</annotatedTarget>
+        <oboInOwl:hasDbXref>OBOL:automatic</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013756"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>BTO:0006187</annotatedTarget>
+        <sssom:author_id rdf:resource="https://orcid.org/0000-0003-4423-4370"/>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+        <sssom:mapping_provider>https://github.com/biopragmatics/biomappings</sssom:mapping_provider>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013756"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>blood in vein</annotatedTarget>
+        <oboInOwl:hasDbXref>FMA:83067</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013756"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>portion of venous blood</annotatedTarget>
+        <oboInOwl:hasDbXref>FMA:83067</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0013756"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>venous blood</annotatedTarget>
+        <oboInOwl:hasDbXref>FMA:83067</oboInOwl:hasDbXref>
+    </Axiom>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
+
