@@ -1,5 +1,5 @@
 ID	Label	Exact Match	Synonyms	Suggested parent term	Abbreviation	Definition	Textual Definition	Definition Source	See Also	Editor	Reviewer1	Reviewer2	Type	Parent	Close Match	Exact Match	Narrow Match	Related Match
-ID	A rdfs:label	A skos:exactMatch  SPLIT=|			A abbreviation textual entity		A definition	>A definition source	>AI rdfs:seeAlso	A term editor	A term editor	A term editor	TYPE	SC %	A skos:closeMatch	A skos:exactMatch	A skos:narrowMatch SPLIT=|	A skos:relatedMatch SPLIT=|
+ID	A rdfs:label	A skos:exactMatch  SPLIT=|			A obo:IAO_0000111		A definition	>A definition source	>AI rdfs:seeAlso	A term editor	A term editor	A term editor	TYPE	SC %	A skos:closeMatch	A skos:exactMatch	A skos:narrowMatch SPLIT=|	A skos:relatedMatch SPLIT=|
 pbpko:PBPKO_00000	Evaluation Metrics						Evaluation of PBPK models.			0000-0001-8345-1349	0000-0002-9795-5967		Class					
 pbpko:PBPKO_00001	Statistical Method						Statistical method to evaluate PBPK model.			0000-0001-8345-1349	0000-0002-9795-5967		Class	Evaluation Metrics				
 pbpko:PBPKO_00002	Parameters						Different types of parameters involved in PBPK modelling.			0000-0001-8345-1349	0000-0002-9795-5967		Class					
