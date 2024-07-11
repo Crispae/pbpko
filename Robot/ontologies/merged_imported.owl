@@ -494,6 +494,24 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purl.org/dc/terms/description -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#date_retrieved -->
 
     <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#date_retrieved"/>
@@ -2142,6 +2160,24 @@ BAC: Bacterial artificial chromosome; CR: Calretinin; GFAP: Glial fibrillary aci
         <annotatedTarget>venous blood</annotatedTarget>
         <oboInOwl:hasDbXref>FMA:83067</oboInOwl:hasDbXref>
     </Axiom>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="https://github.com/Crispae/pbpko/blob/main/pbpko.owl">
+        <terms:description>Ontology aligned for PBPK modelling.</terms:description>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <terms:title>PBPK ontology</terms:title>
+        <rdfs:comment>This ontology is designed for Physiologically-Based Pharmacokinetic (PBPK) modeling.</rdfs:comment>
+        <rdfs:label>PBPK Ontology</rdfs:label>
+    </rdf:Description>
 </rdf:RDF>
 
 
