@@ -1,0 +1,5 @@
+docker run -v ${PWD}:/work -w /work -e 'ROBOT_JAVA_ARGS=' -e 'JAVA_OPTS=' --rm -ti obolibrary/robot robot --version
+
+
+## Annotations
+ docker run -v ${PWD}:/work -w /work -e 'ROBOT_JAVA_ARGS=' -e 'JAVA_OPTS=' --rm -ti obolibrary/robot robot annotate --input /work/pbpko.owl --ontology-iri "https://github.com/Crispae/pbpko/blob/main/pbpko.owl" --version-iri "http://purl.obolibrary.org/obo/pbpko/releases/2024-06-25/pbpko.owl" --annotation-file /work/annotation.ttl --output pbpko-annotated.owl

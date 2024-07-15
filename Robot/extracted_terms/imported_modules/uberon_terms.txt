@@ -1,0 +1,17 @@
+http://purl.obolibrary.org/obo/UBERON_0000174 # excreta
+http://purl.obolibrary.org/obo/UBERON_0002113 # kidney
+http://purl.obolibrary.org/obo/UBERON_0001969 # blood plasma
+http://purl.obolibrary.org/obo/UBERON_0001988 # feces
+http://purl.obolibrary.org/obo/UBERON_0001088 # urine
+http://purl.obolibrary.org/obo/UBERON_0000160 # intestine
+http://purl.obolibrary.org/obo/UBERON_0002048 # lungs
+http://purl.obolibrary.org/obo/UBERON_0000479 # tissue
+http://purl.obolibrary.org/obo/UBERON_0002097 # skin of body
+http://purl.obolibrary.org/obo/UBERON_0002107 # liver
+http://purl.obolibrary.org/obo/UBERON_0013755 # arterial blood
+http://purl.obolibrary.org/obo/UBERON_0013756 # venous blood
+http://purl.obolibrary.org/obo/UBERON_0001013 # adipose tissue
+http://purl.obolibrary.org/obo/UBERON_0001555 # digestive tract
+http://purl.obolibrary.org/obo/UBERON_0001007 # digestive system
+http://purl.obolibrary.org/obo/UBERON_0000945 # stomach
+http://purl.obolibrary.org/obo/UBERON_0002027 # stratum corneum of epidermis
