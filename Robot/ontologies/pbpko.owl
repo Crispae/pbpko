@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://github.com/ontodev/robot/examples/annotated.owl#"
-     xml:base="https://github.com/ontodev/robot/examples/annotated.owl"
+<rdf:RDF xmlns="https://github.com/Crispae/pbpko/blob/main/Robot/ontologies/pbpko.owl#"
+     xml:base="https://github.com/Crispae/pbpko/blob/main/Robot/ontologies/pbpko.owl"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -12,10 +12,30 @@
      xmlns:sssom="https://w3id.org/sssom/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="https://github.com/ontodev/robot/examples/annotated.owl">
-        <owl:versionIRI rdf:resource="https://github.com/ontodev/robot/examples/annotated-1.owl"/>
+    <owl:Ontology rdf:about="https://github.com/Crispae/pbpko/blob/main/Robot/ontologies/pbpko.owl">
+        <owl:versionIRI rdf:resource="https://github.com/Crispae/pbpko/releases/download/v1.0.0/pbpko_15_07_2024.owl"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-07-15</terms:created>
-        
+        <terms:creator>
+            <rdf:Description>
+                <foaf:homepage rdf:resource="https://orcid.org/0000-0003-0593-2598"/>
+                <foaf:mbox rdf:resource="mailto:saurav.kumar@iispv.cat"/>
+                <foaf:name>Saurav Kumar</foaf:name>
+            </rdf:Description>
+        </terms:creator>
+        <terms:creator>
+            <rdf:Description>
+                <foaf:homepage rdf:resource="https://orcid.org/0000-0001-8345-1349"/>
+                <foaf:mbox rdf:resource="mailto:deepika@iispv.cat"/>
+                <foaf:name>Deepika Deepika</foaf:name>
+            </rdf:Description>
+        </terms:creator>
+        <terms:creator>
+            <rdf:Description>
+                <foaf:homepage rdf:resource="https://orcid.org/0009-0004-2207-3937"/>
+                <foaf:mbox rdf:resource="mailto:shubh.sharma@estudiants.urv.cat"/>
+                <foaf:name>Shubh Sharma</foaf:name>
+            </rdf:Description>
+        </terms:creator>
         <terms:creator>
             <rdf:Description>
                 <foaf:homepage rdf:resource="https://orcid.org/0000-0002-9795-5967"/>
@@ -32,16 +52,23 @@
         </terms:creator>
         <terms:creator>
             <rdf:Description>
-                <foaf:homepage rdf:resource="https://orcid.org/0000-0001-8345-1349"/>
-                <foaf:mbox rdf:resource="mailto:deepika@iispv.cat"/>
-                <foaf:name>Deepika Deepika</foaf:name>
+                <foaf:homepage rdf:resource="https://orcid.org/0000-0003-0593-2598"/>
+                <foaf:mbox rdf:resource="mailto:saurav.kumar@iispv.cat"/>
+                <foaf:name>Saurav Kumar</foaf:name>
             </rdf:Description>
         </terms:creator>
         <terms:creator>
             <rdf:Description>
-                <foaf:homepage rdf:resource="https://orcid.org/0000-0003-0593-2598"/>
-                <foaf:mbox rdf:resource="mailto:saurav.kumar@iispv.cat"/>
-                <foaf:name>Saurav Kumar</foaf:name>
+                <foaf:homepage rdf:resource="https://orcid.org/0000-0002-9795-5967"/>
+                <foaf:mbox rdf:resource="mailto:vikas.kumar@iispv.cat"/>
+                <foaf:name>Vikas Kumar</foaf:name>
+            </rdf:Description>
+        </terms:creator>
+        <terms:creator>
+            <rdf:Description>
+                <foaf:homepage rdf:resource="https://orcid.org/0000-0001-8345-1349"/>
+                <foaf:mbox rdf:resource="mailto:deepika@iispv.cat"/>
+                <foaf:name>Deepika Deepika</foaf:name>
             </rdf:Description>
         </terms:creator>
         <terms:description>Physiologically Based Pharmacokinetic Models (PBPK) are widely used in both pharmaceutical and environmental domain by experts to assess the kinetics of xenobiotics. Thousands of papers have been published over years but the major drawback being utilization of inconsistent vocabulary which reduce the potential for automation. Machine-readable semantic technology like ontology can be used to improve the reporting of PBPK models. Currently there are multiple ontologies related to life science domain on portals like Bioportal, still there is no dedicated ontology for describing PBPK. The objective of this work is to develop a dedicated ontology for PBPK named PBPKO which can be used in future by wider kinetic community. PBPKO has covered possible mechanisms, existing kinetic terms in multiple databases and commonly utilized terminology by experts. This is freely available ontology with first version (V1.0) being published following FAIR guidelines using ROBOT tool and published at OBO foundry (crispae.github.io/pbpko/ (github.com)). It will be further enriched by including multiple species and much more kinetic terms with the help of experts. PBPKO annotates both physiological and biochemical parameters related to PBPK modeling. This ontology can be further used for text mining of PBPK parameters and model output.</terms:description>
