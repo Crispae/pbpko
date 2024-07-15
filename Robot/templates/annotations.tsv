@@ -1,6 +1,0 @@
-ID	Label	Type
-ID	LABEL	TYPE
-iao:IAO_0000605	abbreviation textual entity	owl:AnnotationProperty
-iao:IAO_0000115	definition	owl:AnnotationProperty
-iao:IAO_0000119	definition source	owl:AnnotationProperty
-iao:IAO_0000117	term editor	owl:AnnotationProperty
