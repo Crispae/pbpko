@@ -12,18 +12,7 @@
      xmlns:sssom="https://w3id.org/sssom/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="https://github.com/Crispae/pbpko/blob/main/pbpko.owl">
-        <owl:versionIRI rdf:resource="https://github.com/ontodev/robot/examples/annotated-1.owl"/>
-        <terms:description>Ontology aligned for PBPK modelling.</terms:description>
-        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-        <terms:title>PBPK ontology</terms:title>
-        <rdfs:comment>This ontology is designed for Physiologically-Based Pharmacokinetic (PBPK) modeling.</rdfs:comment>
-        <rdfs:label>PBPK Ontology</rdfs:label>
-        <terms:contributor xml:lang="en">saurav Kumar</terms:contributor>
-        <terms:contributor xml:lang="en">Shubh Sharma</terms:contributor>
-        <terms:contributor xml:lang="en">Deepika Deepika</terms:contributor>
-        <terms:contributor xml:lang="en">Vikas kumar</terms:contributor>
-    </owl:Ontology>
+    <Ontology/>
     
 
 
@@ -54,15 +43,7 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
 
-    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
-        <pbpko:IAO_0000111 xml:lang="en">example of usage</pbpko:IAO_0000111>
-        <pbpko:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <pbpko:IAO_0000115 xml:lang="en">A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold.</pbpko:IAO_0000115>
-        <pbpko:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</pbpko:IAO_0000117>
-        <pbpko:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</pbpko:IAO_0000119>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-        <rdfs:label xml:lang="en">example of usage</rdfs:label>
-    </AnnotationProperty>
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
     
 
 
@@ -218,21 +199,13 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/IAO_0000233 -->
 
     <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233">
-        <pbpko:IAO_0000111 xml:lang="en">term tracker item</pbpko:IAO_0000111>
-        <pbpko:IAO_0000112 xml:lang="en">the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/</pbpko:IAO_0000112>
-        <pbpko:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-        <pbpko:IAO_0000115 xml:lang="en">An IRI or similar locator for a request or discussion of an ontology term.</pbpko:IAO_0000115>
-        <pbpko:IAO_0000117 xml:lang="en">Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</pbpko:IAO_0000117>
-        <pbpko:IAO_0000119 xml:lang="en">Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</pbpko:IAO_0000119>
         <oboInOwl:hasDbXref>IAO:0000233</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
         <oboInOwl:id>term_tracker_item</oboInOwl:id>
         <oboInOwl:is_class_level rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_class_level>
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
         <oboInOwl:shorthand>term_tracker_item</oboInOwl:shorthand>
-        <rdfs:comment xml:lang="en">The &apos;tracker item&apos; can associate a tracker with a specific ontology term.</rdfs:comment>
         <rdfs:label>term tracker item</rdfs:label>
-        <rdfs:label xml:lang="en">term tracker item</rdfs:label>
     </AnnotationProperty>
     
 
@@ -240,6 +213,14 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/IAO_0000425 -->
 
     <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000425"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PBPKO_00461 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/PBPKO_00461">
+        <rdfs:label>Abbreviations</rdfs:label>
+    </AnnotationProperty>
     
 
 
@@ -776,21 +757,6 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000605 -->
-
-    <Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000605">
-        <pbpko:IAO_0000111 xml:lang="en">abbreviation textual entity</pbpko:IAO_0000111>
-        <pbpko:IAO_0000112 xml:lang="en">From Shiba et al. Acta Neuropathol Commun. 2013; 1: 45. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3893467/):
-
-BAC: Bacterial artificial chromosome; CR: Calretinin; GFAP: Glial fibrillary acidic protein; MAP: Microtubule-associated protein; MRI: Magnetic resonance imaging; NSC: Neural stem cell; PDA: Patent ductus arteriosus; PMG: Polymicrogyria; PNH: Periventricular nodular heterotopia; VSD: Ventricular septal defect.</pbpko:IAO_0000112>
-        <pbpko:IAO_0000115 xml:lang="en">A textual entity listing abbreviations and their expansions that are used in a document.</pbpko:IAO_0000115>
-        <pbpko:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</pbpko:IAO_0000117>
-        <pbpko:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
-        <rdfs:label xml:lang="en">abbreviation textual entity</rdfs:label>
-    </Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBCS_0000030 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000030">
@@ -886,10 +852,10 @@ BAC: Bacterial artificial chromosome; CR: Calretinin; GFAP: Glial fibrillary aci
     <!-- http://purl.obolibrary.org/obo/PBPKO_00003 -->
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00003">
-        <pbpko:IAO_0000111>PBPK</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Physiologically based pharmacokinetic (PBPK) modeling is a mathematical modeling technique that predicts the absorption, distribution, metabolism, and excretion (ADME) of synthetic or natural chemical substances in humans and other animal species</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>PBPK</pbpko:PBPKO_00461>
         <rdfs:label>Physiologically Based Pharmacokinetic Modeling</rdfs:label>
         <skos:exactMatch>http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000609</skos:exactMatch>
     </Class>
@@ -906,10 +872,10 @@ BAC: Bacterial artificial chromosome; CR: Calretinin; GFAP: Glial fibrillary aci
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00003"/>
-        <pbpko:IAO_0000111>All organs PBPK</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>A whole-body PBPK model contains an explicit representation of the organs that are most relevant to the absorption, distribution, excretion, and metabolization of the drug/chemicals due to their physiological/pharmacological function or their volume</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>All organs PBPK</pbpko:PBPKO_00461>
         <rdfs:label>Whole body PBPK Model</rdfs:label>
     </Class>
     <Axiom>
@@ -963,10 +929,10 @@ BAC: Bacterial artificial chromosome; CR: Calretinin; GFAP: Glial fibrillary aci
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00006"/>
-        <pbpko:IAO_0000111>BMI</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>An individual&apos;s weight in kilograms divided by the square of the height in meters.</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>BMI</pbpko:PBPKO_00461>
         <rdfs:label>Body Mass Index </rdfs:label>
         <skos:exactMatch>http://purl.bioontology.org/ontology/MESH/D015992</skos:exactMatch>
     </Class>
@@ -983,10 +949,10 @@ BAC: Bacterial artificial chromosome; CR: Calretinin; GFAP: Glial fibrillary aci
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00006"/>
-        <pbpko:IAO_0000111>BW</pbpko:IAO_0000111>
         <pbpko:IAO_0000115> Mass or quantity of heaviness of an individual. </pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>BW</pbpko:PBPKO_00461>
         <rdfs:label>BW (Kg)</rdfs:label>
         <skos:exactMatch>http://purl.bioontology.org/ontology/MESH/D001835</skos:exactMatch>
     </Class>
@@ -1003,10 +969,10 @@ BAC: Bacterial artificial chromosome; CR: Calretinin; GFAP: Glial fibrillary aci
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00006"/>
-        <pbpko:IAO_0000111>HT</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Height is a term used to describe the distance from the bottom to the top of someone or something standing upright</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>HT</pbpko:PBPKO_00461>
         <rdfs:label>HT</rdfs:label>
         <skos:exactMatch>http://purl.bioontology.org/ontology/MESH/D001827</skos:exactMatch>
     </Class>
@@ -1017,11 +983,11 @@ BAC: Bacterial artificial chromosome; CR: Calretinin; GFAP: Glial fibrillary aci
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00010">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00006"/>
-        <pbpko:IAO_0000111>BSA/SA</pbpko:IAO_0000111>
         <pbpko:IAO_0000115> A measure of  total area i.e., surface of  object occupies. or
 The two dimensional measure of the outer layer of the body.</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>BSA/SA</pbpko:PBPKO_00461>
         <rdfs:label>Surface area</rdfs:label>
         <skos:exactMatch>http://purl.bioontology.org/ontology/MESH/D001830</skos:exactMatch>
     </Class>
@@ -1060,10 +1026,10 @@ http://purl.bioontology.org/ontology/MESH/D001830</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00012">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00006"/>
-        <pbpko:IAO_0000111>Q</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Blood flow in PBPK modeling refers to the rate of blood flow to a particular organ or tissue, which is used to calculate the rate of drug delivery to that organ or tissue/chemical</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>Q</pbpko:PBPKO_00461>
         <rdfs:label>Blood flow</rdfs:label>
         <skos:exactMatch>http://purl.org/obo/owl/GO#GO_0008015</skos:exactMatch>
     </Class>
@@ -1080,10 +1046,10 @@ http://purl.bioontology.org/ontology/MESH/D001830</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00013">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00012"/>
-        <pbpko:IAO_0000111>CO</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Cardiac output in PBPK modeling refers to the volume of blood pumped by the heart per unit of time, which is used to calculate the rate of blood flow to different organs and tissues in the body</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>CO</pbpko:PBPKO_00461>
         <rdfs:label>Cardiac Output</rdfs:label>
         <skos:exactMatch>http://purl.bioontology.org/ontology/MESH/D002302</skos:exactMatch>
     </Class>
@@ -1377,10 +1343,10 @@ https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-reporting-
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00032">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00012"/>
-        <pbpko:IAO_0000111>Qadipose tissue</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Qfat is a parameter used in PBPK modeling to describe the blood flow rate to the fat, which is used to calculate the rate of drug/chemical delivery to the fat. The value of Qfat depends on the species of interest and is defined by the fat weight/volume and cardiac output</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>Qadipose tissue</pbpko:PBPKO_00461>
         <rdfs:label>Qfat</rdfs:label>
     </Class>
     
@@ -1902,10 +1868,10 @@ https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-reporting-
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00066">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00012"/>
-        <pbpko:IAO_0000111>GFR</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Glomerular filtration rate (GFR) is a measure of kidney function that describes the flow rate of filtered fluid through the kidney</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>GFR</pbpko:PBPKO_00461>
         <rdfs:label>Glomerular filtration rate</rdfs:label>
         <skos:exactMatch>http://purl.bioontology.org/ontology/MESH/D005919</skos:exactMatch>
     </Class>
@@ -1916,10 +1882,10 @@ https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-reporting-
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00067">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00006"/>
-        <pbpko:IAO_0000111>Vorgan</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Organ volume in PBPK modeling refers to the volume of a specific organ or tissue in the body. </pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>Vorgan</pbpko:PBPKO_00461>
         <rdfs:label>Volume</rdfs:label>
     </Class>
     <Axiom>
@@ -2862,10 +2828,10 @@ https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-reporting-
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00125">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00124"/>
-        <pbpko:IAO_0000111>M</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Males, as sex i,e. produces smaller gametes (e.g. sperm)</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>M</pbpko:PBPKO_00461>
         <rdfs:label>Male</rdfs:label>
         <skos:exactMatch>http://purl.bioontology.org/ontology/MESH/D008297</skos:exactMatch>
     </Class>
@@ -2882,10 +2848,10 @@ https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-reporting-
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00126">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00124"/>
-        <pbpko:IAO_0000111>F</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Females, as sex i,e. produces gamete dimorphism (anisogamy)</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>F</pbpko:PBPKO_00461>
         <rdfs:label>Female</rdfs:label>
         <skos:exactMatch>http://purl.bioontology.org/ontology/MESH/D005260</skos:exactMatch>
     </Class>
@@ -2921,10 +2887,10 @@ https://cot.food.gov.uk/sites/default/files/2021-01/TOX-2019-34%20PBPK%20used%20
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00128">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00127"/>
-        <pbpko:IAO_0000111>MW</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Sum of weight of all the atoms in a molecule.</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>MW</pbpko:PBPKO_00461>
         <rdfs:label>Molecular weight</rdfs:label>
         <skos:exactMatch>http://purl.bioontology.org/ontology/MESH/D008970</skos:exactMatch>
     </Class>
@@ -2961,10 +2927,10 @@ for a lipophilic environment </annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00130">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00127"/>
-        <pbpko:IAO_0000111>Log D</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>LogD distribution constant, better descriptor of lipophilicity of a molecule.</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>Log D</pbpko:PBPKO_00461>
         <rdfs:label>Distribution coefficients</rdfs:label>
     </Class>
     <Axiom>
@@ -3036,10 +3002,10 @@ https://docs.chemaxon.com/display/docs/theory-of-aqueous-solubility-prediction.m
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00134">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00127"/>
-        <pbpko:IAO_0000111>pka</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Negative base-10 logarithm of acid dissociation constant (Ka) of a solution</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>pka</pbpko:PBPKO_00461>
         <rdfs:label>pka (strongest acidic)</rdfs:label>
         <skos:exactMatch>http://www.bioassayontology.org/bao#BAO_0002131</skos:exactMatch>
     </Class>
@@ -3057,10 +3023,10 @@ https://dev.Xenoboiticbank.com/guides/terms/pka</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00135">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00127"/>
-        <pbpko:IAO_0000111>pKb pK(b) pK(B) affinity constant, Base dissociation constan</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Negative base-10 logarithm of base dissociation constant (Ka) of a solution</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>pKb pK(b) pK(B) affinity constant, Base dissociation constan</pbpko:PBPKO_00461>
         <rdfs:label>pkb (strongest basic)</rdfs:label>
         <skos:exactMatch>http://www.bioassayontology.org/bao#BAO_0190006</skos:exactMatch>
     </Class>
@@ -3089,10 +3055,10 @@ http://www.semanticweb.org/ontologies/2010/3/Ontology1271664172453.owl#pKb</pbpk
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00137">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00127"/>
-        <pbpko:IAO_0000111>A</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>A descriptor reflects  integer number of hydrogen bond acceptors in a given molecular entity.</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>A</pbpko:PBPKO_00461>
         <rdfs:label>Hydrogen acceptor count</rdfs:label>
         <skos:closeMatch>http://purl.obolibrary.org/obo/CHEBI_13193</skos:closeMatch>
     </Class>
@@ -3161,10 +3127,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00141">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00444"/>
-        <pbpko:IAO_0000111>A</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Drug/chemical absorption is a pharmacokinetic parameter that refers to the way a drug/chemical is absorbed from a particular source (e.g. formulation) into the bloodstream</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>A</pbpko:PBPKO_00461>
         <rdfs:label>Absorption</rdfs:label>
         <skos:closeMatch>http://vocabs.lter-europe.net/EnvThes/21448</skos:closeMatch>
         <skos:exactMatch>http://purl.bioontology.org/ontology/MESH/D000042</skos:exactMatch>
@@ -3182,10 +3148,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00142">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00140"/>
-        <pbpko:IAO_0000111>Kagut</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>The absorption rate constant (kabs) is used in the PBPK model to define absorption, which is the movement of a xenobiotic from its site of delivery (gut) to systemic circulation or another compartment</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>Kagut</pbpko:PBPKO_00461>
         <rdfs:label>Absorption rate constant gut</rdfs:label>
     </Class>
     <Axiom>
@@ -3201,10 +3167,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00143">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00140"/>
-        <pbpko:IAO_0000111>Kaintestine</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>The absorption rate constant (kabs) is used in the PBPK model to define absorption, which is the movement of a xenobiotic from its site of delivery (intestine) to systemic circulation or another compartment</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>Kaintestine</pbpko:PBPKO_00461>
         <rdfs:label>Absorption rate constant intestine</rdfs:label>
     </Class>
     <Axiom>
@@ -3220,10 +3186,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00144">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00140"/>
-        <pbpko:IAO_0000111>GE</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Gastric emptying in PBPK refers to the rate at which the stomach empties its contents into the small intestine. It is an important parameter in PBPK modeling as it can affect the absorption of drugs and xenobiotics.</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>GE</pbpko:PBPKO_00461>
         <rdfs:label>Gastric emptying</rdfs:label>
         <skos:exactMatch>http://purl.bioontology.org/ontology/MESH/D005746</skos:exactMatch>
     </Class>
@@ -3240,10 +3206,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00145">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00140"/>
-        <pbpko:IAO_0000111>EHR</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Recycling through liver by excretion in bile, reabsorption from intestines into portal circulation, passage back into liver, and re-excretion in bile</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>EHR</pbpko:PBPKO_00461>
         <rdfs:label>Enterohepatic recirculation</rdfs:label>
         <skos:closeMatch>http://purl.bioontology.org/ontology/MESH/D004764</skos:closeMatch>
     </Class>
@@ -3298,10 +3264,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00148">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00140"/>
-        <pbpko:IAO_0000111>Vd</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>It refers to the apparent volume in which a drug/chemical is distributed in the body, taking into account the concentration of the drug/chemical in plasma and tissues</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>Vd</pbpko:PBPKO_00461>
         <rdfs:label>Volume of distribution</rdfs:label>
         <skos:exactMatch>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70917</skos:exactMatch>
     </Class>
@@ -3337,10 +3303,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00150">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00140"/>
-        <pbpko:IAO_0000111>FU</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>The fraction of a xenobiotic that is unbound in plasma</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>FU</pbpko:PBPKO_00461>
         <rdfs:label>Unbound fraction</rdfs:label>
         <skos:exactMatch>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C135490</skos:exactMatch>
         <skos:exactMatch>http://www.bioassayontology.org/bao#BAO_0080040</skos:exactMatch>
@@ -3352,10 +3318,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00151">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00150"/>
-        <pbpko:IAO_0000111>Fu gut</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>The fraction of a xenobiotic that is unbound in gut</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>Fu gut</pbpko:PBPKO_00461>
         <rdfs:label>fugut</rdfs:label>
     </Class>
     
@@ -3365,10 +3331,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00152">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00150"/>
-        <pbpko:IAO_0000111>fustomach</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>The fraction of a xenobiotic that is unbound in stomach</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>fustomach</pbpko:PBPKO_00461>
         <rdfs:label>fustomach</rdfs:label>
     </Class>
     
@@ -3378,10 +3344,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00153">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00150"/>
-        <pbpko:IAO_0000111>fuintestine</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>The fraction of a xenobiotic that is unbound in intestine</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>fuintestine</pbpko:PBPKO_00461>
         <rdfs:label>fuintestine</rdfs:label>
     </Class>
     
@@ -3391,10 +3357,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00154">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00150"/>
-        <pbpko:IAO_0000111>fupancreas</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>The fraction of a xenobiotic that is unbound in pancreas</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>fupancreas</pbpko:PBPKO_00461>
         <rdfs:label>fupancreas</rdfs:label>
     </Class>
     
@@ -3404,10 +3370,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00155">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00150"/>
-        <pbpko:IAO_0000111>fuliver</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>The fraction of a xenobiotic that is unbound in liver</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>fuliver</pbpko:PBPKO_00461>
         <rdfs:label>fuliver</rdfs:label>
     </Class>
     
@@ -3417,10 +3383,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00156">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00150"/>
-        <pbpko:IAO_0000111>fukidney</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>The fraction of a xenobiotic that is unbound in kidney</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>fukidney</pbpko:PBPKO_00461>
         <rdfs:label>fukidney</rdfs:label>
     </Class>
     
@@ -3430,10 +3396,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00157">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00150"/>
-        <pbpko:IAO_0000111>fumuscle</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>The fraction of a xenobiotic that is unbound in muscle</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>fumuscle</pbpko:PBPKO_00461>
         <rdfs:label>fumuscle</rdfs:label>
     </Class>
     
@@ -3443,10 +3409,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00158">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00150"/>
-        <pbpko:IAO_0000111>fuheart</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>The fraction of a xenobiotic that is unbound in heart</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>fuheart</pbpko:PBPKO_00461>
         <rdfs:label>fuheart</rdfs:label>
     </Class>
     
@@ -3456,10 +3422,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00159">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00150"/>
-        <pbpko:IAO_0000111>fufat</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>The fraction of a xenobiotic that is unbound in fat</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>fufat</pbpko:PBPKO_00461>
         <rdfs:label>fufat</rdfs:label>
     </Class>
     
@@ -3469,10 +3435,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00160">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00150"/>
-        <pbpko:IAO_0000111>fugonads</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>The fraction of a xenobiotic that is unbound in gonads</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>fugonads</pbpko:PBPKO_00461>
         <rdfs:label>fugonads</rdfs:label>
     </Class>
     
@@ -3482,10 +3448,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00161">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00150"/>
-        <pbpko:IAO_0000111>fuskin</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>The fraction of a xenobiotic that is unbound in skin</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>fuskin</pbpko:PBPKO_00461>
         <rdfs:label>fuskin</rdfs:label>
     </Class>
     
@@ -3495,10 +3461,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00162">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00150"/>
-        <pbpko:IAO_0000111>fubone</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>The fraction of a xenobiotic that is unbound in bone</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>fubone</pbpko:PBPKO_00461>
         <rdfs:label>fubone</rdfs:label>
     </Class>
     
@@ -3508,10 +3474,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00163">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00150"/>
-        <pbpko:IAO_0000111>fuspleen</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>The fraction of a xenobiotic that is unbound in spleen</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>fuspleen</pbpko:PBPKO_00461>
         <rdfs:label>fuspleen</rdfs:label>
     </Class>
     
@@ -3521,10 +3487,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00164">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00150"/>
-        <pbpko:IAO_0000111>fulung</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>The fraction of a xenobiotic that is unbound in lung</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>fulung</pbpko:PBPKO_00461>
         <rdfs:label>fulung</rdfs:label>
     </Class>
     
@@ -3534,10 +3500,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00165">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00150"/>
-        <pbpko:IAO_0000111>fuenterocytes</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>The fraction of a xenobiotic that is unbound in enterocyte</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>fuenterocytes</pbpko:PBPKO_00461>
         <rdfs:label>fuenterocytes</rdfs:label>
     </Class>
     
@@ -3547,10 +3513,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00166">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00140"/>
-        <pbpko:IAO_0000111>Kp</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>The ratio of the concentration of a drug/chemical in a particular tissue to its concentration in plasma at equilibrium. It is also known as tissue-to-plasma partition coefficient</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>Kp</pbpko:PBPKO_00461>
         <rdfs:label>Partition coefficient</rdfs:label>
         <skos:exactMatch>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C20610</skos:exactMatch>
         <skos:exactMatch>http://semanticscience.org/resource/CHEMINF_000496</skos:exactMatch>
@@ -3568,10 +3534,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00167">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00166"/>
-        <pbpko:IAO_0000111>k_gut_plasma</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Partition coefficient of gut to plasma</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>k_gut_plasma</pbpko:PBPKO_00461>
         <rdfs:label>gut:plasma</rdfs:label>
     </Class>
     <Axiom>
@@ -3587,10 +3553,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00168">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00166"/>
-        <pbpko:IAO_0000111>k_Stomach_plasma</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Partition coefficient of stomach to plasma</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>k_Stomach_plasma</pbpko:PBPKO_00461>
         <rdfs:label>Stomach:Plasma</rdfs:label>
     </Class>
     
@@ -3600,10 +3566,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00169">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00166"/>
-        <pbpko:IAO_0000111>k_Intestine_plasma</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Partition coefficient of intestine to plasma</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>k_Intestine_plasma</pbpko:PBPKO_00461>
         <rdfs:label>Intestine:Plasma</rdfs:label>
     </Class>
     
@@ -3613,10 +3579,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00170">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00166"/>
-        <pbpko:IAO_0000111>k_Pancreas_plasma</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Partition coefficient of pancreas to plasma</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>k_Pancreas_plasma</pbpko:PBPKO_00461>
         <rdfs:label>Pancreas:Plasma</rdfs:label>
     </Class>
     
@@ -3626,10 +3592,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00171">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00166"/>
-        <pbpko:IAO_0000111>k_Liver_plasma</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Partition coefficient of liver to plasma</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>k_Liver_plasma</pbpko:PBPKO_00461>
         <rdfs:label>Liver:Plasma</rdfs:label>
     </Class>
     
@@ -3639,10 +3605,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00172">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00166"/>
-        <pbpko:IAO_0000111>k_Kidney_plasma</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Partition coefficient of kidney to plasma</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>k_Kidney_plasma</pbpko:PBPKO_00461>
         <rdfs:label>Kidney: Plasma</rdfs:label>
     </Class>
     
@@ -3652,10 +3618,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00173">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00166"/>
-        <pbpko:IAO_0000111>k_Muscle_plasma</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Partition coefficient of muscle to plasma</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>k_Muscle_plasma</pbpko:PBPKO_00461>
         <rdfs:label>Muscle:Plasma</rdfs:label>
     </Class>
     
@@ -3665,10 +3631,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00174">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00166"/>
-        <pbpko:IAO_0000111>k_Heart_plasma</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Partition coefficient of heart to plasma</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>k_Heart_plasma</pbpko:PBPKO_00461>
         <rdfs:label>Heart:Plasma</rdfs:label>
     </Class>
     
@@ -3678,10 +3644,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00175">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00166"/>
-        <pbpko:IAO_0000111>k_fat_plasma</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Partition coefficient of fat to plasma</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>k_fat_plasma</pbpko:PBPKO_00461>
         <rdfs:label>Fat:Plasma</rdfs:label>
     </Class>
     
@@ -3691,10 +3657,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00176">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00166"/>
-        <pbpko:IAO_0000111>k_gonads_plasma</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Partition coefficient of gonads to plasma</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>k_gonads_plasma</pbpko:PBPKO_00461>
         <rdfs:label>Gonads:Plasma</rdfs:label>
     </Class>
     
@@ -3704,10 +3670,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00177">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00166"/>
-        <pbpko:IAO_0000111>k_skin_plasma</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Partition coefficient of skin to plasma</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>k_skin_plasma</pbpko:PBPKO_00461>
         <rdfs:label>Skin:Plasma</rdfs:label>
     </Class>
     
@@ -3717,10 +3683,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00178">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00166"/>
-        <pbpko:IAO_0000111>k_bone_plasma</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Partition coefficient of bone to plasma</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>k_bone_plasma</pbpko:PBPKO_00461>
         <rdfs:label>Bone:Plasma</rdfs:label>
     </Class>
     
@@ -3730,10 +3696,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00179">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00166"/>
-        <pbpko:IAO_0000111>k_spleen_plasma</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Partition coefficient of spleen to plasma</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>k_spleen_plasma</pbpko:PBPKO_00461>
         <rdfs:label>Spleen:Plasma</rdfs:label>
     </Class>
     
@@ -3743,10 +3709,10 @@ A molecule can undergo oxidation by  loss of hydrogen.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00180">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00166"/>
-        <pbpko:IAO_0000111>k_lung_plasma</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Partition coefficient of lung to plasma</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>k_lung_plasma</pbpko:PBPKO_00461>
         <rdfs:label>Lung:plasma</rdfs:label>
     </Class>
     
@@ -3817,10 +3783,10 @@ corneum</pbpko:IAO_0000115>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00186">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00140"/>
-        <pbpko:IAO_0000111>HSA</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>corneum</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>HSA</pbpko:PBPKO_00461>
         <rdfs:label>Human serum albumin</rdfs:label>
         <skos:exactMatch>http://purl.bioontology.org/ontology/LNC/LP62267-7</skos:exactMatch>
         <skos:exactMatch>http://purl.bioontology.org/ontology/MESH/D000075462</skos:exactMatch>
@@ -3832,10 +3798,10 @@ corneum</pbpko:IAO_0000115>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00187">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00140"/>
-        <pbpko:IAO_0000111>AAG</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Orosomucoid, ,i.s  globulin with a molecular weight of 44,000 Da.</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>AAG</pbpko:PBPKO_00461>
         <rdfs:label>alpha acid glycoprotein</rdfs:label>
         <skos:exactMatch> http://purl.bioontology.org/ontology/SNOMEDCT/17003006</skos:exactMatch>
         <skos:exactMatch>http://purl.bioontology.org/ontology/LNC/LP15755-9</skos:exactMatch>
@@ -3855,10 +3821,10 @@ corneum</pbpko:IAO_0000115>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00188">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00140"/>
-        <pbpko:IAO_0000111>CB/CP</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Ratio of concentration of molecule in whole blood (contains both red blood cells and plasma) to concentration of molecule in plasma</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>CB/CP</pbpko:PBPKO_00461>
         <rdfs:label>Blood:Plasma ratio</rdfs:label>
         <skos:exactMatch>http://www.bioassayontology.org/bao#BAO_0080043</skos:exactMatch>
     </Class>
@@ -3875,10 +3841,10 @@ corneum</pbpko:IAO_0000115>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00189">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00444"/>
-        <pbpko:IAO_0000111>M</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>The process of drug or chemical transformation within the body, typically involving enzymatic reactions leading to formation of active metabolite, inactivation of parent compound or formation of toxic by-products</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>M</pbpko:PBPKO_00461>
         <rdfs:label>Metabolism</rdfs:label>
         <skos:exactMatch>http://purl.bioontology.org/ontology/MESH/D008660</skos:exactMatch>
     </Class>
@@ -3895,11 +3861,11 @@ corneum</pbpko:IAO_0000115>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00190">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00140"/>
-        <pbpko:IAO_0000111>kcat</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Numerical parameter that quantifies  an enzymatic reaction velocity.or
 Maximum number of substrate molecules converted to products per active site per unit time.</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>kcat</pbpko:PBPKO_00461>
         <rdfs:label>catalytic rate constant</rdfs:label>
         <skos:exactMatch>http://biomodels.net/SBO/SBO_0000025</skos:exactMatch>
     </Class>
@@ -3979,10 +3945,10 @@ of a molecule of water.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00194">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00193"/>
-        <pbpko:IAO_0000111>CYP1A2</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>CYPIA2|P450 form 4|aryl hydrocarbon hydroxylase|cytochrome P(3)450|cytochrome P450 1A2|cytochrome P450 4|cytochrome P450, subfamily I (aromatic compound-inducible), polypeptide 2|cytochrome P450-P3|dioxin-inducible P3-450|flavoprotein-linked monooxygenase|microsomal monooxygenase|xenobiotic monooxygenase</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>CYP1A2</pbpko:PBPKO_00461>
         <rdfs:label>CYP1A2</rdfs:label>
         <skos:exactMatch>http://identifiers.org/ncbigene/1544</skos:exactMatch>
     </Class>
@@ -3999,10 +3965,10 @@ of a molecule of water.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00195">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00193"/>
-        <pbpko:IAO_0000111>CYP 2E1</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>An ethanol-inducible cytochrome P450 enzyme that metabolizes several precarcinogens, Xenoboitics, and solvents to reactive metabolites.</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>CYP 2E1</pbpko:PBPKO_00461>
         <rdfs:label>CYP2E1</rdfs:label>
         <skos:exactMatch>http://purl.bioontology.org/ontology/MESH/D019392</skos:exactMatch>
     </Class>
@@ -4019,10 +3985,10 @@ of a molecule of water.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00196">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00193"/>
-        <pbpko:IAO_0000111>CYP3A4</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Cytochrome P450, family 3, subfamily A; polypeptide 4. A heme-thiolate monooxygenase.</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>CYP3A4</pbpko:PBPKO_00461>
         <rdfs:label>CYP3A4</rdfs:label>
         <skos:exactMatch>http://id.nlm.nih.gov/mesh/D051544</skos:exactMatch>
     </Class>
@@ -4039,10 +4005,10 @@ of a molecule of water.</annotatedTarget>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00197">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00193"/>
-        <pbpko:IAO_0000111>CYP2D6</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Cytochrome P450, family 2, subfamily D, polypeptide 6. A heme-thiolate monooxygenase.</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>CYP2D6</pbpko:PBPKO_00461>
         <rdfs:label>CYP2D6</rdfs:label>
         <skos:exactMatch>http://purl.bioontology.org/ontology/MESH/D019389</skos:exactMatch>
     </Class>
@@ -4061,10 +4027,10 @@ http://purl.obolibrary.org/obo/NCBIGene_446878</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00198">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00193"/>
-        <pbpko:IAO_0000111>CYP2C9</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Cytochrome P450, family 2, subfamily C, polypeptide 9.  A heme-thiolate monooxygenase.</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>CYP2C9</pbpko:PBPKO_00461>
         <rdfs:label>CYP2C9</rdfs:label>
         <skos:exactMatch>http://purl.bioontology.org/ontology/MESH/D065729</skos:exactMatch>
     </Class>
@@ -4082,10 +4048,10 @@ http://purl.obolibrary.org/obo/NCBIGene_1559</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00199">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00193"/>
-        <pbpko:IAO_0000111>CYP3A7</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Cytochrome P450, family 3, subfamily A, polypeptide 7) located on chromosome 7 mapped at 7q21-q22.1.</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>CYP3A7</pbpko:PBPKO_00461>
         <rdfs:label>CYP3A7</rdfs:label>
         <skos:exactMatch>http://purl.bioontology.org/ontology/SNOMEDCT/425316004</skos:exactMatch>
     </Class>
@@ -4104,10 +4070,10 @@ http://purl.obolibrary.org/obo/OGG_3000001551</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00200">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00193"/>
-        <pbpko:IAO_0000111>CYP2C8</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Cytochrome P450, family 2, subfamily C, polypeptide 8) located on chromosome 10 mapped at 10q23.33.</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>CYP2C8</pbpko:PBPKO_00461>
         <rdfs:label>CYP2C8</rdfs:label>
         <skos:exactMatch>http://identifiers.org/ncbigene/1558</skos:exactMatch>
     </Class>
@@ -4147,10 +4113,10 @@ Phase II, subtype of  metabolic biotransformation reactions involving conjugate 
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00202">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00446"/>
-        <pbpko:IAO_0000111>UGT1A1</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>UGT1A1 (UDP glucuronosyltransferase 1 family, polypeptide A1) located on  chromosome 2 mapped at 2q37.</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>UGT1A1</pbpko:PBPKO_00461>
         <rdfs:label>UGT1A1</rdfs:label>
         <skos:exactMatch>http://identifiers.org/ncbigene/54658</skos:exactMatch>
     </Class>
@@ -4167,10 +4133,10 @@ Phase II, subtype of  metabolic biotransformation reactions involving conjugate 
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00203">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00446"/>
-        <pbpko:IAO_0000111>UGT1A4</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>UDP Glucuronosyltransferase 1 Family, Polypeptide A4 Gene involved in xenobiotic metabolism.</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>UGT1A4</pbpko:PBPKO_00461>
         <rdfs:label>UGT1A4</rdfs:label>
         <skos:exactMatch>http://identifiers.org/ncbigene/54657</skos:exactMatch>
     </Class>
@@ -4188,10 +4154,10 @@ http://purl.obolibrary.org/obo/OMIT_0042415</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00204">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00446"/>
-        <pbpko:IAO_0000111>UGT1A6</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>The protein-coding gene UGT1A6 (UDP glucuronosyltransferase 1 family, polypeptide A6) located on the chromosome 2 mapped at 2q37.</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>UGT1A6</pbpko:PBPKO_00461>
         <rdfs:label>UGT1A6</rdfs:label>
         <skos:exactMatch>http://identifiers.org/ncbigene/113992</skos:exactMatch>
         <skos:exactMatch>http://identifiers.org/ncbigene/54578</skos:exactMatch>
@@ -4209,10 +4175,10 @@ http://purl.obolibrary.org/obo/OMIT_0042415</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00205">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00446"/>
-        <pbpko:IAO_0000111>UGT1A9</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>UGT1A9 (UDP glucuronosyltransferase 1 family, polypeptide A9)  is involved in phenol detoxification</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>UGT1A9</pbpko:PBPKO_00461>
         <rdfs:label>UGT1A9</rdfs:label>
         <skos:exactMatch>http://identifiers.org/ncbigene/54600</skos:exactMatch>
     </Class>
@@ -4230,11 +4196,11 @@ http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C105862</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00206">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00446"/>
-        <pbpko:IAO_0000111>UGT2B4</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>UGT2B4 (UDP glucuronosyltransferase 2 family, polypeptide B4) located on  chromosome 4 mapped at 4q13. or
 UDP glucuronosyltransferase family 2 member B4.</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>UGT2B4</pbpko:PBPKO_00461>
         <rdfs:label>UGT2B4</rdfs:label>
         <skos:exactMatch>http://identifiers.org/ncbigene/7363</skos:exactMatch>
     </Class>
@@ -4255,10 +4221,10 @@ http://purl.obolibrary.org/obo/OMIT_0036009</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00207">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00446"/>
-        <pbpko:IAO_0000111>UGT2B7</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>UDP glucuronosyltransferase 2 family, polypeptide B7</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>UGT2B7</pbpko:PBPKO_00461>
         <rdfs:label>UGT2B7</rdfs:label>
         <skos:exactMatch>http://identifiers.org/ncbigene/286989</skos:exactMatch>
     </Class>
@@ -4276,10 +4242,10 @@ http://purl.obolibrary.org/obo/OGG_3000007364</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00208">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00445"/>
-        <pbpko:IAO_0000111>SULT</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Sult5a1 (sulfotransferase family 5A, member 1) located on the chromosome 8 mapped at 8 E1|8.</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>SULT</pbpko:PBPKO_00461>
         <rdfs:label>SULT</rdfs:label>
         <skos:exactMatch>http://purl.bioontology.org/ontology/PDQ/CDR0000322900</skos:exactMatch>
         <skos:exactMatch>http://purl.obolibrary.org/obo/HINO_0025295</skos:exactMatch>
@@ -4297,10 +4263,10 @@ http://purl.obolibrary.org/obo/OGG_3000007364</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00209">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00445"/>
-        <pbpko:IAO_0000111>NAT 2</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Arylamine N-acetyltransferase Nat (arylamine acetylase)</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>NAT 2</pbpko:PBPKO_00461>
         <rdfs:label>NAT 2</rdfs:label>
         <skos:exactMatch>http://purl.bioontology.org/ontology/PDQ/CDR0000043375</skos:exactMatch>
     </Class>
@@ -4500,10 +4466,10 @@ http://purl.obolibrary.org/obo/OGG_3000007364</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00220">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00218"/>
-        <pbpko:IAO_0000111>ABCC3</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Human ABCC3 wild-type allele is located in vicinity of 17q22 and is approximately 57 kb in length, plays a role in bile metabolism and transport</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>ABCC3</pbpko:PBPKO_00461>
         <rdfs:label>Abcc3</rdfs:label>
         <skos:exactMatch>http://identifiers.org/ncbigene/8714</skos:exactMatch>
     </Class>
@@ -4520,10 +4486,10 @@ http://purl.obolibrary.org/obo/OGG_3000007364</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00221">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00218"/>
-        <pbpko:IAO_0000111>ABCC2</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Protein-coding gene ABCC2 located on chromosome 10 mapped at 10q24</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>ABCC2</pbpko:PBPKO_00461>
         <rdfs:label>Abcc2</rdfs:label>
         <skos:exactMatch>http://identifiers.org/ncbigene/1244</skos:exactMatch>
     </Class>
@@ -4560,10 +4526,10 @@ http://purl.obolibrary.org/obo/OGG_3000007364</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00223">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00140"/>
-        <pbpko:IAO_0000111>ki</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>inhibition constant for a specific enzyme or transporter</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>ki</pbpko:PBPKO_00461>
         <rdfs:label>ki</rdfs:label>
         <skos:exactMatch>http://purl.bioontology.org/ontology/LNC/LP89241-1</skos:exactMatch>
         <skos:exactMatch>http://www.bioassayontology.org/bao#BAO_0000192</skos:exactMatch>
@@ -4669,10 +4635,10 @@ http://purl.obolibrary.org/obo/OGG_3000007364</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00230">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007588"/>
-        <pbpko:IAO_0000111>Cl</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Volume of fluid cleared of xenoboitic from body per unit  time. </pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>Cl</pbpko:PBPKO_00461>
         <rdfs:label>Clearance</rdfs:label>
         <skos:exactMatch>http://purl.bioontology.org/ontology/LNC/LP267658-5</skos:exactMatch>
         <skos:exactMatch>http://purl.bioontology.org/ontology/SNOMEDCT/260695007</skos:exactMatch>
@@ -4784,10 +4750,10 @@ http://purl.obolibrary.org/obo/OGG_3000007364</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00236">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00230"/>
-        <pbpko:IAO_0000111>Clint</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>the rate at which a compound is metabolized or eliminated by a specific organ or tissue, independent of the concentration of the compound in the blood</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>Clint</pbpko:PBPKO_00461>
         <rdfs:label>intrinsic clearance</rdfs:label>
     </Class>
     <Axiom>
@@ -4919,10 +4885,10 @@ http://purl.obolibrary.org/obo/OGG_3000007364</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00244">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00240"/>
-        <pbpko:IAO_0000111>IVB</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Type of IV therapy where a single dose of medication/chemical/ nutrients is administered over a short period of time, typically less than 30 minutes</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>IVB</pbpko:PBPKO_00461>
         <rdfs:label>intravenous bolus</rdfs:label>
     </Class>
     
@@ -4932,10 +4898,10 @@ http://purl.obolibrary.org/obo/OGG_3000007364</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00245">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00240"/>
-        <pbpko:IAO_0000111>IVI</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>The administration of fluids, medication, nutrition, or blood directly into the bloodstream through a vein</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>IVI</pbpko:PBPKO_00461>
         <rdfs:label>intravenous infusion</rdfs:label>
     </Class>
     <Axiom>
@@ -5089,10 +5055,10 @@ http://purl.obolibrary.org/obo/OGG_3000007364</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00254">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00253"/>
-        <pbpko:IAO_0000111>Cmax</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>The highest concentration of a drug/chemical in the blood, cerebrospinal fluid, or target organ after exposure</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>Cmax</pbpko:PBPKO_00461>
         <rdfs:label>Peak Concentration</rdfs:label>
     </Class>
     <Axiom>
@@ -5120,10 +5086,10 @@ http://purl.obolibrary.org/obo/OGG_3000007364</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00256">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00253"/>
-        <pbpko:IAO_0000111>Tmax</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>The time required to reach maximum xenoboitic concentration after xenoboitic administration</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>Tmax</pbpko:PBPKO_00461>
         <rdfs:label>Tmax</rdfs:label>
     </Class>
     <Axiom>
@@ -5139,10 +5105,10 @@ http://purl.obolibrary.org/obo/OGG_3000007364</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00257">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00253"/>
-        <pbpko:IAO_0000111>AUC</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>It is the definite integral of the concentration of a drug/chemical in blood or plasma as a function of time</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>AUC</pbpko:PBPKO_00461>
         <rdfs:label>Area under curve</rdfs:label>
     </Class>
     <Axiom>
@@ -5212,10 +5178,10 @@ http://purl.obolibrary.org/obo/OGG_3000007364</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00261">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00253"/>
-        <pbpko:IAO_0000111>AUMC</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>AUMC is a pharmacokinetic parameter that is calculated by measuring the concentration of a drug/chemical in blood plasma as a function of time and then taking the definite integral of the product of time and concentration squared</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>AUMC</pbpko:PBPKO_00461>
         <rdfs:label>Area under moment curve</rdfs:label>
     </Class>
     <Axiom>
@@ -5231,10 +5197,10 @@ http://purl.obolibrary.org/obo/OGG_3000007364</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00262">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00253"/>
-        <pbpko:IAO_0000111>MRT</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Average time a drug/chemical molecule resides in the body</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>MRT</pbpko:PBPKO_00461>
         <rdfs:label>Mean residence time</rdfs:label>
     </Class>
     
@@ -5244,10 +5210,10 @@ http://purl.obolibrary.org/obo/OGG_3000007364</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00263">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00253"/>
-        <pbpko:IAO_0000111>t1/2</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>the time it takes for the concentration of a drug/chemical in the body to decrease by half</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>t1/2</pbpko:PBPKO_00461>
         <rdfs:label>half-life</rdfs:label>
     </Class>
     
@@ -5257,10 +5223,10 @@ http://purl.obolibrary.org/obo/OGG_3000007364</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00264">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00253"/>
-        <pbpko:IAO_0000111>F</pbpko:IAO_0000111>
         <pbpko:IAO_0000115> Bioavailability is defined as the rate and extent to which the active ingredient or active moiety is absorbed from a Xenoboitic product and becomes available at the site of action (US-FDA, CDER, 2014a).</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>F</pbpko:PBPKO_00461>
         <rdfs:label>bioavailavility</rdfs:label>
     </Class>
     <Axiom>
@@ -5277,10 +5243,10 @@ Chapter 16, Page Number-471</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00265">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00264"/>
-        <pbpko:IAO_0000111>F rel</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Relative bioavailability is a term used to describe the extent and rate at which a drug/chemical is absorbed into the systemic circulation after administration compared to a reference formulation/source chemical,</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>F rel</pbpko:PBPKO_00461>
         <rdfs:label>Relative bioavailability</rdfs:label>
     </Class>
     <Axiom>
@@ -5297,10 +5263,10 @@ Chapter 16, Page Number-473</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00266">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00253"/>
-        <pbpko:IAO_0000111>MAT</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Average time it takes for drug/chemical to be absorbed into systemic circulation</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>MAT</pbpko:PBPKO_00461>
         <rdfs:label>Mean absorption time</rdfs:label>
     </Class>
     <Axiom>
@@ -5316,10 +5282,10 @@ Chapter 16, Page Number-473</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00267">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00253"/>
-        <pbpko:IAO_0000111>MDT</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Average time it takes for drug/chemical to dissolve in body</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>MDT</pbpko:PBPKO_00461>
         <rdfs:label>Mean dissolution time</rdfs:label>
     </Class>
     <Axiom>
@@ -5336,10 +5302,10 @@ Chapter-25,Page number-837</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00268">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00253"/>
-        <pbpko:IAO_0000111>BE</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Identical comparison between test (T) and reference (R) xenoboitic product</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>BE</pbpko:PBPKO_00461>
         <rdfs:label>Bioequivalence</rdfs:label>
     </Class>
     <Axiom>
@@ -5355,10 +5321,10 @@ Chapter-25,Page number-837</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00269">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00264"/>
-        <pbpko:IAO_0000111>FABS</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Fraction of treatment dose that reaches systemic circulation and ratio of xenobiotics amount in system after administration of a test xenobiotics to xenobiotics in system after IV administration</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>FABS</pbpko:PBPKO_00461>
         <rdfs:label>absolute bioavailability</rdfs:label>
     </Class>
     <Axiom>
@@ -5620,10 +5586,10 @@ Chapter-25,Page number-837</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00288">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00253"/>
-        <pbpko:IAO_0000111>BE</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>chemical concentration (or metabolite) in biological medium (eg. blood, urine, human milk) consistent with defined exposure guidance values or toxicity criteria including reference doses and reference concentrations, minimal risk levels or tolerable daily intakes</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>BE</pbpko:PBPKO_00461>
         <rdfs:label>Biomonitoring equivalent</rdfs:label>
     </Class>
     <Axiom>
@@ -5657,10 +5623,10 @@ Chapter-25,Page number-837</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00290">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00253"/>
-        <pbpko:IAO_0000111>RfD</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Daily oral or dermal exposure estimation to human population (including sensitive subgroups)</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>RfD</pbpko:PBPKO_00461>
         <rdfs:label>Reference dose</rdfs:label>
     </Class>
     
@@ -5670,10 +5636,10 @@ Chapter-25,Page number-837</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00291">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00253"/>
-        <pbpko:IAO_0000111>ADI</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Substance in food or drinking water that consumed daily over a lifetime without presenting appreciable risk to health</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>ADI</pbpko:PBPKO_00461>
         <rdfs:label>Acceptable daily intake</rdfs:label>
     </Class>
     
@@ -5683,10 +5649,10 @@ Chapter-25,Page number-837</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00292">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00253"/>
-        <pbpko:IAO_0000111>HBM</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Measuring instrument for internal dose of exogenous substances/chemicals that enter a body during a certain exposure period from different sources</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>HBM</pbpko:PBPKO_00461>
         <rdfs:label>Human biomonitoring</rdfs:label>
     </Class>
     
@@ -6078,10 +6044,10 @@ Chapter-25,Page number-837</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00316">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00127"/>
-        <pbpko:IAO_0000111>Peff</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Effective permeability is a measure of the rate at which a substance can pass through a barrier, such as a cell membrane or capillary wal</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>Peff</pbpko:PBPKO_00461>
         <rdfs:label>effective permeability (Peff)</rdfs:label>
     </Class>
     <Axiom>
@@ -6348,10 +6314,10 @@ Chapter-25,Page number-837</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00335">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00333"/>
-        <pbpko:IAO_0000111>Inf</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>An infant is a very young child, under age of one year.</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>Inf</pbpko:PBPKO_00461>
         <rdfs:label>Infants</rdfs:label>
     </Class>
     
@@ -6361,10 +6327,10 @@ Chapter-25,Page number-837</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00336">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00333"/>
-        <pbpko:IAO_0000111>Tdl</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Young children who are  between  ages of one and three years old.  (infancy to early childhood)</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>Tdl</pbpko:PBPKO_00461>
         <rdfs:label>Toddlers</rdfs:label>
     </Class>
     
@@ -6524,10 +6490,10 @@ Chapter-25,Page number-837</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00347">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00345"/>
-        <pbpko:IAO_0000111>MC</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Monte Carlo simulation is a form of uncertainty analysis that allows the propagation of uncertainty through a model, which results in an estimate of the variance in model output</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>MC</pbpko:PBPKO_00461>
         <rdfs:label>Monte carlo simulation</rdfs:label>
     </Class>
     <Axiom>
@@ -7605,10 +7571,10 @@ Chapter-25,Page number-837</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00432">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00127"/>
-        <pbpko:IAO_0000111>D</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Xenoboitic amount ,i.s diffuses across a membrane of a given unit area per unit time</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>D</pbpko:PBPKO_00461>
         <rdfs:label>Diffusion Coefficient</rdfs:label>
     </Class>
     <Axiom>
@@ -7624,10 +7590,10 @@ Chapter-25,Page number-837</pbpko:IAO_0000119>
 
     <Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00433">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00448"/>
-        <pbpko:IAO_0000111>?s</pbpko:IAO_0000111>
         <pbpko:IAO_0000115>Measure of mass per unit volume of particle</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
+        <pbpko:PBPKO_00461>?s</pbpko:PBPKO_00461>
         <rdfs:label>particle density</rdfs:label>
     </Class>
     
