@@ -1,0 +1,8 @@
+ID	Label	Editor	Type	Super Property	Domain	Range	Characteristic
+ID	A rdfs:label	A term editor	TYPE	SP %	DOMAIN	RANGE	CHARACTERISTIC
+pbpko:PBPKO_05000	hasParameters		owl:ObjectProperty		Physiologically Based Pharmacokinetic Modeling	Parameters	transitive
+pbpko:PBPKO_05001	hasEvaluationMetrics		owl:ObjectProperty		Physiologically Based Pharmacokinetic Modeling	Evaluation Metrics	
+pbpko:PBPKO_05002	hasCompartments		owl:ObjectProperty		Physiologically Based Pharmacokinetic Modeling	Compartment	
+pbpko:PBPKO_05003	includesTransporters		owl:ObjectProperty		Physiologically Based Pharmacokinetic Modeling	Transporters	
+pbpko:PBPKO_05004	includesBiologicalEvent		owl:ObjectProperty		Physiologically Based Pharmacokinetic Modeling	Biological event	
+pbpko:PBPKO_05005	includesEnzymes		owl:ObjectProperty		Physiologically Based Pharmacokinetic Modeling	Enzymes	
