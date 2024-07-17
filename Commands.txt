@@ -1,0 +1,5 @@
+## Annotation command
+ docker run -v ${PWD}:/work -w /work -e 'ROBOT_JAVA_ARGS=' -e 'JAVA_OPTS=' --rm -ti obolibrary/robot robot annotate --input /work/ontologies/pbpko.owl --ontology-iri "https://github.com/Crispae/pbpko/blob/main/Robot/ontologies/pbpko.owl" --version-iri "https://github.com/Crispae/pbpko/releases/download/v1.0.0/pbpko_15_07_2024.owl"  --annotation-file /work/annotations/annotation.ttl   --output /work/ontologies/pbpko.owl -vvv
+
+## Including property command
+docker run -v ${PWD}:/work -w /work -e 'ROBOT_JAVA_ARGS=' -e 'JAVA_OPTS=' --rm -ti obolibrary/robot robot template --merge-before --input /work/ontologies/imported_modules.owl --template /work/templates/properties/properties.tsv --template /work/templates/vocab.tsv --add-prefixes /work/config/context.json  --output /work/ontologies/pbpko.owl -vvv
