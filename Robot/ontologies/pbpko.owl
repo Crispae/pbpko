@@ -17,20 +17,6 @@
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-07-15</terms:created>
         <terms:creator>
             <rdf:Description>
-                <foaf:homepage rdf:resource="https://orcid.org/0000-0001-8345-1349"/>
-                <foaf:mbox rdf:resource="mailto:deepika@iispv.cat"/>
-                <foaf:name>Deepika Deepika</foaf:name>
-            </rdf:Description>
-        </terms:creator>
-        <terms:creator>
-            <rdf:Description>
-                <foaf:homepage rdf:resource="https://orcid.org/0000-0002-9795-5967"/>
-                <foaf:mbox rdf:resource="mailto:vikas.kumar@iispv.cat"/>
-                <foaf:name>Vikas Kumar</foaf:name>
-            </rdf:Description>
-        </terms:creator>
-        <terms:creator>
-            <rdf:Description>
                 <foaf:homepage rdf:resource="https://orcid.org/0000-0003-0593-2598"/>
                 <foaf:mbox rdf:resource="mailto:saurav.kumar@iispv.cat"/>
                 <foaf:name>Saurav Kumar</foaf:name>
@@ -38,9 +24,23 @@
         </terms:creator>
         <terms:creator>
             <rdf:Description>
+                <foaf:homepage rdf:resource="https://orcid.org/0000-0001-8345-1349"/>
+                <foaf:mbox rdf:resource="mailto:deepika@iispv.cat"/>
+                <foaf:name>Deepika Deepika</foaf:name>
+            </rdf:Description>
+        </terms:creator>
+        <terms:creator>
+            <rdf:Description>
                 <foaf:homepage rdf:resource="https://orcid.org/0009-0004-2207-3937"/>
                 <foaf:mbox rdf:resource="mailto:shubh.sharma@estudiants.urv.cat"/>
                 <foaf:name>Shubh Sharma</foaf:name>
+            </rdf:Description>
+        </terms:creator>
+        <terms:creator>
+            <rdf:Description>
+                <foaf:homepage rdf:resource="https://orcid.org/0000-0002-9795-5967"/>
+                <foaf:mbox rdf:resource="mailto:vikas.kumar@iispv.cat"/>
+                <foaf:name>Vikas Kumar</foaf:name>
             </rdf:Description>
         </terms:creator>
         <terms:description>Physiologically Based Pharmacokinetic Models (PBPK) are widely used in both pharmaceutical and environmental domain by experts to assess the kinetics of xenobiotics. Thousands of papers have been published over years but the major drawback being utilization of inconsistent vocabulary which reduce the potential for automation. Machine-readable semantic technology like ontology can be used to improve the reporting of PBPK models. Currently there are multiple ontologies related to life science domain on portals like Bioportal, still there is no dedicated ontology for describing PBPK. The objective of this work is to develop a dedicated ontology for PBPK named PBPKO which can be used in future by wider kinetic community. PBPKO has covered possible mechanisms, existing kinetic terms in multiple databases and commonly utilized terminology by experts. This is freely available ontology with first version (V1.0) being published following FAIR guidelines using ROBOT tool and published at OBO foundry (crispae.github.io/pbpko/ (github.com)). It will be further enriched by including multiple species and much more kinetic terms with the help of experts. PBPKO annotates both physiological and biochemical parameters related to PBPK modeling. This ontology can be further used for text mining of PBPK parameters and model output.</terms:description>
@@ -1005,7 +1005,7 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00006"/>
-        <pbpko:IAO_0000115> mass or quantity of heaviness of an individual. </pbpko:IAO_0000115>
+        <pbpko:IAO_0000115>Mass or quantity of heaviness of an individual. </pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
         <pbpko:PBPKO_00460>BW</pbpko:PBPKO_00460>
@@ -1015,7 +1015,7 @@ We also have the outstanding issue of how to aim different definitions to differ
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00008"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget> mass or quantity of heaviness of an individual. </owl:annotatedTarget>
+        <owl:annotatedTarget>Mass or quantity of heaviness of an individual. </owl:annotatedTarget>
         <pbpko:IAO_0000119>http://purl.bioontology.org/ontology/MESH/D001835</pbpko:IAO_0000119>
     </owl:Axiom>
     
@@ -1039,8 +1039,7 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00010">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00006"/>
-        <pbpko:IAO_0000115> a measure of  total area i.e., surface of  object occupies. or
-the two dimensional measure of the outer layer of the body.</pbpko:IAO_0000115>
+        <pbpko:IAO_0000115>The surface area of a is a measure of the total area that the surface of the object occupies.</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
         <pbpko:PBPKO_00460>BSA/SA</pbpko:PBPKO_00460>
@@ -1050,8 +1049,7 @@ the two dimensional measure of the outer layer of the body.</pbpko:IAO_0000115>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00010"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget> a measure of  total area i.e., surface of  object occupies. or
-the two dimensional measure of the outer layer of the body.</owl:annotatedTarget>
+        <owl:annotatedTarget>The surface area of a is a measure of the total area that the surface of the object occupies.</owl:annotatedTarget>
         <pbpko:IAO_0000119>http://semanticscience.org/resource/SIO_001407
 
 http://purl.bioontology.org/ontology/MESH/D001830</pbpko:IAO_0000119>
@@ -1790,7 +1788,7 @@ https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-reporting-
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00058">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00012"/>
-        <pbpko:IAO_0000115>Qmetab? represents the metabolic clearance rate of a drug in a specific organ or tissue compartment.</pbpko:IAO_0000115>
+        <pbpko:IAO_0000115>Qmetab represents the metabolic clearance rate of a drug in a specific organ or tissue compartment.</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
         <rdfs:label>Qmetab</rdfs:label>
@@ -1798,7 +1796,7 @@ https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-reporting-
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00058"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Qmetab? represents the metabolic clearance rate of a drug in a specific organ or tissue compartment.</owl:annotatedTarget>
+        <owl:annotatedTarget>Qmetab represents the metabolic clearance rate of a drug in a specific organ or tissue compartment.</owl:annotatedTarget>
         <pbpko:IAO_0000119>doi.org/10.1002/9780470921920.edm036</pbpko:IAO_0000119>
     </owl:Axiom>
     
@@ -1808,7 +1806,7 @@ https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-reporting-
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00059">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00012"/>
-        <pbpko:IAO_0000115>Qexcret? represents the excreation clearance rate of a drug in a specific organ or tissue compartment.</pbpko:IAO_0000115>
+        <pbpko:IAO_0000115>Qexcret represents the excreation clearance rate of a drug in a specific organ or tissue compartment.</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
         <rdfs:label>Qexcret</rdfs:label>
@@ -1816,7 +1814,7 @@ https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-reporting-
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00059"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Qexcret? represents the excreation clearance rate of a drug in a specific organ or tissue compartment.</owl:annotatedTarget>
+        <owl:annotatedTarget>Qexcret represents the excreation clearance rate of a drug in a specific organ or tissue compartment.</owl:annotatedTarget>
         <pbpko:IAO_0000119>doi.org/10.1002/9780470921920.edm036</pbpko:IAO_0000119>
     </owl:Axiom>
     
@@ -2713,7 +2711,7 @@ https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-reporting-
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00111">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00010"/>
-        <pbpko:IAO_0000115> fraction of skin surface area actually exposed</pbpko:IAO_0000115>
+        <pbpko:IAO_0000115>Fraction of skin surface area actually exposed</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
         <rdfs:label>fSA_exposed</rdfs:label>
@@ -2963,8 +2961,7 @@ https://cot.food.gov.uk/sites/default/files/2021-01/TOX-2019-34%20PBPK%20used%20
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00129">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00127"/>
-        <pbpko:IAO_0000115> affinity of a molecule or a moiety
-for a lipophilic environment </pbpko:IAO_0000115>
+        <pbpko:IAO_0000115>Lipophilicity defined as the affinity or tendency of a substance to dissolve in lipids or hydrophobic environments.</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
         <rdfs:label>Lipophillicity</rdfs:label>
@@ -2972,8 +2969,7 @@ for a lipophilic environment </pbpko:IAO_0000115>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00129"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget> affinity of a molecule or a moiety
-for a lipophilic environment </owl:annotatedTarget>
+        <owl:annotatedTarget>Lipophilicity defined as the affinity or tendency of a substance to dissolve in lipids or hydrophobic environments.</owl:annotatedTarget>
         <pbpko:IAO_0000119>10.1016/j.microc.2019.01.030</pbpko:IAO_0000119>
     </owl:Axiom>
     
@@ -2983,7 +2979,7 @@ for a lipophilic environment </owl:annotatedTarget>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00130">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00127"/>
-        <pbpko:IAO_0000115>Logd distribution constant, better descriptor of lipophilicity of a molecule.</pbpko:IAO_0000115>
+        <pbpko:IAO_0000115>LogD distribution constant, better descriptor of lipophilicity of a molecule.</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
         <pbpko:PBPKO_00460>Log D</pbpko:PBPKO_00460>
@@ -2992,7 +2988,7 @@ for a lipophilic environment </owl:annotatedTarget>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00130"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Logd distribution constant, better descriptor of lipophilicity of a molecule.</owl:annotatedTarget>
+        <owl:annotatedTarget>LogD distribution constant, better descriptor of lipophilicity of a molecule.</owl:annotatedTarget>
         <pbpko:IAO_0000119>https://doi.org/10.3109/00498258809041669
 https://pubs.acs.org/doi/abs/10.1021/jm00211a010</pbpko:IAO_0000119>
     </owl:Axiom>
@@ -3003,7 +2999,7 @@ https://pubs.acs.org/doi/abs/10.1021/jm00211a010</pbpko:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00131">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00127"/>
-        <pbpko:IAO_0000115> ratio of a dissolved xenoboitic substance in a two-phase system. </pbpko:IAO_0000115>
+        <pbpko:IAO_0000115>Ratio of a dissolved xenoboitic substance in a two-phase system. </pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
         <rdfs:label>Log P</rdfs:label>
@@ -3012,7 +3008,7 @@ https://pubs.acs.org/doi/abs/10.1021/jm00211a010</pbpko:IAO_0000119>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00131"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget> ratio of a dissolved xenoboitic substance in a two-phase system. </owl:annotatedTarget>
+        <owl:annotatedTarget>Ratio of a dissolved xenoboitic substance in a two-phase system. </owl:annotatedTarget>
         <pbpko:IAO_0000119>https://doi.org/10.3109/00498258809041669
 https://pubs.acs.org/doi/abs/10.1021/jm00211a010
 http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C20610</pbpko:IAO_0000119>
@@ -3133,7 +3129,7 @@ http://semanticscience.org/resource/CHEMINF_000245</pbpko:IAO_0000119>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00138">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00127"/>
         <pbpko:IAO_0000115> 
-a molecule can undergo oxidation by  loss of hydrogen.</pbpko:IAO_0000115>
+A molecular entity that can undergo oxidation by the loss of hydrogen atom(s).</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
         <rdfs:label>Hydrogen donor count</rdfs:label>
@@ -3143,7 +3139,7 @@ a molecule can undergo oxidation by  loss of hydrogen.</pbpko:IAO_0000115>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00138"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget> 
-a molecule can undergo oxidation by  loss of hydrogen.</owl:annotatedTarget>
+A molecular entity that can undergo oxidation by the loss of hydrogen atom(s).</owl:annotatedTarget>
         <pbpko:IAO_0000119>http://purl.obolibrary.org/obo/CHEBI_17499</pbpko:IAO_0000119>
     </owl:Axiom>
     
@@ -3171,7 +3167,7 @@ a molecule can undergo oxidation by  loss of hydrogen.</owl:annotatedTarget>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00140">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00002"/>
-        <pbpko:IAO_0000115> biochemical parameters refer to the various chemical and biological measurements that can be analyzed in bodily fluids, such as blood, urine, or cerebrospinal fluid.</pbpko:IAO_0000115>
+        <pbpko:IAO_0000115>Biochemical parameters refer to the various chemical and biological measurements that can be analyzed in bodily fluids, such as blood, urine, or cerebrospinal fluid.</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
         <rdfs:label>Biochemical Parameters</rdfs:label>
@@ -3839,7 +3835,7 @@ corneum</pbpko:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00186">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00140"/>
-        <pbpko:IAO_0000115>Corneum</pbpko:IAO_0000115>
+        <pbpko:IAO_0000115>Human serum albumin (HSA) is a protein made by the liver and is the most abundant protein in human blood plasma, representing about half of the total protein content</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
         <pbpko:PBPKO_00460>HSA</pbpko:PBPKO_00460>
@@ -3854,7 +3850,7 @@ corneum</pbpko:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00187">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00140"/>
-        <pbpko:IAO_0000115>Orosomucoid, ,i.s  globulin with a molecular weight of 44,000 da.</pbpko:IAO_0000115>
+        <pbpko:IAO_0000115>Alpha-1-acid glycoprotein (AAG), also known as orosomucoid, is a globulin with a molecular weight of about 44,000 Da.</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
         <pbpko:PBPKO_00460>AAG</pbpko:PBPKO_00460>
@@ -3867,7 +3863,7 @@ corneum</pbpko:IAO_0000115>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00187"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Orosomucoid, ,i.s  globulin with a molecular weight of 44,000 da.</owl:annotatedTarget>
+        <owl:annotatedTarget>Alpha-1-acid glycoprotein (AAG), also known as orosomucoid, is a globulin with a molecular weight of about 44,000 Da.</owl:annotatedTarget>
         <pbpko:IAO_0000119>Shargel, Leon, et al. Applied Biopharmaceutics &amp; Pharmacokinetics. 7th ed., McGraw-Hill Education, 2015.Chapter-11, page number-275</pbpko:IAO_0000119>
     </owl:Axiom>
     
@@ -4715,7 +4711,7 @@ http://purl.obolibrary.org/obo/OGG_3000007364</pbpko:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00231">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00230"/>
-        <pbpko:IAO_0000115> fecal cleared volume of  xenoboitic from body per unit  time. </pbpko:IAO_0000115>
+        <pbpko:IAO_0000115>Fecal cleared volume of  xenoboitic from body per unit  time. </pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
         <rdfs:label>fecal clearance</rdfs:label>
@@ -4724,7 +4720,7 @@ http://purl.obolibrary.org/obo/OGG_3000007364</pbpko:IAO_0000119>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00231"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget> fecal cleared volume of  xenoboitic from body per unit  time. </owl:annotatedTarget>
+        <owl:annotatedTarget>Fecal cleared volume of  xenoboitic from body per unit  time. </owl:annotatedTarget>
         <pbpko:IAO_0000119>Shargel, Leon, et al. Applied Biopharmaceutics &amp; Pharmacokinetics. 7th ed., McGraw-Hill Education, 2015.</pbpko:IAO_0000119>
     </owl:Axiom>
     
@@ -4734,7 +4730,7 @@ http://purl.obolibrary.org/obo/OGG_3000007364</pbpko:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00232">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00230"/>
-        <pbpko:IAO_0000115> sweat cleared volume of  xenoboitic from body per unit  time. </pbpko:IAO_0000115>
+        <pbpko:IAO_0000115>Sweat cleared volume of  xenoboitic from body per unit  time. </pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
         <rdfs:label>sweat clearance</rdfs:label>
@@ -4742,7 +4738,7 @@ http://purl.obolibrary.org/obo/OGG_3000007364</pbpko:IAO_0000119>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00232"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget> sweat cleared volume of  xenoboitic from body per unit  time. </owl:annotatedTarget>
+        <owl:annotatedTarget>Sweat cleared volume of  xenoboitic from body per unit  time. </owl:annotatedTarget>
         <pbpko:IAO_0000119>Shargel, Leon, et al. Applied Biopharmaceutics &amp; Pharmacokinetics. 7th ed., McGraw-Hill Education, 2015.Chapter 7, Page Number-152</pbpko:IAO_0000119>
     </owl:Axiom>
     
@@ -4752,7 +4748,7 @@ http://purl.obolibrary.org/obo/OGG_3000007364</pbpko:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00233">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00230"/>
-        <pbpko:IAO_0000115> urine cleared volume of  xenoboitic from body per unit time. </pbpko:IAO_0000115>
+        <pbpko:IAO_0000115>Urine cleared volume of  xenoboitic from body per unit time. </pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
         <rdfs:label>urinary clearance</rdfs:label>
@@ -4760,7 +4756,7 @@ http://purl.obolibrary.org/obo/OGG_3000007364</pbpko:IAO_0000119>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00233"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget> urine cleared volume of  xenoboitic from body per unit time. </owl:annotatedTarget>
+        <owl:annotatedTarget>Urine cleared volume of  xenoboitic from body per unit time. </owl:annotatedTarget>
         <pbpko:IAO_0000119>Shargel, Leon, et al. Applied Biopharmaceutics &amp; Pharmacokinetics. 7th ed., McGraw-Hill Education, 2015.Chapter 7, Page Number-153</pbpko:IAO_0000119>
     </owl:Axiom>
     
@@ -4770,7 +4766,7 @@ http://purl.obolibrary.org/obo/OGG_3000007364</pbpko:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00234">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00230"/>
-        <pbpko:IAO_0000115> bile cleared volume of  xenoboitic from body per unit time. </pbpko:IAO_0000115>
+        <pbpko:IAO_0000115>Bile cleared volume of  xenoboitic from body per unit time. </pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
         <rdfs:label>biliary clearance</rdfs:label>
@@ -4778,7 +4774,7 @@ http://purl.obolibrary.org/obo/OGG_3000007364</pbpko:IAO_0000119>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00234"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget> bile cleared volume of  xenoboitic from body per unit time. </owl:annotatedTarget>
+        <owl:annotatedTarget>Bile cleared volume of  xenoboitic from body per unit time. </owl:annotatedTarget>
         <pbpko:IAO_0000119>Shargel, Leon, et al. Applied Biopharmaceutics &amp; Pharmacokinetics. 7th ed., McGraw-Hill Education, 2015.Chapter 7, Page Number-154</pbpko:IAO_0000119>
     </owl:Axiom>
     
@@ -4788,7 +4784,7 @@ http://purl.obolibrary.org/obo/OGG_3000007364</pbpko:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00235">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00230"/>
-        <pbpko:IAO_0000115> liver cleared volume of  xenoboitic from body per unit time. </pbpko:IAO_0000115>
+        <pbpko:IAO_0000115>Liver cleared volume of  xenoboitic from body per unit time. </pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
         <rdfs:label>Hepatic clearance</rdfs:label>
@@ -4796,7 +4792,7 @@ http://purl.obolibrary.org/obo/OGG_3000007364</pbpko:IAO_0000119>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00235"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget> liver cleared volume of  xenoboitic from body per unit time. </owl:annotatedTarget>
+        <owl:annotatedTarget>Liver cleared volume of  xenoboitic from body per unit time. </owl:annotatedTarget>
         <pbpko:IAO_0000119>Shargel, Leon, et al. Applied Biopharmaceutics &amp; Pharmacokinetics. 7th ed., McGraw-Hill Education, 2015.Chapter 7, Page Number-155</pbpko:IAO_0000119>
     </owl:Axiom>
     
@@ -5279,7 +5275,7 @@ http://purl.obolibrary.org/obo/OGG_3000007364</pbpko:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00264">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00253"/>
-        <pbpko:IAO_0000115> bioavailability is defined as the rate and extent to which the active ingredient or active moiety is absorbed from a xenoboitic product and becomes available at the site of action (us-fda, cder, 2014a).</pbpko:IAO_0000115>
+        <pbpko:IAO_0000115> Bioavailability is defined as the rate and extent to which the active ingredient or active moiety is absorbed from a xenoboitic product and becomes available at the site of action (us-fda, cder, 2014a).</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
         <pbpko:PBPKO_00460>F</pbpko:PBPKO_00460>
@@ -5288,7 +5284,7 @@ http://purl.obolibrary.org/obo/OGG_3000007364</pbpko:IAO_0000119>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00264"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget> bioavailability is defined as the rate and extent to which the active ingredient or active moiety is absorbed from a xenoboitic product and becomes available at the site of action (us-fda, cder, 2014a).</owl:annotatedTarget>
+        <owl:annotatedTarget> Bioavailability is defined as the rate and extent to which the active ingredient or active moiety is absorbed from a xenoboitic product and becomes available at the site of action (us-fda, cder, 2014a).</owl:annotatedTarget>
         <pbpko:IAO_0000119>Shargel, Leon, et al. Applied Biopharmaceutics &amp; Pharmacokinetics. 7th ed., McGraw-Hill Education, 2015.
 Chapter 16, Page Number-471</pbpko:IAO_0000119>
     </owl:Axiom>
@@ -5594,7 +5590,7 @@ Chapter-25,Page number-837</pbpko:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00284">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00279"/>
-        <pbpko:IAO_0000115>Percetile 97.5 plasma concentration</pbpko:IAO_0000115>
+        <pbpko:IAO_0000115>Percentile 97.5 plasma concentration</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
         <rdfs:label>Percentile 97.5 plasma concentration</rdfs:label>
@@ -6625,7 +6621,7 @@ Chapter-25,Page number-837</pbpko:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00353">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00012"/>
-        <pbpko:IAO_0000115>Total csf flowing in spinal region</pbpko:IAO_0000115>
+        <pbpko:IAO_0000115>Total CSF flowing in spinal region</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
         <rdfs:label>Spinal CSF flow</rdfs:label>
@@ -6637,7 +6633,7 @@ Chapter-25,Page number-837</pbpko:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00354">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00012"/>
-        <pbpko:IAO_0000115>Total csf flowing in cranial region</pbpko:IAO_0000115>
+        <pbpko:IAO_0000115>Total CSF flowing in cranial region</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
         <rdfs:label>Cranial CSF flow</rdfs:label>
@@ -7050,7 +7046,7 @@ Chapter-25,Page number-837</pbpko:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00388">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00448"/>
-        <pbpko:IAO_0000115> measure of the age of a pregnancy, indicating how far along the pregnancy is. typically measured in weeks</pbpko:IAO_0000115>
+        <pbpko:IAO_0000115> Measure of the age of a pregnancy, indicating how far along the pregnancy is. typically measured in weeks</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
         <rdfs:label>Gestational age</rdfs:label>
@@ -7062,7 +7058,7 @@ Chapter-25,Page number-837</pbpko:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00389">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00448"/>
-        <pbpko:IAO_0000115> measure of the week of a pregnancy, indicating how far along the pregnancy is. </pbpko:IAO_0000115>
+        <pbpko:IAO_0000115> Measure of the week of a pregnancy, indicating how far along the pregnancy is. </pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
         <rdfs:label>Gestational week</rdfs:label>
@@ -7283,7 +7279,7 @@ Chapter-25,Page number-837</pbpko:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00404">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00003"/>
-        <pbpko:IAO_0000115>Pbpk model built to predict the compound concnetration in lung compartment</pbpko:IAO_0000115>
+        <pbpko:IAO_0000115>PBPK model built to predict the compound concnetration in lung compartment</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
         <rdfs:label>lung PBPK</rdfs:label>
@@ -7346,7 +7342,7 @@ Chapter-25,Page number-837</pbpko:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00409">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00003"/>
-        <pbpko:IAO_0000115>Pbpk model build to predict the concentration of drug/chemical in different compartments of gut.</pbpko:IAO_0000115>
+        <pbpko:IAO_0000115>PBPK model build to predict the concentration of drug/chemical in different compartments of gut.</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
         <rdfs:label>Gut PBPK or ADAM model</rdfs:label>
@@ -7682,7 +7678,7 @@ Chapter-25,Page number-837</pbpko:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00436">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00003"/>
-        <pbpko:IAO_0000115>Pbpk models built to predict the drug/chemical concentration in milk during lactation</pbpko:IAO_0000115>
+        <pbpko:IAO_0000115>PBPK models built to predict the drug/chemical concentration in milk during lactation</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
         <rdfs:label>Lactational PBPK</rdfs:label>
@@ -7690,7 +7686,7 @@ Chapter-25,Page number-837</pbpko:IAO_0000119>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00436"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Pbpk models built to predict the drug/chemical concentration in milk during lactation</owl:annotatedTarget>
+        <owl:annotatedTarget>PBPK models built to predict the drug/chemical concentration in milk during lactation</owl:annotatedTarget>
         <pbpko:IAO_0000119>10.1002/psp4.12662</pbpko:IAO_0000119>
     </owl:Axiom>
     
@@ -7748,7 +7744,7 @@ Chapter-25,Page number-837</pbpko:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00441">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00448"/>
-        <pbpko:IAO_0000115>Ph of milk</pbpko:IAO_0000115>
+        <pbpko:IAO_0000115>pH of milk</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
         <rdfs:label>phmilk</rdfs:label>
@@ -7789,7 +7785,7 @@ Chapter-25,Page number-837</pbpko:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/PBPKO_00444 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00444">
-        <pbpko:IAO_0000115>Adme process considered for pbpk modeling.</pbpko:IAO_0000115>
+        <pbpko:IAO_0000115>ADME process considered for pbpk modeling.</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
         <rdfs:label>Biological event</rdfs:label>
@@ -7812,7 +7808,7 @@ Chapter-25,Page number-837</pbpko:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PBPKO_00446">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PBPKO_00445"/>
-        <pbpko:IAO_0000115>Udp-glucuronosyltransferases (ugts) are involved in metabolism of lipophilic compounds by catalyzing the glucuronidation reaction.</pbpko:IAO_0000115>
+        <pbpko:IAO_0000115>UDP-glucuronosyltransferases (UGTs) are involved in metabolism of lipophilic compounds by catalyzing the glucuronidation reaction.</pbpko:IAO_0000115>
         <pbpko:IAO_0000117>0000-0001-8345-1349</pbpko:IAO_0000117>
         <pbpko:IAO_0000117>0000-0002-9795-5967</pbpko:IAO_0000117>
         <rdfs:label>UGT enzymes</rdfs:label>
