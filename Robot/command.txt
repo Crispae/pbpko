@@ -1,5 +1,14 @@
+## Check Robot version
 docker run -v ${PWD}:/work -w /work -e 'ROBOT_JAVA_ARGS=' -e 'JAVA_OPTS=' --rm -ti obolibrary/robot robot --version
 
+## Adding properties
+docker run -v ${PWD}:/work -w /work -e 'ROBOT_JAVA_ARGS=' -e 'JAVA_OPTS=' --rm -ti obolibrary/robot robot template  --template /work/templates/properties.tsv --merge-before --input /work/ontologies/pbpko.owl --add-prefixes /work/config/context.json  --output /work/ontologies/pbpko-rel.owl 
+
+## Merge imported modules to the main ontology using template command
+docker run -v ${PWD}:/work -w /work -e 'ROBOT_JAVA_ARGS=' -e 'JAVA_OPTS=' --rm -ti obolibrary/robot robot template --merge-before --input /work/ontologies/imported_modules.owl --template /work/templates/vocab.tsv --prefix "pbpko:http://purl.obolibrary.org/obo/" --output /work/ontologies/merged.owl
+
+## Imported ontology
+docker run -v ${PWD}:/work -w /work -e 'ROBOT_JAVA_ARGS=' -e 'JAVA_OPTS=' --rm -ti obolibrary/robot robot template --template /work/templates/annotations.tsv --prefix "iao:http://purl.obolibrary.org/obo/" --output /work/ontologies/imported.owl -vvv
 
 ## Annotations
- docker run -v ${PWD}:/work -w /work -e 'ROBOT_JAVA_ARGS=' -e 'JAVA_OPTS=' --rm -ti obolibrary/robot robot annotate --input /work/pbpko.owl --ontology-iri "https://github.com/Crispae/pbpko/blob/main/pbpko.owl" --version-iri "http://purl.obolibrary.org/obo/pbpko/releases/2024-06-25/pbpko.owl" --annotation-file /work/annotation.ttl --output pbpko-annotated.owl
+docker run -v ${PWD}:/work -w /work -e 'ROBOT_JAVA_ARGS=' -e 'JAVA_OPTS=' --rm -ti obolibrary/robot robot annotate --input /work/ontologies/pbpko.owl --ontology-iri "https://github.com/Crispae/pbpko/blob/main/pbpko.owl" --version-iri "http://purl.obolibrary.org/obo/pbpko/releases/2024-10-09/pbpko.owl" --annotation-file /work/annotations/annotation.ttl --output /work/ontologies/pbpko.owl

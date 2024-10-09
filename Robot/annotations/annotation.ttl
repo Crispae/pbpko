@@ -30,6 +30,6 @@
         
         ;
     dcterms:created "2024-08-11"^^xsd:date ;
-    dcterms:modified "2024-08-11"^^xsd:date ;
+    dcterms:modified "2024-10-09"^^xsd:date ;
     owl:versionInfo "1.0" ;
     rdfs:label "PBPK Ontology" .
